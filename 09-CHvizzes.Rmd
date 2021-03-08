@@ -1,0 +1,64 @@
+# Visualizing CH Direct Food security Indicators
+
+Visualizing the phasing of areas in maps and tables  according to the different food security indicators can give users a chance to better contemplate/synthesize results during the analysis process.  The resources below, offer two methods for visualizing the results: via the Matrice Intermediare (.csv file) or via the processed survey (.sav) file .
+
+## Visualizing CH Direct Food security Indicators from Matrice Intermediare (.csv file)
+
+After survey teams have generated the .csv for thematrice intermediare, the R script below can be used for creating maps and tables of the Food Security Direct Evidence.
+
+### Overview video 
+
+<iframe width="750" height="400" src="https://www.youtube.com/embed/BdORJYlOEQU" frameborder="0" allowfullscreen></iframe>
+
+
+### Example matrice intermediare (.csv file)
+
+Here is the zipped example matrice intermediare (.csv) generated from processes in the last chapter:
+
+[matrice_intermediaire_direct_en](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/matrice_intermediaire_direct_en.zip?raw=true) 
+
+### Example shapefiles 
+
+Here are shape files for Nigeria which will be used to make maps in our example:
+
+[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+
+
+### Syntax
+
+Here is the syntax to visualize the CH Direct Food security Indicators
+[example_CH_preliminaryFSresults_fromcsv](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/example_CH_preliminaryFSresults_fromcsv.zip?raw=true) 
+
+
+## Visualizing CH Direct Food security Indicators directly from processed data set 
+
+Alternatively, teams can use the R script below to create maps and tables of the Food Security Direct Evidence directly from the processed dataset.  
+
+
+### Overview video 
+
+<iframe width="750" height="400" src="https://www.youtube.com/embed/SStPXUETQxY" frameborder="0" allowfullscreen></iframe>
+
+### Example processed data set
+
+Here is the example processed data set:
+
+[exampledataEnglish_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_processed.sav?raw=true) 
+
+
+### Example shapefiles 
+
+Here are shape files for Nigeria which will be used to make maps in our example:
+
+[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+
+### Syntax
+
+Here is the syntax to visualize the CH Direct Food security Indicators from the processed dataset:
+
+[example_CH_preliminaryFSresults_fromspss](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/example_CH_preliminaryFSresults_fromspss.zip?raw=true) 
+
+
+
+
+

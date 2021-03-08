@@ -1,0 +1,1301 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{book}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={A Guide to Collection \& Calculation of Cadre Harmonise Food Security Indicators - beta version},
+  pdfauthor={Research, Assesment and Monitoring (RAM) Team Regional Bureau Dakar World Food Programme rbd.vam@wfp.org},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{longtable,booktabs}
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
+
+\title{A Guide to Collection \& Calculation of Cadre Harmonise Food Security Indicators - beta version}
+\author{Research, Assesment and Monitoring (RAM) Team Regional Bureau Dakar World Food Programme \href{mailto:rbd.vam@wfp.org}{\nolinkurl{rbd.vam@wfp.org}}}
+\date{2021-02-12}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{purpose-how-to-use-this-guide}{%
+\chapter{Purpose \& How to use this Guide}\label{purpose-how-to-use-this-guide}}
+
+This guide proposes a uniform way of collecting and analyzing key food security indicators for the Cadre Harmonise process.
+
+Chapters are listed by indicator and include:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  standardized data collection modules and ODK compliant xlsforms
+\item
+  sample data set
+\item
+  standardized syntax in SPSS and R
+\item
+  references / official guidelines / source materials for the indicators
+\end{enumerate}
+
+\hypertarget{gecodes}{%
+\chapter{Gecodes}\label{gecodes}}
+
+Using names as identifiers can easily lead to confusion over spelling and transliterations as well as alternative and duplicate names.
+
+As unique identifiers, P-Codes overcome the challenges of linking datasets and confirming locations.
+
+We recommend using Gecodes and Names from OCHA's Common Operational Datasets:
+\url{https://data.humdata.org/dashboards/cod?ext_geodata=1\&q=\&ext_page_size=25}
+
+\hypertarget{a-brief-example-of-the-problem}{%
+\section{A brief example of the problem:}\label{a-brief-example-of-the-problem}}
+
+The geographic variables of the \emph{choices} section of the xlsform typically look like this
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+list\_name & name & label\tabularnewline
+\midrule
+\endhead
+cod\_lga & 1 & ASKIRA/UBA\tabularnewline
+cod\_lga & 2 & BAYO\tabularnewline
+cod\_lga & 3 & CHIBOK\tabularnewline
+cod\_lga & 4 & KALABAGE\tabularnewline
+\bottomrule
+\end{longtable}
+
+The geographic variables in corresponding GIS dataset look like this:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+Shape & admin2Pcode & admin2RefName\tabularnewline
+\midrule
+\endhead
+Polygon & NG008002 & Askira/Uba\tabularnewline
+Polygon & NG008004 & Bayo\tabularnewline
+Polygon & NG008006 & Chibok\tabularnewline
+Polygon & NG008015 & Kala/Balge\tabularnewline
+\bottomrule
+\end{longtable}
+
+Unfortunately, if we tried to merge the dataset and the GIS file by the name of the area, we would first have to fix the capitalization and punctuation of the names.
+
+To avoid unnecessary work, we recommend putting in the \emph{Pcode} in the name column of the xlsform:
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+list\_name & name & label\tabularnewline
+\midrule
+\endhead
+cod\_lga & NG008002 & ASKIRA/UBA\tabularnewline
+cod\_lga & NG008004 & BAYO\tabularnewline
+cod\_lga & NG008006 & CHIBOK\tabularnewline
+cod\_lga & NG008015 & KALABAGE\tabularnewline
+\bottomrule
+\end{longtable}
+
+With a common, simple variable to merge both datasets, mapping and data processing will be much easier!
+
+\hypertarget{where-to-find-pcodes}{%
+\section{Where to find Pcodes}\label{where-to-find-pcodes}}
+
+Geographic data can be found \url{https://data.humdata.org/dashboards/cod?ext_geodata=1\&q=\&ext_page_size=25} and searching for the appropriate country.
+
+We recommend using the codes from the \emph{admin1Pcode} and \emph{admin2Pcode} columns in the \emph{name} column of the xlsform. Using the \emph{admin1RefName} and \emph{admin2RefName}
+
+\hypertarget{example-data-set-of-the-data-collection-sheet-for-nigeria}{%
+\section{Example data set of the data collection sheet for Nigeria:}\label{example-data-set-of-the-data-collection-sheet-for-nigeria}}
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/xlsformwithgeocodesexample.xlsx}{xlsformwithgeocodesexample}
+
+\hypertarget{caveats}{%
+\section{2 caveats}\label{caveats}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  In some countries, the boundaries in the CODS might not correspond with the latest boundaries used by the country. In this case, special development of a GIS boundary file and codes will need to be developed.
+\item
+  Inserting the relevant pcodes in the \emph{name} column will probably require some \emph{vlookup} . This might be relatively straightforward when only replacing codes at the admin1 and admin2 level, however things might get more complicated and difficult if cascading columns and the \emph{choice\_filter} option is used at the adm3, adm4 level.
+\end{enumerate}
+
+\hypertarget{household-hunger-scale}{%
+\chapter{Household Hunger Scale}\label{household-hunger-scale}}
+
+\hypertarget{references-resources}{%
+\section{References / Resources}\label{references-resources}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \url{https://www.fantaproject.org/monitoring-and-evaluation/household-hunger-scale-hhs}
+\end{enumerate}
+
+\hypertarget{standardized-questionnaire}{%
+\section{Standardized Questionnaire}\label{standardized-questionnaire}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.17\columnwidth}\raggedright
+Variable Name\strut
+\end{minipage} & \begin{minipage}[b]{0.56\columnwidth}\raggedright
+Question Label\strut
+\end{minipage} & \begin{minipage}[b]{0.17\columnwidth}\raggedright
+Answer Choices\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+HHhSNoFood\_YN\strut
+\end{minipage} & \begin{minipage}[t]{0.56\columnwidth}\raggedright
+In the past {[}4 weeks/30 days{]}, was there ever no food to eat of any kind in your house because of lack of resources to get food?\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+1) Yes 0) No\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+HHhSNoFood\_FR\strut
+\end{minipage} & \begin{minipage}[t]{0.56\columnwidth}\raggedright
+How often did this happen in the past {[}4 weeks/30 days{]}?\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+1) Rarely (1--2 times) 2) Sometimes (3--10 times) 3) Often (more than 10 times)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+HHhSBedHung\_YN\strut
+\end{minipage} & \begin{minipage}[t]{0.56\columnwidth}\raggedright
+In the past {[}4 weeks/30 days{]}, did you or any household member go to sleep at night hungry because there was not enough food?\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+1) Yes 0) No\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+HHhSBedHung\_FR\strut
+\end{minipage} & \begin{minipage}[t]{0.56\columnwidth}\raggedright
+How often did this happen in the past {[}4 weeks/30 days{]}?\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+1) Rarely (1--2 times) 2) Sometimes (3--10 times) 3) Often (more than 10 times)\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+HHhSNotEat\_YN\strut
+\end{minipage} & \begin{minipage}[t]{0.56\columnwidth}\raggedright
+In the past {[}4 weeks/30 days{]}, did you or any household member go to sleep at night hungry because there was not enough food?\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+1) Yes 0) No\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.17\columnwidth}\raggedright
+HHhSNotEat\_FR\strut
+\end{minipage} & \begin{minipage}[t]{0.56\columnwidth}\raggedright
+How often did this happen in the past {[}4 weeks/30 days{]}?\strut
+\end{minipage} & \begin{minipage}[t]{0.17\columnwidth}\raggedright
+1) Rarely (1--2 times) 2) Sometimes (3--10 times) 3) Often (more than 10 times)\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{paper-version-of-questionnaire}{%
+\subsection{Paper Version of Questionnaire}\label{paper-version-of-questionnaire}}
+
+Here is the standardized module in word format:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.xlsx}{RBDstandardized\_questionnaireHHS}
+
+\hypertarget{electronic-version-of-questionnaire}{%
+\subsection{Electronic Version of Questionnaire}\label{electronic-version-of-questionnaire}}
+
+Here is the standardized module in xlsform format:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.docx}{RBDstandardized\_questionnaireHHS}
+
+\hypertarget{calculation-of-household-hunger-scale-indicators-cadre-harmonise-phasing}{%
+\section{Calculation of Household Hunger Scale Indicators \& Cadre Harmonise Phasing}\label{calculation-of-household-hunger-scale-indicators-cadre-harmonise-phasing}}
+
+\hypertarget{example-data-set}{%
+\subsection{Example data set}\label{example-data-set}}
+
+Here is the example data set:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/dataHHSEng.sav}{dataHHSEng}
+
+\hypertarget{spss-syntax}{%
+\subsection{SPSS Syntax}\label{spss-syntax}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{GET  FILE=}\StringTok{'dataHHSEng.sav'}\NormalTok{.}
+\NormalTok{DATASET NAME DataSet1 WINDOW=FRONT.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{recode the frequency questions to scores}
+
+\NormalTok{Recode HHhSNoFood_FR HHhSBedHung_FR }\KeywordTok{HHhSNotEat_FR}\NormalTok{ (}\DecValTok{1}\NormalTok{ =}\StringTok{ }\DecValTok{1}\NormalTok{) (}\DecValTok{2}\NormalTok{=}\DecValTok{1}\NormalTok{) (}\DecValTok{3}\NormalTok{=}\DecValTok{2}\NormalTok{) (}\DataTypeTok{ELSE=}\DecValTok{0}\NormalTok{) INTO HHhSNoFood_FR_r HHhSBedHung_FR_r HHhSNotEat_FR_r.}
+
+\NormalTok{Variable labels HHhSNoFood_FR_r }\StringTok{"In the past [4 weeks/30 days], was there ever no food to eat of any kind in your house because of lack of resources to get food? - recoded"}
+\NormalTok{HHhSBedHung_FR_r }\StringTok{"In the past [4 weeks/30 days], did you or any household member go to sleep at night hungry because there was not enough food? - recoded"}
+\NormalTok{HHhSNotEat_FR_r }\StringTok{"In the past [4 weeks/30 days], did you or any household member go to sleep at night hungry because there was not enough food? - recoded"}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{sum the recoded questions to calculate the HHS}
+
+\NormalTok{Compute HHhS =}\StringTok{ }\NormalTok{HHhSNoFood_FR_r }\OperatorTok{+}\StringTok{ }\NormalTok{HHhSBedHung_FR_r }\OperatorTok{+}\StringTok{ }\NormalTok{HHhSNotEat_FR_r.}
+\NormalTok{variable labels HHhS }\StringTok{"Household Hunger Scale"}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{each household should have an HHhS score between }\DecValTok{0} \OperatorTok{-}\StringTok{ }\FloatTok{6.}
+
+\NormalTok{FREQUENCIES VARIABLES =}\StringTok{ }\NormalTok{HHhS}
+\OperatorTok{/}\NormalTok{STATISTICS=MEAN MEDIAN MINIMUM MAXIMUM}
+\OperatorTok{/}\NormalTok{ORDER=ANALYSIS.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{Create Categorical HHhS}
+
+\NormalTok{RECODE }\KeywordTok{HHhS}\NormalTok{ (}\DecValTok{0}\NormalTok{ thru }\DecValTok{1}\NormalTok{=}\DecValTok{1}\NormalTok{) (}\DecValTok{2}\NormalTok{ thru }\DecValTok{3}\NormalTok{=}\DecValTok{2}\NormalTok{) (}\DecValTok{4}\NormalTok{ thru }\DataTypeTok{Highest=}\DecValTok{3}\NormalTok{) INTO HHhSCat.}
+\NormalTok{variable labels HHhSCat }\StringTok{"Household Hunger Score Categories"}\NormalTok{.}
+\NormalTok{value labels HHhSCat }
+\DecValTok{1} \StringTok{`}\DataTypeTok{No or little hunger in the household}\StringTok{`}
+\DecValTok{2} \StringTok{`}\DataTypeTok{Moderate hunger in the household}\StringTok{`}
+\DecValTok{3} \StringTok{`}\DataTypeTok{Severe hunger in the household}\StringTok{`}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{Create HHhS Cadre Harmonise Categories}
+
+\NormalTok{RECODE }\KeywordTok{HHS}\NormalTok{ (}\DecValTok{0}\NormalTok{=}\DecValTok{1}\NormalTok{) (}\DecValTok{1}\NormalTok{=}\DecValTok{2}\NormalTok{) (}\DecValTok{2}\NormalTok{ thru }\DecValTok{3}\NormalTok{=}\DecValTok{3}\NormalTok{) (}\DecValTok{4}\NormalTok{=}\DecValTok{4}\NormalTok{) (}\DecValTok{5}\NormalTok{=}\DecValTok{5}\NormalTok{) INTO HHhS_CH.}
+\NormalTok{variable labels HHhS_CH }\StringTok{"Household Hunger Score Categories - Cadre Harmonise"}\NormalTok{.}
+\NormalTok{value labels HHhS_CH}
+\DecValTok{1} \StringTok{`}\DataTypeTok{Phase1}\StringTok{`}
+\DecValTok{2} \StringTok{`}\DataTypeTok{Phase2}\StringTok{`}
+\DecValTok{3} \StringTok{`}\DataTypeTok{Phase3}\StringTok{`}
+\DecValTok{4} \StringTok{`}\DataTypeTok{Phase4}\StringTok{`}
+\DecValTok{5} \StringTok{`}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{Generate table of proportion of households }\ControlFlowTok{in}\NormalTok{ CH HHS phases by Adm1 and Adm2 using weights}
+
+\NormalTok{WEIGHT BY WeightHH.}
+
+\NormalTok{CROSSTABS}
+  \OperatorTok{/}\NormalTok{TABLES=ADMIN2Name BY HHhS_CH BY ADMIN1Name}
+  \OperatorTok{/}\NormalTok{FORMAT=AVALUE TABLES}
+  \OperatorTok{/}\NormalTok{CELLS=ROW }
+  \OperatorTok{/}\NormalTok{COUNT ROUND CELL.}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the SPSS syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxHHS.sps}{RBDstandardized\_SPSSsyntaxHHS}
+
+\hypertarget{r-syntax}{%
+\subsection{R Syntax}\label{r-syntax}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(haven)}
+\KeywordTok{library}\NormalTok{(labelled)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\CommentTok{#import dataset}
+\NormalTok{dataHHSEng <-}\StringTok{ }\KeywordTok{read_sav}\NormalTok{(}\StringTok{"example_datasets/dataHHSEng.sav"}\NormalTok{)}
+
+\CommentTok{#Calculate HHS }
+\NormalTok{dataHHSEng <-}\StringTok{ }\KeywordTok{to_factor}\NormalTok{(dataHHSEng)}
+
+\CommentTok{#Recode HHS questions into new variables with score }
+\NormalTok{dataHHSEng <-}\StringTok{ }\NormalTok{dataHHSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{HHhSNoFood_FR_r =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{                                      HHhSNoFood_FR }\OperatorTok{==}\StringTok{ "Rarely (1–2 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,}
+\NormalTok{                                      HHhSNoFood_FR }\OperatorTok{==}\StringTok{ "Sometimes (3–10 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,}
+\NormalTok{                                      HHhSNoFood_FR }\OperatorTok{==}\StringTok{ "Often (more than 10 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{,}
+                                      \OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+                                    \DataTypeTok{HHhSBedHung_FR_r =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{                                      HHhSBedHung_FR }\OperatorTok{==}\StringTok{ "Rarely (1–2 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,}
+\NormalTok{                                      HHhSBedHung_FR }\OperatorTok{==}\StringTok{ "Sometimes (3–10 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,}
+\NormalTok{                                      HHhSBedHung_FR }\OperatorTok{==}\StringTok{ "Often (more than 10 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{,}
+                                      \OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+                                    \DataTypeTok{HHhSNotEat_FR_r =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{                                      HHhSNotEat_FR }\OperatorTok{==}\StringTok{ "Rarely (1–2 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,}
+\NormalTok{                                      HHhSNotEat_FR }\OperatorTok{==}\StringTok{ "Sometimes (3–10 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,}
+\NormalTok{                                      HHhSNotEat_FR }\OperatorTok{==}\StringTok{ "Often (more than 10 times)"} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{,}
+                                      \OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{))}
+\CommentTok{# Calculate HHhS score}
+\NormalTok{dataHHSEng <-}\StringTok{ }\NormalTok{dataHHSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{HHhS =}\NormalTok{ HHhSNoFood_FR_r }\OperatorTok{+}\StringTok{ }\NormalTok{HHhSBedHung_FR_r }\OperatorTok{+}\StringTok{ }\NormalTok{HHhSNotEat_FR_r)}
+\KeywordTok{var_label}\NormalTok{(dataHHSEng}\OperatorTok{$}\NormalTok{HHhS) <-}\StringTok{ "Household Hunger Scale"}
+
+\CommentTok{#each household should have an HHS score between 0 - 6}
+\KeywordTok{summary}\NormalTok{(dataHHSEng}\OperatorTok{$}\NormalTok{HHhS)}
+
+\CommentTok{# Create Categorical HHS}
+\NormalTok{dataHHSEng <-}\StringTok{ }\NormalTok{dataHHSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{HHhSCat =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{    HHhS }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{) }\OperatorTok{~}\StringTok{ "No or little hunger in the household"}\NormalTok{,}
+\NormalTok{    HHhS }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{) }\OperatorTok{~}\StringTok{ "Moderate hunger in the household"}\NormalTok{,}
+\NormalTok{    HHhS }\OperatorTok{>=}\StringTok{ }\DecValTok{4} \OperatorTok{~}\StringTok{ "Severe hunger in the household"} 
+\NormalTok{    ))}
+\KeywordTok{var_label}\NormalTok{(dataHHSEng}\OperatorTok{$}\NormalTok{HHhSCat) <-}\StringTok{ "Household Hunger Score Categories"}
+
+\CommentTok{#Convert HH Scores to CH phases}
+\NormalTok{dataHHSEng <-}\StringTok{ }\NormalTok{dataHHSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{HHhS_CH =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{    HHhS }\OperatorTok{==}\StringTok{ }\DecValTok{0} \OperatorTok{~}\StringTok{ "Phase1"}\NormalTok{,}
+\NormalTok{    HHhS }\OperatorTok{==}\StringTok{ }\DecValTok{1} \OperatorTok{~}\StringTok{ "Phase2"}\NormalTok{,}
+\NormalTok{    HHhS }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{3}\NormalTok{) }\OperatorTok{~}\StringTok{ "Phase3"}\NormalTok{,}
+\NormalTok{    HHhS }\OperatorTok{==}\StringTok{ }\DecValTok{4} \OperatorTok{~}\StringTok{ "Phase4"}\NormalTok{,  }
+\NormalTok{    HHhS }\OperatorTok{>=}\StringTok{ }\DecValTok{5} \OperatorTok{~}\StringTok{ "Phase5"}\NormalTok{))}
+\KeywordTok{var_label}\NormalTok{(dataHHSEng}\OperatorTok{$}\NormalTok{HHhS_CH) <-}\StringTok{ "Household Hunger Score Categories - Cadre Harmonise"}
+
+\CommentTok{#Generate table of proportion of households in CH HHS phases by Adm1 and Adm2 using weights}
+\NormalTok{CH_HHhS_table_wide <-}\StringTok{ }\NormalTok{dataHHSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{drop_na}\NormalTok{(HHhS_CH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{count}\NormalTok{(HHhS_CH, }\DataTypeTok{wt =}\NormalTok{ WeightHH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{perc =} \DecValTok{100} \OperatorTok{*}\StringTok{ }\NormalTok{n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{spread}\NormalTok{(}\DataTypeTok{key =}\NormalTok{ HHhS_CH, }\DataTypeTok{value =}\NormalTok{ perc) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{replace}\NormalTok{(., }\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{)  }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate_if}\NormalTok{(is.numeric, round, }\DecValTok{1}\NormalTok{)}
+
+\CommentTok{#Calculate phasing of CH HHS indicator for area (applying CH 20% rules)}
+\NormalTok{CH_HHhS_table_wide <-}\StringTok{ }\NormalTok{CH_HHhS_table_wide }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{phase2345 =} \StringTok{`}\DataTypeTok{Phase2}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase3}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{,}\DataTypeTok{phase345 =} \StringTok{`}\DataTypeTok{Phase3}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{, }\DataTypeTok{phase45 =} \StringTok{`}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{,}
+      \DataTypeTok{HHS_finalphase =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{      Phase5 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{5}\NormalTok{,}
+\NormalTok{      Phase4 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{phase45 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{4}\NormalTok{,}
+\NormalTok{      Phase3 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{phase345 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{3}\NormalTok{,}
+\NormalTok{      Phase2 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{phase2345 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{,}
+      \OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code, }\DataTypeTok{HHS_Phase1 =}\NormalTok{ Phase1, }\DataTypeTok{HHS_Phase2 =}\NormalTok{ Phase2, }\DataTypeTok{HHS_Phase3 =}\NormalTok{ Phase3, }\DataTypeTok{HHS_Phase4 =}\NormalTok{ Phase4, }\DataTypeTok{HHS_Phase5 =}\NormalTok{ Phase5, HHS_finalphase)}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the R syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxHHS.R}{RBDstandardized\_RsyntaxHHS}
+
+\hypertarget{reduced-coping-strategy-index}{%
+\chapter{reduced Coping Strategy Index}\label{reduced-coping-strategy-index}}
+
+\hypertarget{references-resources-1}{%
+\section{References / Resources}\label{references-resources-1}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \url{https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp211058.pdf}
+\item
+  \url{https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf}
+\end{enumerate}
+
+\hypertarget{standardized-questionnaire-1}{%
+\section{Standardized Questionnaire}\label{standardized-questionnaire-1}}
+
+\begin{longtable}[]{@{}ll@{}}
+\toprule
+\begin{minipage}[b]{0.22\columnwidth}\raggedright
+Variable Name\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright
+Question Label\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+rCSILessQlty\strut
+\end{minipage} & \begin{minipage}[t]{0.72\columnwidth}\raggedright
+In the past 7 days, how many days has your household had to: \emph{Rely on less preferred and less expensive food} because you did not have enough food or money to buy food?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+rCSIBorrow\strut
+\end{minipage} & \begin{minipage}[t]{0.72\columnwidth}\raggedright
+In the past 7 days, how many days has your household had to: \emph{Borrow food or rely on help from a relative or friend} because you did not have enough food or money to buy food?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+rCSIMealSize\strut
+\end{minipage} & \begin{minipage}[t]{0.72\columnwidth}\raggedright
+In the past 7 days, how many days has your household had to: \emph{Limit portion size of meals} because you did not have enough food or money to buy food?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+rCSIMealAdult\strut
+\end{minipage} & \begin{minipage}[t]{0.72\columnwidth}\raggedright
+In the past 7 days, how many days has your household had to: \emph{Restrict consumption by adults in order for small children to eat} because you did not have enough food or money to buy food?\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.22\columnwidth}\raggedright
+rCSIMealNb\strut
+\end{minipage} & \begin{minipage}[t]{0.72\columnwidth}\raggedright
+In the past 7 days, how many days has your household had to: \emph{Reduce the number of meals eaten per day} because you did not have enough food or money to buy food?\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{paper-version-of-questionnaire-1}{%
+\subsection{Paper Version of Questionnaire}\label{paper-version-of-questionnaire-1}}
+
+Here is the standardized module in word format:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairerCSI.docx}{RBDstandardized\_questionnairerCSI}
+
+\hypertarget{electronic-version-of-questionnaire-1}{%
+\subsection{Electronic Version of Questionnaire}\label{electronic-version-of-questionnaire-1}}
+
+Here is the standardized module in xlsform:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairerCSI.xlsx}{RBDstandardized\_questionnairerCSI}
+
+\hypertarget{calculation-of-rcsi-indicator-ch}{%
+\section{Calculation of rCSI Indicator \& CH}\label{calculation-of-rcsi-indicator-ch}}
+
+\hypertarget{example-data-set-1}{%
+\subsection{Example data set}\label{example-data-set-1}}
+
+Here is the example data set:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/datarCSIEng.sav}{datarCSIEng}
+
+\hypertarget{spss-syntax-1}{%
+\subsection{SPSS Syntax}\label{spss-syntax-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{GET  FILE=}\StringTok{'datarCSIEng.sav'}\NormalTok{.}
+\NormalTok{DATASET NAME DataSet1 WINDOW=FRONT.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{caculate rCSI}
+
+\NormalTok{compute rCSI =}\StringTok{ }\KeywordTok{sum}\NormalTok{(rCSILessQlty,rCSIBorrow}\OperatorTok{*}\DecValTok{2}\NormalTok{,rCSIMealSize,rCSIMealAdult}\OperatorTok{*}\DecValTok{3}\NormalTok{,rCSIMealNb).}
+\NormalTok{Variable labels rCSI }\StringTok{"rCSI"}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{each household should have a rCSI between }\DecValTok{0} \OperatorTok{-}\StringTok{ }\DecValTok{56}
+
+\NormalTok{FREQUENCIES VARIABLES =}\StringTok{  }\NormalTok{rCSI}
+\OperatorTok{/}\NormalTok{STATISTICS=MEAN MEDIAN MINIMUM MAXIMUM}
+\OperatorTok{/}\NormalTok{ORDER=ANALYSIS.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{Create rCSI Cadre Harmonise Categories}
+
+\NormalTok{RECODE }\KeywordTok{rCSI}\NormalTok{ (}\DecValTok{0}\NormalTok{ thru }\DecValTok{3}\NormalTok{=}\DecValTok{1}\NormalTok{) (}\DecValTok{4}\NormalTok{ thru }\DecValTok{18}\NormalTok{=}\DecValTok{2}\NormalTok{) (}\DecValTok{19}\NormalTok{ thru }\DecValTok{56}\NormalTok{=}\DecValTok{3}\NormalTok{) INTO rCSI_CH.}
+\NormalTok{variable labels rCSI_CH }\StringTok{"rCSI categories - Cadre Harmonise "}\NormalTok{.}
+\NormalTok{value labels rCSI_CH}
+\DecValTok{1} \StringTok{`}\DataTypeTok{Phase1}\StringTok{`}
+\DecValTok{2} \StringTok{`}\DataTypeTok{Phase2}\StringTok{`}
+\DecValTok{3} \StringTok{`}\DataTypeTok{Phase3}\StringTok{`}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{Generate table of proportion of households }\ControlFlowTok{in}\NormalTok{ CH HHhS phases by Adm1 and Adm2 using weights}
+
+\NormalTok{WEIGHT BY WeightHH.}
+
+\NormalTok{CROSSTABS}
+  \OperatorTok{/}\NormalTok{TABLES=ADMIN2Name BY rCSI_CH BY ADMIN1Name}
+  \OperatorTok{/}\NormalTok{FORMAT=AVALUE TABLES}
+  \OperatorTok{/}\NormalTok{CELLS=ROW }
+  \OperatorTok{/}\NormalTok{COUNT ROUND CELL.}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the SPSS syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI.sps}{RBDstandardized\_SPSSsyntaxrCSI}
+
+\hypertarget{r-syntax-1}{%
+\subsection{R Syntax}\label{r-syntax-1}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(haven)}
+\KeywordTok{library}\NormalTok{(labelled)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\CommentTok{#import dataset}
+\NormalTok{datarCSIEng <-}\StringTok{ }\KeywordTok{read_sav}\NormalTok{(}\StringTok{"example_datasets/datarCSIEng.sav"}\NormalTok{)}
+
+\CommentTok{#Calculate HHS }
+\NormalTok{datarCSIEng <-}\StringTok{ }\KeywordTok{to_factor}\NormalTok{(datarCSIEng)}
+
+\CommentTok{#calculate rCSI Score}
+\NormalTok{datarCSIEng <-}\StringTok{ }\NormalTok{datarCSIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{rCSI =}\NormalTok{ rCSILessQlty  }\OperatorTok{+}\StringTok{ }\NormalTok{(}\DecValTok{2} \OperatorTok{*}\StringTok{ }\NormalTok{rCSIBorrow) }\OperatorTok{+}\StringTok{ }\NormalTok{rCSIMealSize }\OperatorTok{+}\StringTok{ }\NormalTok{(}\DecValTok{3} \OperatorTok{*}\StringTok{ }\NormalTok{rCSIMealAdult) }\OperatorTok{+}\StringTok{ }\NormalTok{rCSIMealNb)}
+\KeywordTok{var_label}\NormalTok{(datarCSIEng}\OperatorTok{$}\NormalTok{rCSI) <-}\StringTok{ "rCSI"}
+
+\CommentTok{#each household should have a rCSI between 0 - 56}
+
+\KeywordTok{summary}\NormalTok{(datarCSIEng}\OperatorTok{$}\NormalTok{rCSI)}
+
+\CommentTok{#Create rCSI Cadre Harmonise Categories}
+\NormalTok{datarCSIEng <-}\StringTok{ }\NormalTok{datarCSIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{rCSI_CH =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{  rCSI }\OperatorTok{<=}\StringTok{ }\DecValTok{3} \OperatorTok{~}\StringTok{ "Phase1"}\NormalTok{, }
+  \KeywordTok{between}\NormalTok{(rCSI,}\DecValTok{4}\NormalTok{,}\DecValTok{18}\NormalTok{) }\OperatorTok{~}\StringTok{ "Phase2"}\NormalTok{,       }
+\NormalTok{  rCSI }\OperatorTok{>=}\StringTok{ }\DecValTok{19} \OperatorTok{~}\StringTok{ "Phase3"}\NormalTok{))}
+\KeywordTok{var_label}\NormalTok{(datarCSIEng}\OperatorTok{$}\NormalTok{rCSI_CH) <-}\StringTok{ "rCSI categories - Cadre Harmonise "}
+
+\CommentTok{#Generate table of proportion of households in CH rCSI phases by Adm1 and Adm2 using weights}
+\NormalTok{CH_rCSI_table_wide <-}\StringTok{ }\NormalTok{datarCSIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{group_by}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{drop_na}\NormalTok{(rCSI_CH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{count}\NormalTok{(rCSI_CH, }\DataTypeTok{wt =}\NormalTok{ WeightHH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{perc =} \DecValTok{100} \OperatorTok{*}\StringTok{ }\NormalTok{n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{spread}\NormalTok{(}\DataTypeTok{key =}\NormalTok{ rCSI_CH, }\DataTypeTok{value =}\NormalTok{ perc) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{replace}\NormalTok{(., }\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{)  }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate_if}\NormalTok{(is.numeric, round, }\DecValTok{1}\NormalTok{)}
+
+
+\CommentTok{#Calculate phasing of CH rCSI indicator for area (applying CH 20% rules)}
+\NormalTok{CH_rCSI_table_wide <-}\StringTok{ }\NormalTok{CH_rCSI_table_wide  }\OperatorTok{%>%}\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{rcsi23 =}\NormalTok{ Phase2 }\OperatorTok{+}\StringTok{ }\NormalTok{Phase3,}
+         \DataTypeTok{rCSI_finalphase =}
+           \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{             Phase3 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{3}\NormalTok{, }
+\NormalTok{             Phase2 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{rcsi23 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{,}
+             \OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code, }\DataTypeTok{rCSI_Phase1 =}\NormalTok{ Phase1, }\DataTypeTok{rCSI_Phase2 =}\NormalTok{ Phase2, }\DataTypeTok{rCSI_Phase3 =}\NormalTok{ Phase3, rCSI_finalphase)}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the R syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI.R}{RBDstandardized\_RsyntaxrCSI}
+
+\hypertarget{food-consumption-score-household-dietary-diversity}{%
+\chapter{Food Consumption Score \& Household Dietary Diversity}\label{food-consumption-score-household-dietary-diversity}}
+
+The modules below allow you to collect and calculate FCS, FCS-N and HDDS indicators.
+
+\hypertarget{references-resources-2}{%
+\section{References / Resources}\label{references-resources-2}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  FCS - \url{https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf}
+\item
+  FCS\_N - \url{https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp277333.pdf}
+\item
+  HDDS - \url{http://www.fao.org/fileadmin/user_upload/wa_workshop/docs/FAO-guidelines-dietary-diversity2011.pdf}
+\end{enumerate}
+
+\hypertarget{standardized-questionnaire-2}{%
+\section{Standardized Questionnaire}\label{standardized-questionnaire-2}}
+
+\hypertarget{paper-version-of-questionnaire-2}{%
+\subsection{Paper Version of Questionnaire}\label{paper-version-of-questionnaire-2}}
+
+Here is the standardized module in word format:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.docx}{RBDstandardized\_questionnaireFCSHDDS}
+
+\hypertarget{electronic-version-of-questionnaire-2}{%
+\subsection{Electronic Version of Questionnaire}\label{electronic-version-of-questionnaire-2}}
+
+Here is the standardized module in xlsform:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.xlsx}{RBDstandardized\_questionnaireFCSHDDS}
+
+\hypertarget{calculation-of-fcs-hdds-indicators}{%
+\section{Calculation of FCS \& HDDS Indicators}\label{calculation-of-fcs-hdds-indicators}}
+
+\hypertarget{example-data-set-2}{%
+\subsection{Example data set}\label{example-data-set-2}}
+
+Here is the example data set:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/dataFCSHDDSEng.sav}{dataFCSHDDSEng}
+
+still need to create
+
+\hypertarget{spss-syntax-2}{%
+\subsection{SPSS Syntax}\label{spss-syntax-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{GET}
+\NormalTok{  FILE=}\StringTok{'E:}\CharTok{\textbackslash{}e}\StringTok{xample_datasets\textbackslash{}dataFCSHDDSEng.sav'}\NormalTok{.}
+\NormalTok{DATASET NAME DataSet1 WINDOW=FRONT.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{calculate Food Consumption Score }
+
+\NormalTok{compute FCS =}\StringTok{ }\KeywordTok{sum}\NormalTok{(FCSStap}\OperatorTok{*}\DecValTok{2}\NormalTok{, FCSPulse}\OperatorTok{*}\DecValTok{3}\NormalTok{, FCSDairy}\OperatorTok{*}\DecValTok{4}\NormalTok{, FCSPr}\OperatorTok{*}\DecValTok{4}\NormalTok{, FCSVeg, FCSFruit, FCSFat}\OperatorTok{*}\FloatTok{0.5}\NormalTok{, FCSSugar}\OperatorTok{*}\FloatTok{0.5}\NormalTok{).}
+\NormalTok{variable labels FCS }\StringTok{"Food Consumption Score"}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{create food consumption groups from food consumption score }\OperatorTok{-}\StringTok{ }\DecValTok{21}\OperatorTok{/}\DecValTok{35}\NormalTok{ and }\DecValTok{28}\OperatorTok{/}\DecValTok{42}\NormalTok{ thresholds}
+
+\NormalTok{recode }\KeywordTok{FCS}\NormalTok{ (}\DecValTok{0}\NormalTok{ thru }\DecValTok{21}\NormalTok{ =}\StringTok{ }\DecValTok{1}\NormalTok{) (}\DecValTok{21}\NormalTok{ thru }\DecValTok{35}\NormalTok{ =}\StringTok{ }\DecValTok{2}\NormalTok{) (}\DecValTok{35}\NormalTok{ thru }\DataTypeTok{highest =} \DecValTok{3}\NormalTok{) into FCSCat21.}
+\NormalTok{variable labels FCSCat21 }\StringTok{"Food Consumption Groups - 21/35 thresholds"}\NormalTok{.}
+\NormalTok{recode }\KeywordTok{FCS}\NormalTok{ (}\DecValTok{0}\NormalTok{ thru }\DecValTok{28}\NormalTok{ =}\StringTok{ }\DecValTok{1}\NormalTok{) (}\DecValTok{28}\NormalTok{ thru }\DecValTok{42}\NormalTok{ =}\StringTok{ }\DecValTok{2}\NormalTok{) (}\DecValTok{42}\NormalTok{ thru }\DataTypeTok{highest =} \DecValTok{3}\NormalTok{) into FCSCat28.}
+\NormalTok{variable labels FCSCat28  }\StringTok{"Food Consumption Groups - 28/42 thresholds"}\NormalTok{.}
+
+\NormalTok{VALUE LABELS FCSCat21 FCSCat28 }
+\DecValTok{1} \StringTok{"Poor"}
+\DecValTok{2} \StringTok{"Borderline"}
+\DecValTok{3} \StringTok{"Acceptable"}\NormalTok{.}
+
+\OperatorTok{**}\StringTok{ }\NormalTok{calculate Household Dietary Diversity Score}
+
+\NormalTok{compute HDDS =}\StringTok{ }\KeywordTok{sum}\NormalTok{(HDDSStapCer,HDDSStapRoot,HDDSPulse,HDDSDairy,HDDSPrMeatF,HDDSPrMeatO,HDDSPrFish,}
+\NormalTok{HDDSPrEgg,HDDSVegOrg,HDDSVegGre,HDDSVegOth,HDDSFruitOrg,HDDSFruitOth,HDDSFat,HDDSSugar,HDDSCond).}
+\NormalTok{variable labels HDDS }\StringTok{"Household Dietary Diversity Score"}\NormalTok{.}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the SPSS syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxFCSHDDS.sav}{RBDstandardized\_SPSSsyntaxFCSHDDS}
+
+\hypertarget{r-syntax-2}{%
+\subsection{R Syntax}\label{r-syntax-2}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(haven)}
+\KeywordTok{library}\NormalTok{(labelled)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\CommentTok{#import dataset}
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\KeywordTok{read_sav}\NormalTok{(}\StringTok{"example_datasets/dataFCSHDDSEng.sav"}\NormalTok{)}
+\CommentTok{#convert to labels}
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\KeywordTok{to_factor}\NormalTok{(dataFCSHDDSEng)}
+
+\CommentTok{#calculate FCS}
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{FCS =}\NormalTok{ (}\DecValTok{2} \OperatorTok{*}\StringTok{ }\NormalTok{FCSStap) }\OperatorTok{+}\StringTok{ }\NormalTok{(}\DecValTok{3} \OperatorTok{*}\StringTok{ }\NormalTok{FCSPulse)}\OperatorTok{+}\StringTok{ }\NormalTok{(}\DecValTok{4}\OperatorTok{*}\NormalTok{FCSPr) }\OperatorTok{+}\NormalTok{FCSVeg  }\OperatorTok{+}\NormalTok{FCSFruit }\OperatorTok{+}\NormalTok{(}\DecValTok{4}\OperatorTok{*}\NormalTok{FCSDairy) }\OperatorTok{+}\StringTok{ }\NormalTok{(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{FCSFat) }\OperatorTok{+}\StringTok{ }\NormalTok{(}\FloatTok{0.5}\OperatorTok{*}\NormalTok{FCSSugar))}
+\CommentTok{#create FCG groups based on 21/25 or 28/42 thresholds}
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}
+  \DataTypeTok{FCSCat21 =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{  FCS }\OperatorTok{<=}\StringTok{ }\DecValTok{21} \OperatorTok{~}\StringTok{ "Poor"}\NormalTok{, }\KeywordTok{between}\NormalTok{(FCS, }\FloatTok{21.5}\NormalTok{, }\DecValTok{35}\NormalTok{) }\OperatorTok{~}\StringTok{ "Borderline"}\NormalTok{, FCS }\OperatorTok{>}\StringTok{ }\DecValTok{35} \OperatorTok{~}\StringTok{ "Acceptable"}\NormalTok{),}
+  \DataTypeTok{FCSCat28 =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{  FCS }\OperatorTok{<=}\StringTok{ }\DecValTok{28} \OperatorTok{~}\StringTok{ "Poor"}\NormalTok{, }\KeywordTok{between}\NormalTok{(FCS, }\FloatTok{28.5}\NormalTok{, }\DecValTok{42}\NormalTok{) }\OperatorTok{~}\StringTok{ "Borderline"}\NormalTok{, FCS }\OperatorTok{>}\StringTok{ }\DecValTok{42} \OperatorTok{~}\StringTok{ "Acceptable"}\NormalTok{))}
+\KeywordTok{var_label}\NormalTok{(dataFCSHDDSEng}\OperatorTok{$}\NormalTok{FCSCat21) <-}\StringTok{ "Food Consumption Group 21/35 thresholds"}
+\KeywordTok{var_label}\NormalTok{(dataFCSHDDSEng}\OperatorTok{$}\NormalTok{FCSCat28) <-}\StringTok{  "Food Consumption Group 28/42 thresholds"}
+
+
+
+\CommentTok{#calculate HDDS first by creating the 12 groups based on the 16 questions }
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{HDDSStapCer =} \KeywordTok{case_when}\NormalTok{(HDDSStapCer }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSStapRoot =} \KeywordTok{case_when}\NormalTok{(HDDSStapRoot  }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSVeg =} \KeywordTok{case_when}\NormalTok{(HDDSVegOrg  }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{|}\StringTok{ }\NormalTok{HDDSVegGre }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{|}\StringTok{ }\NormalTok{HDDSVegOth }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSFruit =} \KeywordTok{case_when}\NormalTok{(HDDSFruitOrg }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{|}\StringTok{ }\NormalTok{HDDSFruitOth }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSPrMeat =} \KeywordTok{case_when}\NormalTok{(HDDSPrMeatF }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{|}\StringTok{ }\NormalTok{HDDSPrMeatO }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSPrEgg =} \KeywordTok{case_when}\NormalTok{(HDDSPrEgg  }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSPrFish =} \KeywordTok{case_when}\NormalTok{(HDDSPrFish }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSPulse =} \KeywordTok{case_when}\NormalTok{(HDDSPulse }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSDairy =} \KeywordTok{case_when}\NormalTok{(HDDSDairy }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSFat =} \KeywordTok{case_when}\NormalTok{(HDDSFat }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSSugar =} \KeywordTok{case_when}\NormalTok{(HDDSSugar }\OperatorTok{==}\StringTok{ "Yes"} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{),}
+    \DataTypeTok{HDDSCond =} \KeywordTok{case_when}\NormalTok{(HDDSCond }\OperatorTok{==}\StringTok{ "Yes"}\OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{, }\OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{0}\NormalTok{))}
+
+\CommentTok{#Calculate HDDS and Cadre Harmonise Phases}
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{HDDS =}\NormalTok{ HDDSStapCer }\OperatorTok{+}\NormalTok{HDDSStapRoot }\OperatorTok{+}\NormalTok{HDDSVeg }\OperatorTok{+}\NormalTok{HDDSFruit }\OperatorTok{+}\NormalTok{HDDSPrMeat }\OperatorTok{+}\NormalTok{HDDSPrEgg }\OperatorTok{+}\NormalTok{HDDSPrFish }\OperatorTok{+}\NormalTok{HDDSPulse }\OperatorTok{+}\NormalTok{HDDSDairy }\OperatorTok{+}\NormalTok{HDDSFat }\OperatorTok{+}\NormalTok{HDDSSugar }\OperatorTok{+}\NormalTok{HDDSCond)}
+\KeywordTok{var_label}\NormalTok{(dataFCSHDDSEng}\OperatorTok{$}\NormalTok{HDDS) <-}\StringTok{ "Hosehold Dietary Diversity Score"}
+
+\CommentTok{#Calucate Cadre Harmonise HDDS phasing categories }
+\NormalTok{dataFCSHDDSEng <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{HDDS_CH =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{    HDDS }\OperatorTok{>=}\StringTok{ }\DecValTok{5} \OperatorTok{~}\StringTok{ "Phase1"}\NormalTok{, }
+\NormalTok{    HDDS }\OperatorTok{==}\StringTok{ }\DecValTok{4} \OperatorTok{~}\StringTok{ "Phase2"}\NormalTok{,       }
+\NormalTok{    HDDS }\OperatorTok{==}\StringTok{ }\DecValTok{3} \OperatorTok{~}\StringTok{ "Phase3"}\NormalTok{,}
+\NormalTok{    HDDS }\OperatorTok{==}\StringTok{ }\DecValTok{2} \OperatorTok{~}\StringTok{ "Phase4"}\NormalTok{,}
+\NormalTok{    HDDS }\OperatorTok{<}\StringTok{ }\DecValTok{2} \OperatorTok{~}\StringTok{ "Phase5"}\NormalTok{))}
+\KeywordTok{var_label}\NormalTok{(dataFCSHDDSEng}\OperatorTok{$}\NormalTok{HDDS_CH) <-}\StringTok{ "Hosehold Dietary Diversity Score - CH phasing"}
+
+\CommentTok{#Generate table of proportion of households in FCG by Adm1 and Adm2 using weights }
+\CommentTok{#Food Consumption Group 21/35 cutoff }
+\NormalTok{FCSCat_table_wide <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{drop_na}\NormalTok{(FCSCat21) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{count}\NormalTok{(FCSCat21, }\DataTypeTok{wt =}\NormalTok{ WeightHH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{perc =} \DecValTok{100} \OperatorTok{*}\StringTok{ }\NormalTok{n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{spread}\NormalTok{(}\DataTypeTok{key =}\NormalTok{ FCSCat21, }\DataTypeTok{value =}\NormalTok{ perc) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{replace}\NormalTok{(., }\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate_if}\NormalTok{(is.numeric, round, }\DecValTok{1}\NormalTok{)}
+
+\CommentTok{#Calculate phasing of FCG indicator for area (applying CH 20% rules)}
+\NormalTok{FCSCat_table_wide <-}\StringTok{ }\NormalTok{FCSCat_table_wide }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{PoorBorderline =}\NormalTok{ Poor }\OperatorTok{+}\StringTok{ }\NormalTok{Borderline, }\DataTypeTok{FCG_finalphase =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{  Poor }\OperatorTok{<}\StringTok{ }\DecValTok{5} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{,  }\CommentTok{#if less than 5% are in the poor food group then phase 1}
+\NormalTok{  Poor }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{4}\NormalTok{, }\CommentTok{#if 20% or more are in the poor food group then phase 4}
+  \KeywordTok{between}\NormalTok{(Poor,}\DecValTok{5}\NormalTok{,}\DecValTok{10}\NormalTok{) }\OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{, }\CommentTok{#if % of people are between 5 and 10%  then phase2}
+  \KeywordTok{between}\NormalTok{(Poor,}\DecValTok{10}\NormalTok{,}\DecValTok{20}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{PoorBorderline }\OperatorTok{<}\StringTok{ }\DecValTok{30} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{, }\CommentTok{#if % of people in poor food group are between 20 and 20% and the % of people who are in poor and borderline is less than 30 % then phase2}
+  \KeywordTok{between}\NormalTok{(Poor,}\DecValTok{10}\NormalTok{,}\DecValTok{20}\NormalTok{) }\OperatorTok{&}\StringTok{ }\NormalTok{PoorBorderline }\OperatorTok{>=}\StringTok{ }\DecValTok{30} \OperatorTok{~}\StringTok{ }\DecValTok{3}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }\CommentTok{#if % of people in poor food group are between 20 and 20% and the % of people who are in poor and borderline is less than 30 % then phase2}
+\StringTok{  }\KeywordTok{select}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code, }\DataTypeTok{FCG_Poor =}\NormalTok{ Poor, }\DataTypeTok{FCG_Borderline =}\NormalTok{ Borderline, }\DataTypeTok{FCG_Acceptable =}\NormalTok{ Acceptable, FCG_finalphase) }\CommentTok{#select only relevant variables and order in proper sequence}
+
+\CommentTok{#Generate table of proportion of households by HDDS by Adm1 and Adm2 using weights}
+\NormalTok{CH_HDDS_table_wide <-}\StringTok{ }\NormalTok{dataFCSHDDSEng }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{drop_na}\NormalTok{(HDDS_CH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{count}\NormalTok{(HDDS_CH, }\DataTypeTok{wt =}\NormalTok{ WeightHH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{perc =} \DecValTok{100} \OperatorTok{*}\StringTok{ }\NormalTok{n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{spread}\NormalTok{(}\DataTypeTok{key =}\NormalTok{ HDDS_CH, }\DataTypeTok{value =}\NormalTok{ perc) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{replace}\NormalTok{(., }\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate_if}\NormalTok{(is.numeric, round, }\DecValTok{1}\NormalTok{)}
+
+\CommentTok{#Calculate phasing of HDDS indicator for area (applying CH 20% rules)}
+
+
+\CommentTok{#Apply the 20% rule (if it is 20% in that phase or the sum of higher phases equals 20%) }
+\NormalTok{CH_HDDS_table_wide <-}\StringTok{ }\NormalTok{CH_HDDS_table_wide }\OperatorTok{%>%}\StringTok{ }
+\StringTok{    }\KeywordTok{mutate}\NormalTok{(}
+    \DataTypeTok{phase2345 =} \StringTok{`}\DataTypeTok{Phase2}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase3}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{, }
+    \DataTypeTok{phase345 =} \StringTok{`}\DataTypeTok{Phase3}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{,}
+    \DataTypeTok{phase45 =} \StringTok{`}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{+}\StringTok{ `}\DataTypeTok{Phase5}\StringTok{`}\NormalTok{, }
+    \DataTypeTok{HDDS_finalphase =} \KeywordTok{case_when}\NormalTok{(}
+    \StringTok{`}\DataTypeTok{Phase5}\StringTok{`} \OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{5}\NormalTok{, }
+    \StringTok{`}\DataTypeTok{Phase4}\StringTok{`} \OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{phase45 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{4}\NormalTok{, }
+    \StringTok{`}\DataTypeTok{Phase3}\StringTok{`} \OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{phase345 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{3}\NormalTok{, }
+    \StringTok{`}\DataTypeTok{Phase2}\StringTok{`} \OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{|}\StringTok{ }\NormalTok{phase2345 }\OperatorTok{>=}\StringTok{ }\DecValTok{20} \OperatorTok{~}\StringTok{ }\DecValTok{2}\NormalTok{,}
+     \OtherTok{TRUE} \OperatorTok{~}\StringTok{ }\DecValTok{1}\NormalTok{)) }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{select}\NormalTok{(ADMIN1Name, ADMIN2Name, ADMIN2Code, }\DataTypeTok{HDDS_Phase1 =}\NormalTok{ Phase1, }\DataTypeTok{HDDS_Phase2 =}\NormalTok{ Phase2, }\DataTypeTok{HDDS_Phase3 =}\NormalTok{ Phase3, }\DataTypeTok{HDDS_Phase4 =}\NormalTok{ Phase4, }\DataTypeTok{HDDS_Phase5 =}\NormalTok{ Phase5, HDDS_finalphase) }
+\end{Highlighting}
+\end{Shaded}
+
+Here is the R syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS.R}{RBDstandardized\_RsyntaxFCSHDDS}
+
+\hypertarget{livelihood-coping-strategies}{%
+\chapter{Livelihood Coping Strategies}\label{livelihood-coping-strategies}}
+
+\hypertarget{references-resources-3}{%
+\section{References / Resources}\label{references-resources-3}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Standard Livelihood Coping Strategies - \url{https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf}
+\item
+  ENA Livelihood Coping Strategies - \url{https://docs.wfp.org/api/documents/WFP-0000074197/download/}?
+\end{enumerate}
+
+\hypertarget{standardized-light-cari-module}{%
+\section{Standardized Light CARI Module}\label{standardized-light-cari-module}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.15\columnwidth}\raggedright
+Variable Name\strut
+\end{minipage} & \begin{minipage}[b]{0.49\columnwidth}\raggedright
+Question Label\strut
+\end{minipage} & \begin{minipage}[b]{0.27\columnwidth}\raggedright
+Answer Choices\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIStress1\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Sell household assets/goods radio, furniture, refrigerator, television, jewelry etc..)} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIStress2\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{sell more animals (non-productive) than usual} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIStress3\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{spend savings} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIStress4\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Borrow money / food from a formal lender / bank} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSICrisis1\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Reduce non-food expenses on health (including drugs) and education } due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSICrisis2\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{sell productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc..)} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSICrisis3\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{withdraw children from school} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIEmergency1\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{sell house or land} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIEmergency2\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{sell last female animals} due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.15\columnwidth}\raggedright
+LhCSIEmergency3\strut
+\end{minipage} & \begin{minipage}[t]{0.49\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{beg } due to a lack of food or a lack of money to buy food?\strut
+\end{minipage} & \begin{minipage}[t]{0.27\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{paper-version-of-questionnaire-3}{%
+\subsection{Paper Version of Questionnaire}\label{paper-version-of-questionnaire-3}}
+
+Here is the standardized module in word format:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.docx}{RBDstandardized\_questionnaireLHCS\_CARI}
+
+\hypertarget{electronic-version-of-questionnaire-3}{%
+\subsection{Electronic Version of Questionnaire}\label{electronic-version-of-questionnaire-3}}
+
+Here is the standardized module in xlsform:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.xlsx}{RBDstandardized\_questionnaireLHCS\_CARI}
+
+\hypertarget{analysis}{%
+\subsection{Analysis}\label{analysis}}
+
+\hypertarget{example-data-set-3}{%
+\subsubsection{Example data set}\label{example-data-set-3}}
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/dataLHCS_CARIEng.sav}{dataLHCS\_CARIEng}
+
+Here is the example data set:
+
+\hypertarget{spss-syntax-3}{%
+\subsubsection{SPSS Syntax}\label{spss-syntax-3}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{not availible yet}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the SPSS syntax file:
+
+still need to do
+
+\hypertarget{r-syntax-3}{%
+\subsubsection{R Syntax}\label{r-syntax-3}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(haven)}
+\KeywordTok{library}\NormalTok{(labelled)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\CommentTok{#import dataset}
+\NormalTok{dataLHCS_CARIEng <-}\StringTok{ }\KeywordTok{read_sav}\NormalTok{(}\StringTok{"example_datasets/dataLHCS_CARIEng.sav"}\NormalTok{)}
+
+\CommentTok{#Calculate HHS }
+\NormalTok{dataLHCS_CARIEng<-}\StringTok{ }\KeywordTok{to_factor}\NormalTok{(dataLHCS_CARIEng)}
+
+\CommentTok{#create a variable to specify if the household used any of the strategies by severity }
+\CommentTok{#stress}
+\NormalTok{dataLHCS_CARIEng <-}\StringTok{ }\NormalTok{dataLHCS_CARIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{stress_coping =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{LhCSIStress1 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\NormalTok{LhCSIStress2 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\NormalTok{LhCSIStress3 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\NormalTok{LhCSIStress4 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\OtherTok{TRUE} \OperatorTok{~}\StringTok{ "notusedstress"}\NormalTok{))}
+\CommentTok{#Crisis}
+\NormalTok{dataLHCS_CARIEng <-}\StringTok{ }\NormalTok{dataLHCS_CARIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{crisis_coping =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{LhCSICrisis1 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedcrisis"}\NormalTok{,}
+\NormalTok{LhCSICrisis2 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedcrisis"}\NormalTok{,}
+\NormalTok{LhCSICrisis3 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedcrisis"}\NormalTok{,}
+\OtherTok{TRUE} \OperatorTok{~}\StringTok{ "notusedcrisis"}\NormalTok{))}
+\CommentTok{#Emergency}
+\NormalTok{dataLHCS_CARIEng <-}\StringTok{ }\NormalTok{dataLHCS_CARIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{emergency_coping =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{LhCSIEmergency1 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedemergency"}\NormalTok{,}
+\NormalTok{LhCSIEmergency2 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedemergency"}\NormalTok{,}
+\NormalTok{LhCSIEmergency3 }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{~}\StringTok{ "usedemergency"}\NormalTok{,}
+\OtherTok{TRUE} \OperatorTok{~}\StringTok{ "noutusedemergency"}\NormalTok{))}
+
+\CommentTok{#calculate Max_coping_behaviour}
+\NormalTok{dataLHCS_CARIEng <-}\StringTok{ }\NormalTok{dataLHCS_CARIEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{LhCSICat =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{  emergency_coping }\OperatorTok{==}\StringTok{ "usedemergency"} \OperatorTok{~}\StringTok{ "EmergencyStrategies"}\NormalTok{,}
+\NormalTok{  crisis_coping }\OperatorTok{==}\StringTok{ "usedcrisis"} \OperatorTok{~}\StringTok{ "CrisisStrategies"}\NormalTok{,}
+\NormalTok{  stress_coping }\OperatorTok{==}\StringTok{ "usedstress"} \OperatorTok{~}\StringTok{ "StressStrategies"}\NormalTok{,}
+  \OtherTok{TRUE} \OperatorTok{~}\StringTok{ "NoStrategies"}\NormalTok{))}
+\KeywordTok{var_label}\NormalTok{(dataLHCS_CARIEng}\OperatorTok{$}\NormalTok{LhCSICat) <-}\StringTok{ "Livelihood Coping Strategy categories - CARI light version"}
+
+
+
+\CommentTok{#Generate table of proportion of households in CH LhCHS phases by Adm1 and Adm2 using weights}
+\CommentTok{#Livelihood Coping Strategies }
+\NormalTok{LhHCSCat_table_wide <-}\StringTok{ }\NormalTok{dataLHCS_CARIEng }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{drop_na}\NormalTok{(LhCSICat) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(ADMIN1Name, ADMIN2Name) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{count}\NormalTok{(LhCSICat, }\DataTypeTok{wt =}\NormalTok{ WeightHH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{perc =} \DecValTok{100} \OperatorTok{*}\StringTok{ }\NormalTok{n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{spread}\NormalTok{(}\DataTypeTok{key =}\NormalTok{ LhCSICat, }\DataTypeTok{value =}\NormalTok{ perc) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{replace}\NormalTok{(., }\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate_if}\NormalTok{(is.numeric, round, }\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the R syntax file:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI.R}{RBDstandardized\_RsyntaxLHCS\_CARI}
+
+\hypertarget{standardized-module---essential-needs-assessment-ena}{%
+\section{Standardized Module - Essential Needs Assessment (ENA)}\label{standardized-module---essential-needs-assessment-ena}}
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule
+\begin{minipage}[b]{0.11\columnwidth}\raggedright
+Variable Name\strut
+\end{minipage} & \begin{minipage}[b]{0.37\columnwidth}\raggedright
+Question Label\strut
+\end{minipage} & \begin{minipage}[b]{0.43\columnwidth}\raggedright
+Answer Choices\strut
+\end{minipage}\tabularnewline
+\midrule
+\endhead
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress1\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Sell household assets/goods (radio, furniture, refrigerator, television, jewelry etc..)} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress1\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress2\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Purchase food on credit or borrow food} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress2\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress3\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{spend savings} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress3\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress4\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Borrow money} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIStress4\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSICrisis1\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{sell productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc..)} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSICrisis1\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSICrisis2\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{consume seed stocks that were to be held/saved for the next season} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSICrisis2\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSICrisis3\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Withdraw children from school} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSICrisis3\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIEmergency1\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Sell house or land because there was not enough resources (food, cash, else)} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIEmergency1\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIEmergency2\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Beg} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIEmergency2\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIEmergency3\_EN\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+During the past 30 days, did anyone in your household have to: \emph{Sell last female animals} because there was not enough resources (food, cash, else) to meet essential needs (e.g.~adequate shelter, education services, health services, food, etc)?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable\strut
+\end{minipage}\tabularnewline
+\begin{minipage}[t]{0.11\columnwidth}\raggedright
+LhCSIEmergency3\_EN\_why\strut
+\end{minipage} & \begin{minipage}[t]{0.37\columnwidth}\raggedright
+What was the MAIN REASON you or other members in your household adopted these coping strategies to access essential needs?\strut
+\end{minipage} & \begin{minipage}[t]{0.43\columnwidth}\raggedright
+1)To access food 2)To access education services/commodities (e.g.~uniforms, books) 3)To access health services/medicines 4)To buy and repair cloths or shoes 5)To access adequate shelter 6)To access water/sanitation facilities 7)To access essential dwelling services (electricity, energy, waste disposal\ldots) 8)To pay for existing debts 9)Other\strut
+\end{minipage}\tabularnewline
+\bottomrule
+\end{longtable}
+
+\hypertarget{standardized-module---essential-needs-assessment-ena-1}{%
+\section{Standardized Module - Essential Needs Assessment (ENA)}\label{standardized-module---essential-needs-assessment-ena-1}}
+
+\hypertarget{paper-version-of-questionnaire-4}{%
+\subsection{Paper Version of Questionnaire}\label{paper-version-of-questionnaire-4}}
+
+Here is the standardized module in word format:
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.docx}{RBDstandardized\_questionnaireLHCS\_ENA}
+
+\hypertarget{electronic-version-of-questionnaire-4}{%
+\subsection{Electronic Version of Questionnaire}\label{electronic-version-of-questionnaire-4}}
+
+Here is the standardized module in xlsform:
+
+\href{https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.xlsx}{RBDstandardized\_questionnaireLHCS\_ENA}
+
+\hypertarget{analysis-1}{%
+\subsection{Analysis}\label{analysis-1}}
+
+\hypertarget{example-data-set-4}{%
+\subsubsection{Example data set}\label{example-data-set-4}}
+
+Here is the example data set:
+
+not available yet
+
+\hypertarget{spss-syntax-4}{%
+\subsubsection{SPSS Syntax}\label{spss-syntax-4}}
+
+Here is the SPSS syntax file:
+
+still need to do
+
+\hypertarget{r-syntax-4}{%
+\subsubsection{R Syntax}\label{r-syntax-4}}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(haven)}
+\KeywordTok{library}\NormalTok{(labelled)}
+\KeywordTok{library}\NormalTok{(tidyverse)}
+
+\CommentTok{#import dataset}
+\NormalTok{dataLHCS_ENAEng <-}\StringTok{ }\KeywordTok{read_sav}\NormalTok{(}\StringTok{"example_datasets/dataLHCS_ENAEng.sav"}\NormalTok{)}
+
+\CommentTok{#Calculate HHS }
+\NormalTok{dataLHCS_ENAEng<-}\StringTok{ }\KeywordTok{to_factor}\NormalTok{(dataLHCS_ENAEng)}
+
+\CommentTok{#create a variable to specify if the household used any of the strategies by severity }
+\CommentTok{#stress}
+\NormalTok{dataLHCS_ENAEng <-}\StringTok{ }\NormalTok{dataLHCS_ENAEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{stress_coping =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{LhCSIStress1_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}\StringTok{ }
+\NormalTok{LhCSIStress1_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\NormalTok{LhCSIStress2_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}
+\NormalTok{LhCSIStress2_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\NormalTok{LhCSIStress3_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}
+\NormalTok{LhCSIStress3_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\NormalTok{LhCSIStress4_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}
+\NormalTok{LhCSIStress4_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedstress"}\NormalTok{,}
+\OtherTok{TRUE} \OperatorTok{~}\StringTok{ "notusedstress"}\NormalTok{))}
+\CommentTok{#Crisis}
+\NormalTok{dataLHCS_ENAEng <-}\StringTok{ }\NormalTok{dataLHCS_ENAEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{crisis_coping =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{LhCSICrisis1_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}\StringTok{ }
+\NormalTok{LhCSICrisis1_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedcrisis"}\NormalTok{,}
+\NormalTok{LhCSICrisis2_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}\StringTok{ }
+\NormalTok{LhCSICrisis2_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedcrisis"}\NormalTok{,}
+\NormalTok{LhCSICrisis3_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}
+\NormalTok{LhCSICrisis3_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedcrisis"}\NormalTok{,}
+\OtherTok{TRUE} \OperatorTok{~}\StringTok{ "notusedcrisis"}\NormalTok{))}
+\CommentTok{#Emergency}
+\NormalTok{dataLHCS_ENAEng <-}\StringTok{ }\NormalTok{dataLHCS_ENAEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{emergency_coping =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{LhCSIEmergency1_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}\StringTok{ }
+\NormalTok{LhCSIEmergency1_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedemergency"}\NormalTok{,}
+\NormalTok{LhCSIEmergency2_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}\StringTok{ }
+\NormalTok{LhCSIEmergency2_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedemergency"}\NormalTok{,}
+\NormalTok{LhCSIEmergency3_EN }\OperatorTok{%in%}\StringTok{ }\KeywordTok{c}\NormalTok{(}\StringTok{"Yes"}\NormalTok{,}\StringTok{"No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it"}\NormalTok{) }\OperatorTok{&}\StringTok{ }
+\NormalTok{LhCSIEmergency3_EN_why }\OperatorTok{==}\StringTok{ "To buy food"} \OperatorTok{~}\StringTok{ "usedemergency"}\NormalTok{,}
+\OtherTok{TRUE} \OperatorTok{~}\StringTok{ "noutusedemergency"}\NormalTok{))}
+
+\CommentTok{#calculate Max_coping_behaviour}
+\NormalTok{dataLHCS_ENAEng <-}\StringTok{ }\NormalTok{dataLHCS_ENAEng }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{LhCSICat_ENA =} \KeywordTok{case_when}\NormalTok{(}
+\NormalTok{  emergency_coping }\OperatorTok{==}\StringTok{ "usedemergency"} \OperatorTok{~}\StringTok{ "EmergencyStrategies"}\NormalTok{,}
+\NormalTok{  crisis_coping }\OperatorTok{==}\StringTok{ "usedcrisis"} \OperatorTok{~}\StringTok{ "CrisisStrategies"}\NormalTok{,}
+\NormalTok{  stress_coping }\OperatorTok{==}\StringTok{ "usedstress"} \OperatorTok{~}\StringTok{ "StressStrategies"}\NormalTok{,}
+  \OtherTok{TRUE} \OperatorTok{~}\StringTok{ "NoStrategies"}\NormalTok{))}
+\KeywordTok{var_label}\NormalTok{(dataLHCS_ENAEng}\OperatorTok{$}\NormalTok{LhCSICat_ENA) <-}\StringTok{ "Livelihood Coping Strategy categories - ENA version"}
+
+\CommentTok{#Generate table of proportion of households in LhCHS  phases by Adm1 and Adm2 using weights}
+\CommentTok{#Livelihood Coping Strategies }
+\NormalTok{LhHCSCat_table_wide <-}\StringTok{ }\NormalTok{dataLHCS_ENAEng }\OperatorTok{%>%}\StringTok{ }
+\StringTok{  }\KeywordTok{drop_na}\NormalTok{(LhCSICat_ENA) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{group_by}\NormalTok{(ADMIN1Name, ADMIN2Name) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{count}\NormalTok{(LhCSICat_ENA , }\DataTypeTok{wt =}\NormalTok{ WeightHH) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{mutate}\NormalTok{(}\DataTypeTok{perc =} \DecValTok{100} \OperatorTok{*}\StringTok{ }\NormalTok{n }\OperatorTok{/}\StringTok{ }\KeywordTok{sum}\NormalTok{(n)) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{ungroup}\NormalTok{() }\OperatorTok{%>%}\StringTok{ }\KeywordTok{select}\NormalTok{(}\OperatorTok{-}\NormalTok{n) }\OperatorTok{%>%}
+\StringTok{  }\KeywordTok{spread}\NormalTok{(}\DataTypeTok{key =}\NormalTok{ LhCSICat_ENA, }\DataTypeTok{value =}\NormalTok{ perc) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{replace}\NormalTok{(., }\KeywordTok{is.na}\NormalTok{(.), }\DecValTok{0}\NormalTok{) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{mutate_if}\NormalTok{(is.numeric, round, }\DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Here is the R syntax file:
+
+not available yet
+
+\hypertarget{data-quality-monitoring-report}{%
+\chapter{Data Quality Monitoring Report}\label{data-quality-monitoring-report}}
+
+coming soon
+
+\hypertarget{calculating-ch-indicators}{%
+\chapter{Calculating CH Indicators}\label{calculating-ch-indicators}}
+
+  \bibliography{book.bib,packages.bib}
+
+\end{document}

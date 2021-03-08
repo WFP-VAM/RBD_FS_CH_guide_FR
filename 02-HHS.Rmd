@@ -1,0 +1,45 @@
+# Household Hunger Scale 
+
+## References / Resources
+
+https://www.fantaproject.org/monitoring-and-evaluation/household-hunger-scale-hhs
+
+
+## Standardized Questionnaire
+
+Variable Name | Question Label | Answer Choices
+---- | ------------- |------
+HHhSNoFood_YN | In the past [4 weeks/30 days], was there ever no food to eat of any kind in your house because of lack of resources to get food? | 1) Yes 0) No
+HHhSNoFood_FR | How often did this happen in the past [4 weeks/30 days]? | 1) Rarely (1–2 times) 2) Sometimes (3–10 times)  3) Often (more than 10 times)
+HHhSBedHung_YN | In the past [4 weeks/30 days], did you or any household member go to sleep at night hungry because there was not enough food? | 1) Yes 0) No
+HHhSBedHung_FR  | How often did this happen in the past [4 weeks/30 days]? | 1) Rarely (1–2 times) 2) Sometimes (3–10 times)  3) Often (more than 10 times)
+HHhSNotEat_YN | In the past [4 weeks/30 days], did you or any household member go to sleep at night hungry because there was not enough food? | 1) Yes 0) No
+HHhSNotEat_FR | How often did this happen in the past [4 weeks/30 days]? | 1) Rarely (1–2 times) 2) Sometimes (3–10 times)  3) Often (more than 10 times)
+
+### Paper Version of Questionnaire
+
+Here is the standardized module in word format:
+[RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.docx?raw=true) 
+
+### Electronic Version of Questionnaire
+
+Here is the standardized module in xlsform format:
+[RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.xlsx?raw=true) 
+
+
+## Calculation of Household Hunger Scale Indicators
+
+### Example data set
+
+Here is the example raw data set: 
+[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+
+### SPSS Syntax
+
+Here is the SPSS syntax file: 
+[RBDstandardized_SPSSsyntaxHHS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxHHS_EN.sps?raw=true) 
+
+### R Syntax
+
+Here is the R syntax file: 
+[RBDstandardized_RsyntaxHHS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxHHS_EN.R?raw=true) 

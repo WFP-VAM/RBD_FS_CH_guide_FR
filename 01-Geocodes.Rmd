@@ -1,0 +1,72 @@
+# Gecodes
+
+Names of geographic areas, while simple enough to put in a data collection tool, often require some clean up work in data processing for the results to match GIS files.  It's very common for there to be issues and confusion over spelling, transliterations,alternative and duplicate names of areas.
+
+Using standardized geographic codes rather than geographic names helps bound over some of  these typical challenges of processing geographic information.  
+
+To this end, this guide recommends using Geocodes and Names from OCHA's Common Operational Data sets (CODs): 
+
+https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels
+
+
+## A simple example of the problem:
+
+The geographic variables of the *choices* section of a xlsform typically look like this.  The *name* values are usually sequentially assigned.  
+
+list_name | name | label
+---- | --- |---- 
+cod_lga | 1 | ASKIRA/UBA
+cod_lga | 2 | BAYO
+cod_lga | 3 | CHIBOK
+cod_lga | 4 | KALABAGE
+
+The geographic variables in a corresponding GIS data set look like this:
+
+Shape | admin2Pcode | admin2RefName
+---- | --- |---- 
+Polygon |NG008002 | Askira/Uba
+Polygon |NG008004 | Bayo
+Polygon |NG008006 | Chibok
+Polygon |NG008015 | Kala/Balge
+
+Unfortunately, if we tried to merge the data set and the GIS file by the name of the area (this seems to be the variable to join on), we would first have to fix the capitalization and punctuation of the names.  To avoid unnecessary work, we recommend putting in the *Pcode* in the name column of the xlsform.  
+
+list_name | name | label
+---- | --- |---- 
+cod_lga | NG008002 | ASKIRA/UBA
+cod_lga | NG008004 | BAYO
+cod_lga | NG008006 | CHIBOK
+cod_lga | NG008015 | KALABAGE
+
+Even better, also use standardized names and labels.  
+
+list_name | name | label
+---- | --- |---- 
+cod_lga | NG008002 | Askira/Uba
+cod_lga | NG008004 | Bayo
+cod_lga | NG008006 | Chibok
+cod_lga | NG008015 | Kala/Balge
+
+With a common, simple variable to merge both data sets, mapping and data processing can become faster and easier.
+
+## Where to find Pcodes and more details
+
+Geographic data for West and Central Africa can be found at  https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels or users can search for the appropriate country information in https://data.humdata.org/dashboards/cod
+
+We recommend using the codes from the *admin1Pcode* and *admin2Pcode* columns in the *name* column of the xlsform.  Using the *admin1RefName* and *admin2RefName* is also recommended in the *label* column of the xlsform.
+
+## Example data set of the data collection sheet for Nigeria:
+
+Here is an example data set with names and labels matching the Common Operation Datasets.
+
+[xlsformwithgeocodesexample](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true) 
+
+## 2 caveats
+
+1. In a few countries, the boundaries in the CODs might not correspond with the boundaries used by the country.  In this case, special development of a GIS boundary file and codes will need to be developed.  
+
+2. Inserting the relevant pcodes in the *name* column to an existing xlsform will probably require some excel *vlookup* work.  This might be relatively straightforward when only replacing codes at the admin1 and admin2 level, however things might get more complicated if cascading columns and the *choice_filter* option is used at the adm3, adm4 level. 
+
+
+
+

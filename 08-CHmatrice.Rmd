@@ -1,0 +1,32 @@
+# Calculating Matrice Intermediare (direct food security data)
+
+After survey teams have processed the data (cleaned, calculated indicators and added survey weights), then the R syntax below can be used to generate a .csv file of the Food Security Direct evidence that can be pasted into the matrice intermediare
+
+## Overview video 
+
+<iframe width="750" height="400" src="https://www.youtube.com/embed/MfELnjz2G8E" frameborder="0" allowfullscreen></iframe>
+
+
+## Generating Matrice Intermediare
+
+### Example processed data set
+
+Here is the example processed data set:
+[exampledataEnglish_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_processed.sav?raw=true) 
+
+### Syntax
+
+Here is the syntax to generate the matrice intermediare from processed dataset:
+[matricemaker_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/matricemaker_EN.R?raw=true) 
+
+
+### Example of matrice intermediare 
+
+Here is a zipped file of the example matrice intermediare (.csv) generated from processes above:
+[matrice_intermediaire_direct_en](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/matrice_intermediaire_direct_en.zip?raw=true) 
+
+## Troubleshooting & Known issues
+
+- If the country did not collect all the 5 Food Security Indicators (FCS, HDDS, rCSI, HHS, LhCS) - the modules not collected should be removed from the code 
+- If the level of analysis is at the Admin 1 level only - then the variables ADMIN2Name and ADMIN2Code should be removed from the code
+- If the ADMIN1Name and ADMIN2Name were not collected with geocodes (see Chapter 2) then the code will have to be modified 

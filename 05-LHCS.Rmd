@@ -1,0 +1,75 @@
+# Livelihood Coping Strategies
+
+The following resources illustrate how to collect and calculate the CARI light version of the Livelihood Coping Strategy Module.
+
+Users can substitute the stress, crisis and emergency coping strategy strategies according to their context , preferably from the standard list of strategies on page 47 of the CARI Manual (below). 
+
+## References / Resources
+
+1.  CARI Manual - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
+
+2.  ENA Guidelines - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
+
+## Standardized Light CARI Module 
+
+Variable Name | Question Label | Answer Choices
+---- | ------------- |------- 
+LhCSIStress1 | During the past 30 days, did anyone in your household have to: *Sell household assets/goods  radio, furniture, refrigerator, television, jewelry etc..)* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIStress2 | During the past 30 days, did anyone in your household have to: *sell more animals (non-productive) than usual* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIStress3 | During the past 30 days, did anyone in your household have to: *spend savings* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIStress4 | During the past 30 days, did anyone in your household have to: *Borrow money / food  from a formal lender / bank* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSICrisis1 | During the past 30 days, did anyone in your household have to: *Reduce non-food expenses on health (including drugs) and education * due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSICrisis2 | During the past 30 days, did anyone in your household have to: *sell productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc..)* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSICrisis3 | During the past 30 days, did anyone in your household have to: *withdraw children from school* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIEmergency1 | During the past 30 days, did anyone in your household have to: *sell house or land* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIEmergency2 | During the past 30 days, did anyone in your household have to: *sell last female animals* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIEmergency3 | During the past 30 days, did anyone in your household have to: *beg * due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+
+### Paper Version of Questionnaire
+
+Here is the standardized module in word format:
+
+[RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.docx?raw=true) 
+
+### Electronic Version of Questionnaire
+
+Here is the standardized module in xlsform:
+
+[RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.xlsx?raw=true) 
+
+### Example data set
+
+Here is the example data set:
+
+[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+
+### SPSS Syntax
+
+Here is the SPSS syntax file:
+
+[RBDstandardized_SPSSsyntaxLHCS_CARI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_EN.sps?raw=true) 
+
+### R Syntax
+
+Here is the R syntax file: 
+
+[RBDstandardized_RsyntaxLHCS_CARI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI_EN.R?raw=true) 
+
+## Standardized ENA Livehihood Coping Strategy Module
+
+### Paper Version of Questionnaire
+
+Here is the standardized module in word format:
+
+[RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.docx?raw=true) 
+
+### Electronic Version of Questionnaire
+
+Here is the standardized module in xlsform:
+
+[RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.xlsx?raw=true) 
+
+
+### Example Data & Syntax
+
+Example data and syntax for ENA version of the livelihood coping strategies is forthcoming.

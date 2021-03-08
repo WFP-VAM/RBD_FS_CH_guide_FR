@@ -1,0 +1,71 @@
+# Data Quality Monitoring Report
+
+If survey teams collect data with Kobo/Ona/MoDa/ODK and regularly send submissions to a server, then analysts can quickly generate a data quality report with Rmarkdown to regularly track survey results and detect problems that may arise in the field with data collection.
+
+The example report below has been generalized to visualize survey progress by geographic areas and calculated results of key CH indicators by geographic areas and by enumerators using the raw data set downloaded from the  Kobo/Ona/MoDa/ODK server.
+
+For privacy/data security, the code of the enumerator should be used rather thanreporting the enumerators name.  If a particular operator needs to be identified or contacted - you can refer to the data collection form to match the enumerator code with the enumerator name. 
+
+## Overview of the steps
+
+Download a .sav (spss) version of the dataset from Kobo/Ona/MoDa/ODK - use [exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav) as an example.
+
+Create a folder on your machine ("C:" is recommended but not required) with the name of the survey (i.e. NGA_022021_EFSA) and create a sub-folder "1_RawData" and save your SPSS dataset in the "1_RawData" folder.
+
+
+Open up [example_dqmonitoring_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/example_dqmonitoring_EN.Rmd) 
+ and verify the code (below) refers to the correct name of file and folder location.
+
+```{r, eval = F}
+#set working directory 
+setwd("C:/exampledataquality")
+
+#import dataset and call it "dataset"
+dataset <- read_sav("1_RawData/exampledataEnglish_raw.sav")
+```
+
+Also, if the variable name of the Enumerators is not `EnumName`, insert the following code to rename the variable
+
+```{r, eval = F}
+#standardized enumerator name variable
+dataset <- dataset %>% rename(EnumName = OLDNAMEOFENUMERATORVARIABLE) 
+```
+
+before this code:
+
+```{r, eval = F}
+#convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator
+dataset$EnumName <- to_character(dataset$EnumName)
+```
+
+Modify the `title` and author `fields` to your survey. 
+
+```{r, eval = F}
+title: "Example Data Quality Monitoring Report"
+author: "WFP "
+```
+
+Click the Knit button and the report should generate (it might take a few minutes). 
+
+An .html file is produced in the survey folder - you can hover the cursor over the figures for more information.
+
+### Video Example 
+
+<iframe width="750" height="400" src="https://www.youtube.com/embed/-hvUzqojk9c" frameborder="0" allowfullscreen></iframe>
+
+## Data Quality Monitoring Tools
+
+### Example data set & Syntax
+
+Here is the zipped file with the raw example data set and syntax:
+
+[exampledq_monitoring_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/exampledq_monitoring_EN.zip?raw=true) 
+
+
+## Troubleshooting & Going Further
+
+This report has been designed to work with standardized variable names and indicators illustrated earlier in this guide. If the variable names in the raw data set do not match the code - their will be some adjustment needed.
+
+Experienced R users are free to modify the report to meet their specific needs.  Share what you create!  
+
+

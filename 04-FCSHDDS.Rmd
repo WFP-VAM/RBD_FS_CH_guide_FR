@@ -1,0 +1,41 @@
+# Food Consumption Score & Household Dietary Diversity
+
+The module below allows you to collect and calculate FCS, FCS-N and HDDS indicators.
+
+## References / Resources
+
+1.  FCS - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
+
+2.  FCS_N - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp277333.pdf
+
+3.  HDDS - http://www.fao.org/fileadmin/user_upload/wa_workshop/docs/FAO-guidelines-dietary-diversity2011.pdf
+
+## Standardized Questionnaire
+
+### Paper Version of Questionnaire
+
+Here is the standardized module in word format:
+[RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.docx?raw=true) 
+
+### Electronic Version of Questionnaire
+
+Here is the standardized module in xlsform:
+[RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.xlsx?raw=true)
+
+## Calculation of FCS & HDDS Indicators  
+
+### Example data set
+
+Here is the example data set:
+[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+
+
+### SPSS Syntax
+
+Here is the SPSS syntax file: 
+[RBDStandardized_SPSSsyntaxFCSHDDS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_EN.sps?raw=true) 
+
+### R Syntax
+
+Here is the R syntax file: 
+[RBDstandardized_RsyntaxFCSHDDS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS_EN.R?raw=true) 

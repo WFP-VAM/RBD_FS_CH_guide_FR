@@ -1,0 +1,48 @@
+# reduced Coping Strategy Index 
+
+## References / Resources
+
+1. https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp211058.pdf
+
+2. https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
+
+## Standardized Questionnaire
+
+Variable Name | Question Label 
+---- | ------------- 
+rCSILessQlty | In the past 7 days, how many days has your household had to: *Rely on less preferred and less expensive food* because you did not have enough food or money to buy food?
+rCSIBorrow | In the past 7 days, how many days has your household had to: *Borrow food or rely on help from a relative or friend* because you did not have enough food or money to buy food?
+rCSIMealSize | In the past 7 days, how many days has your household had to: *Limit portion size of meals* because you did not have enough food or money to buy food?
+rCSIMealAdult  | In the past 7 days, how many days has your household had to: *Restrict consumption by adults in order for small children to eat* because you did not have enough food or money to buy food?
+rCSIMealNb | In the past 7 days, how many days has your household had to: *Reduce the number of meals eaten per day* because you did not have enough food or money to buy food?
+
+
+### Paper Version of Questionnaire
+
+Here is the standardized module in word format:
+[RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairerCSI.docx?raw=true) 
+
+### Electronic Version of Questionnaire
+
+Here is the standardized module in xlsform:
+[RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairerCSI.xlsx?raw=true) 
+
+
+## Calculation of rCSI Indicator 
+
+### Example data set
+
+Here is the example data set:
+[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+
+### SPSS Syntax
+
+Here is the SPSS syntax file: 
+[RBDstandardized_SPSSsyntaxrCSI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_EN.sps?raw=true) 
+
+
+### R Syntax
+
+Here is the R syntax file: 
+[RBDstandardized_RsyntaxrCSI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI_EN.R?raw=true) 
+
