@@ -1,6 +1,6 @@
 # L'échelle de la faim dans les ménages (HHS)
 
-## References / Resources
+## Références / Ressources
 
 https://www.fantaproject.org/sites/default/files/resources/HHS-Indicator-Guide-Aug2011-FRANCAIS.pdf
 
@@ -27,7 +27,7 @@ Voici le module standardisé en format xlsform :
 [RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.xlsx?raw=true) 
 
 
-## Calcul de l'indicateur de l'échelle de la faim dans les ménages
+## Calcul de l'indicateur HHS
 
 ### Exemple d'ensemble de données
 

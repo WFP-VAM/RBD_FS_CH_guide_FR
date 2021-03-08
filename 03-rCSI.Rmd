@@ -1,48 +1,45 @@
-# reduced Coping Strategy Index 
+#  L’indice réduit des stratégies de survie (rCSI)
 
-## References / Resources
+## Références / Ressources
 
-1. https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp211058.pdf
+https://docs.wfp.org/api/documents/WFP-0000107746/download/
 
-2. https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
+## Questionnaire standardisé
 
-## Standardized Questionnaire
-
-Variable Name | Question Label 
+Nom de la variable  | Etiquette des questions
 ---- | ------------- 
-rCSILessQlty | In the past 7 days, how many days has your household had to: *Rely on less preferred and less expensive food* because you did not have enough food or money to buy food?
-rCSIBorrow | In the past 7 days, how many days has your household had to: *Borrow food or rely on help from a relative or friend* because you did not have enough food or money to buy food?
-rCSIMealSize | In the past 7 days, how many days has your household had to: *Limit portion size of meals* because you did not have enough food or money to buy food?
-rCSIMealAdult  | In the past 7 days, how many days has your household had to: *Restrict consumption by adults in order for small children to eat* because you did not have enough food or money to buy food?
-rCSIMealNb | In the past 7 days, how many days has your household had to: *Reduce the number of meals eaten per day* because you did not have enough food or money to buy food?
+rCSILessQlty | Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû *consommer des aliments moins préférés et moins chers* parce que vous n'aviez pas assez de nourriture ou de l'argent pour acheter de la nourriture ?
+rCSIBorrow | Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû *emprunter de la nourriture ou compter sur l’aide des parents/amis* parce que vous n'aviez pas assez de nourriture ou de l'argent pour acheter de la nourriture ?
+rCSIMealSize | Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû *diminuer la quantité consommée pendant les repas* parce que vous n'aviez pas assez de nourriture ou de l'argent pour acheter de la nourriture ?
+rCSIMealAdult  | Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû *restreindre la consommation des adultes  pour nourrir les enfants* parce que vous n'aviez pas assez de nourriture ou de l'argent pour acheter de la nourriture ?
+rCSIMealNb | Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû *diminuer le nombre de repas par jour* parce que vous n'aviez pas assez de nourriture ou de l'argent pour acheter de la nourriture ?
 
+### Version papier du questionnaire
 
-### Paper Version of Questionnaire
-
-Here is the standardized module in word format:
+Voici le module standardisé en format Word :
 [RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairerCSI.docx?raw=true) 
 
-### Electronic Version of Questionnaire
+### Version électronique du questionnaire
 
-Here is the standardized module in xlsform:
+Voici le module standardisé en format xlsform :
 [RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairerCSI.xlsx?raw=true) 
 
 
-## Calculation of rCSI Indicator 
+## Calcul de l'indicateur rCSI
 
-### Example data set
+### Exemple d'ensemble de données
 
-Here is the example data set:
-[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+Voici l'exemple d'un ensemble de données brutes :  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 
 ### SPSS Syntax
 
 Here is the SPSS syntax file: 
-[RBDstandardized_SPSSsyntaxrCSI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_EN.sps?raw=true) 
+[RBDstandardized_SPSSsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps?raw=true) 
 
 
 ### R Syntax
 
 Here is the R syntax file: 
-[RBDstandardized_RsyntaxrCSI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI_EN.R?raw=true) 
+[RBDstandardized_RsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI_FR.R?raw=true) 
 
