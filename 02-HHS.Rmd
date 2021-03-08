@@ -1,45 +1,45 @@
-# Household Hunger Scale 
+# L'échelle de la faim dans les ménages (HHS)
 
 ## References / Resources
 
-https://www.fantaproject.org/monitoring-and-evaluation/household-hunger-scale-hhs
+https://www.fantaproject.org/sites/default/files/resources/HHS-Indicator-Guide-Aug2011-FRANCAIS.pdf
 
 
-## Standardized Questionnaire
+## Questionnaire standardisé
 
-Variable Name | Question Label | Answer Choices
+Nom de la variable | Etiquette des questions | Choix des réponses
 ---- | ------------- |------
-HHhSNoFood_YN | In the past [4 weeks/30 days], was there ever no food to eat of any kind in your house because of lack of resources to get food? | 1) Yes 0) No
-HHhSNoFood_FR | How often did this happen in the past [4 weeks/30 days]? | 1) Rarely (1–2 times) 2) Sometimes (3–10 times)  3) Often (more than 10 times)
-HHhSBedHung_YN | In the past [4 weeks/30 days], did you or any household member go to sleep at night hungry because there was not enough food? | 1) Yes 0) No
-HHhSBedHung_FR  | How often did this happen in the past [4 weeks/30 days]? | 1) Rarely (1–2 times) 2) Sometimes (3–10 times)  3) Often (more than 10 times)
-HHhSNotEat_YN | In the past [4 weeks/30 days], did you or any household member go to sleep at night hungry because there was not enough food? | 1) Yes 0) No
-HHhSNotEat_FR | How often did this happen in the past [4 weeks/30 days]? | 1) Rarely (1–2 times) 2) Sometimes (3–10 times)  3) Often (more than 10 times)
+HHhSNoFood_YN | Au cours des [4 dernières semaines/30 jours], n'y avait-il aucun aliment à manger à la maison, de quelque nature que ce soit à cause du manque de ressources ? | 1) Oui 0) Non
+HHhSNoFood_FR | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarely (1–2 times) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
+HHhSBedHung_YN | Au cours des [4 dernières semaines/30 jours], étiez-vous ou tout membre de votre ménage obligé de dormir affamé le soir parce qu’il n’y avait pas assez de nourriture ?  | 1) Oui 0) Non
+HHhSBedHung_FR  | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarely (1–2 times) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
+HHhSNotEat_YN | Au cours des [4 dernières semaines/30 jours], avez-vous ou tout membre de votre ménage passé un jour et une nuit entière sans rien manger parce qu’il n’y avait pas assez de nourriture ?
+HHhSNotEat_FR | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarely (1–2 times) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
 
-### Paper Version of Questionnaire
+### Version papier du questionnaire
 
-Here is the standardized module in word format:
+Voici le module standardisé en format Word :
 [RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.docx?raw=true) 
 
-### Electronic Version of Questionnaire
+### Version électronique du questionnaire
 
-Here is the standardized module in xlsform format:
+Voici le module standardisé en format xlsform :
 [RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireHHS.xlsx?raw=true) 
 
 
-## Calculation of Household Hunger Scale Indicators
+## Calcul de l'indicateur de l'échelle de la faim dans les ménages
 
-### Example data set
+### Exemple d'ensemble de données
 
-Here is the example raw data set: 
-[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+Voici l'exemple d'un ensemble de données brutes :  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true) 
 
 ### SPSS Syntax
 
-Here is the SPSS syntax file: 
-[RBDstandardized_SPSSsyntaxHHS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxHHS_EN.sps?raw=true) 
+Voici le fichier de syntaxe SPSS : 
+[RBDstandardized_SPSSsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxHHS_FR.sps?raw=true) 
 
 ### R Syntax
 
-Here is the R syntax file: 
-[RBDstandardized_RsyntaxHHS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxHHS_EN.R?raw=true) 
+Voici le fichier de syntaxe R :  
+[RBDstandardized_RsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxHHS_FR.R?raw=true) 

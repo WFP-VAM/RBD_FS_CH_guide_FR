@@ -52,7 +52,7 @@ La syntaxe R utilisée pour le rapport de suivi de la qualité des données est 
 
 Pour ce guide, deux ensembles de données "semi-fictives" ont été créés en sélectionnant et en désidentifiant au hasard plusieurs enquêtes.  Les résultats sont des ensembles de données "safe" qui servent d'exemples pour la syntaxe et les processus illustrés dans ce guide :
 
-[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) - est ce à quoi devrait ressembler un ensemble de données "brutes" lorsqu'elles sont collectées avec des modules standardisés et téléchargées à partir d'un serveur ODK au format spss.
+exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true) - est ce à quoi devrait ressembler un ensemble de données "brutes" lorsqu'elles sont collectées avec des modules standardisés et téléchargées à partir d'un serveur ODK au format spss.
 
 [exampledataEnglish_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_processed.sav?raw=true) - est ce à quoi devrait ressembler une "donnée traitée" lorsqu'on applique une syntaxe normalisée pour calculer des indicateurs et ajouter des poids d'enquête. 
 
