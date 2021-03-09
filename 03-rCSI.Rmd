@@ -19,12 +19,12 @@ rCSIMealNb | Au cours des 7 derniers jours, combien de jours votre ménage a-t-i
 ### Version papier du questionnaire
 
 Voici le module standardisé en format Word :
-[RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnairerCSI.docx?raw=true) 
+[RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnairerCSI.docx?raw=true) 
 
 ### Version électronique du questionnaire
 
 Voici le module standardisé en format xlsform :
-[RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnairerCSI.xlsx?raw=true) 
+[RBDstandardized_questionnairerCSI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnairerCSI.xlsx?raw=true) 
 
 
 ## Calcul de l'indicateur rCSI
@@ -32,16 +32,16 @@ Voici le module standardisé en format xlsform :
 ### Exemple d'ensemble de données
 
 Voici l'exemple d'un ensemble de données brutes :  
-[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 
 ### SPSS Syntax
 
 Voici le fichier de syntaxe SPSS : 
-[RBDstandardized_SPSSsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps) 
+[RBDstandardized_SPSSsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps) 
 
 
 ### R Syntax
 
 Voici le fichier de syntaxe R : 
-[RBDstandardized_RsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxrCSI_FR.R) 
+[RBDstandardized_RsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/RBDstandardized_RsyntaxrCSI_FR.R) 
 

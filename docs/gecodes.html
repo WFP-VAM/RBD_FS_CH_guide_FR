@@ -156,7 +156,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.1" data-path="gecodes.html"><a href="gecodes.html#un-exemple-simple-du-problème"><i class="fa fa-check"></i><b>3.1</b> Un exemple simple du problème :</a></li>
 <li class="chapter" data-level="3.2" data-path="gecodes.html"><a href="gecodes.html#où-trouver-les-codes-pcodes-et-plus-de-détails"><i class="fa fa-check"></i><b>3.2</b> Où trouver les codes Pcodes et plus de détails</a></li>
 <li class="chapter" data-level="3.3" data-path="gecodes.html"><a href="gecodes.html#exemple-densemble-de-données-de-la-fiche-de-collecte-de-données-pour-le-nigeria"><i class="fa fa-check"></i><b>3.3</b> Exemple d’ensemble de données de la fiche de collecte de données pour le Nigeria :</a></li>
-<li class="chapter" data-level="3.4" data-path="gecodes.html"><a href="gecodes.html#caveats"><i class="fa fa-check"></i><b>3.4</b> 2 caveats</a></li>
+<li class="chapter" data-level="3.4" data-path="gecodes.html"><a href="gecodes.html#notes"><i class="fa fa-check"></i><b>3.4</b> 2 Notes</a></li>
 </ul></li>
 <li class="chapter" data-level="4" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html"><i class="fa fa-check"></i><b>4</b> L’échelle de la faim dans les ménages (HHS)</a><ul>
 <li class="chapter" data-level="4.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#références-ressources"><i class="fa fa-check"></i><b>4.1</b> Références / Ressources</a></li>
@@ -272,9 +272,9 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="gecodes" class="section level1">
 <h1><span class="header-section-number">Chapter 3</span> Gecodes</h1>
-<p>Les noms des zones géographiques, bien qu’ils soient assez simples à mettre dans un outil de collecte de données, nécessitent souvent un certain travail de nettoyage dans le traitement des données pour que les résultats correspondent aux fichiers SIG. Il est très fréquent qu’il y ait des problèmes et des confusions concernant l’orthographe, les translittérations, les noms alternatifs et les doublons des zones.</p>
+<p>Les noms des zones géographiques, bien qu’ils soient assez simples à mettre dans un outil de collecte de données, nécessitent souvent un certain travail de traitement pour que les résultats correspondent aux fichiers SIG. Il est très fréquent qu’il y ait des problèmes et des confusions concernant l’orthographe, les translittérations, les noms alternatifs et les doublons des zones géographiques.</p>
 <p>L’utilisation de codes géographiques normalisés plutôt que de noms géographiques permet de surmonter certains de ces défis typiques du traitement de l’information géographique.</p>
-<p>À cette fin, ce guide recommande d’utiliser les géocodes et les noms des ensembles de données opérationnelles communes (COD) de l’OCHA :</p>
+<p>Ce guide recommande d’utiliser les géocodes et les noms des ensembles de Common Operational Datasets (COD) de l’OCHA :</p>
 <p><a href="https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels" class="uri">https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels</a></p>
 <div id="un-exemple-simple-du-problème" class="section level2">
 <h2><span class="header-section-number">3.1</span> Un exemple simple du problème :</h2>
@@ -342,7 +342,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </tr>
 </tbody>
 </table>
-<p>Malheureusement, si nous essayions de fusionner l’ensemble de données et le fichier SIG par le nom de la zone (il semble que ce soit la variable à laquelle se joindre), nous devrions d’abord fixer la capitalisation et la ponctuation des noms. Pour éviter tout travail inutile, nous recommandons de mettre le <em>Pcode</em> dans la colonne des noms du formulaire xls.</p>
+<p>Malheureusement, si nous essayions de fusionner l’ensemble de données et le fichier SIG par le nom de la zone (il semble que ce soit la variable à laquelle se joindre), nous devrions d’abord fixer la capitalisation et la ponctuation des noms. Pour éviter tout ce travail, nous recommandons de mettre le <em>Pcode</em> dans la colonne des noms du formulaire xls.</p>
 <table>
 <thead>
 <tr class="header">
@@ -410,16 +410,16 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="où-trouver-les-codes-pcodes-et-plus-de-détails" class="section level2">
 <h2><span class="header-section-number">3.2</span> Où trouver les codes Pcodes et plus de détails</h2>
-<p>Les données géographiques pour l’Afrique occidentale et centrale sont disponibles à l’adresse suivante <a href="https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels" class="uri">https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels</a> ou les utilisateurs peuvent rechercher les informations appropriées sur le pays dans <a href="https://data.humdata.org/dashboards/cod" class="uri">https://data.humdata.org/dashboards/cod</a></p>
-<p>Nous recommandons d’utiliser les codes des colonnes <em>admin1Pcode</em> et <em>admin2Pcode</em> dans la colonne <em>nom</em> du formulaire xls. Il est également recommandé d’utiliser les codes des colonnes <em>admin1RefName</em> et <em>admin2RefName</em> dans la colonne <em>label</em> du formulaire xls.</p>
+<p>Les données géographiques pour l’Afrique occidentale et centrale sont disponibles à l’adresse suivante <a href="https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels" class="uri">https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels</a> ou les utilisateurs peuvent rechercher les informations sur le pays dans <a href="https://data.humdata.org/dashboards/cod" class="uri">https://data.humdata.org/dashboards/cod</a></p>
+<p>Nous recommandons d’utiliser les codes des colonnes <em>admin1Pcode</em> et <em>admin2Pcode</em> dans la colonne <em>nom</em> du formulaire xlsform. Il est également recommandé d’utiliser les codes des colonnes <em>admin1RefName</em> et <em>admin2RefName</em> dans la colonne <em>label</em> du formulaire xlsform.</p>
 </div>
 <div id="exemple-densemble-de-données-de-la-fiche-de-collecte-de-données-pour-le-nigeria" class="section level2">
 <h2><span class="header-section-number">3.3</span> Exemple d’ensemble de données de la fiche de collecte de données pour le Nigeria :</h2>
 <p>Voici un exemple d’ensemble de données dont les noms et les étiquettes correspondent aux Common Operation Datasets.</p>
-<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true">xlsformwithgeocodesexample</a></p>
+<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/main/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true">xlsformwithgeocodesexample</a></p>
 </div>
-<div id="caveats" class="section level2">
-<h2><span class="header-section-number">3.4</span> 2 caveats</h2>
+<div id="notes" class="section level2">
+<h2><span class="header-section-number">3.4</span> 2 Notes</h2>
 <ol style="list-style-type: decimal">
 <li><p>Dans quelques pays, les limites des COD peuvent ne pas correspondre aux limites utilisées par le pays. Dans ce cas, il faudra élaborer un fichier de limites et des codes SIG spécifiques.</p></li>
 <li><p>L’insertion des pcodes pertinents dans la colonne <em>nom</em> d’un formulaire xls existant nécessitera probablement un travail de recherche sur excel <em>vlookup</em>. Cela peut être relativement simple si l’on ne remplace les codes qu’au niveau admin1 et admin2, mais les choses peuvent se compliquer si l’on utilise des colonnes en cascade et l’option <em>choice_filter</em> au niveau adm3, adm4.</p></li>

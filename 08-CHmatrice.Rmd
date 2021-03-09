@@ -13,18 +13,18 @@ Après que les équipes d'enquête ont traité les données (nettoyage, calcul d
 ### Exemple d'ensemble de données traitées
 
 Voici un exemple d'ensemble de données traitées :
-[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true) 
+[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_processed.sav?raw=true) 
 
 ### Syntaxe
 
 Voici la syntaxe pour générer la matrice intermediare à partir de l'ensemble des données traitées :
-[matricemaker_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/matricemaker_FR.R?raw=true) 
+[matricemaker_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/matricemaker_FR.R?raw=true) 
 
 
 ### Exemple de matrice intermediare 
 
 Voici un fichier zippé de l'exemple de matrice intermediare (.csv) généré à partir des processus ci-dessus :
-[matrice_intermediaire_direct_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/matrice_intermediaire_direct_FR.zip?raw=true) 
+[matrice_intermediaire_direct_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/matrice_intermediaire_direct_FR.zip?raw=true) 
 
 ## Dépannage et problèmes connus
 

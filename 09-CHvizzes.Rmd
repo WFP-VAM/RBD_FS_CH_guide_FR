@@ -17,19 +17,19 @@ Après que les équipes d'enquête ont généré le .csv pour la matrice interme
 
 Voici l'exemple zippé de matrice intermediare (.csv) généré à partir des processus du dernier chapitre :
 
-[matrice_intermediaire_direct_fr](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/matrice_intermediaire_direct_fr.zip?raw=true) 
+[matrice_intermediaire_direct_fr](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/matrice_intermediaire_direct_fr.zip?raw=true) 
 
 ### Exemple de shapefiles 
 
 Voici des shapefiles pour le Nigéria qui seront utilisés pour réaliser les cartes de notre exemple :
 
-[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/NGA_shpfile.zip?raw=true) 
 
 
 ### Syntaxe
 
 Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH
-[example_CH_preliminaryFSresults_fromcsv_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_CH_preliminaryFSresults_fromcsv_FR.zip?raw=true) 
+[example_CH_preliminaryFSresults_fromcsv_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/example_CH_preliminaryFSresults_fromcsv_FR.zip?raw=true) 
 
 
 ## Visualisation des indicateurs directs de sécurité alimentaire de CH directement à partir de l'ensemble des données traitées 
@@ -48,21 +48,21 @@ Alternativement, les équipes peuvent utiliser le script R ci-dessous pour crée
 
 
 Voici un exemple d'ensemble de données traitées :
-[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true) 
+[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_processed.sav?raw=true) 
 
 
 ### Exemple de shapefiles 
 
 Voici des shapefiles pour le Nigéria qui seront utilisés pour réaliser les cartes de notre exemple :
 
-[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/NGA_shpfile.zip?raw=true) 
 
 
 ### Syntaxe
 
 Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH à partir de l'ensemble des données traitées :
 
-[example_CH_preliminaryFSresults_fromspss_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_CH_preliminaryFSresults_fromspss_FR.zip?raw=true) 
+[example_CH_preliminaryFSresults_fromspss_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/example_CH_preliminaryFSresults_fromspss_FR.zip?raw=true) 
 
 
 

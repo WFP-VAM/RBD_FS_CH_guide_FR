@@ -32,13 +32,13 @@ LhCSIEmergency3 | Au cours des 30 derniers jours, est ce qu’ un membre de votr
 
 Voici le module standardisé en format Word :
 
-[RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.docx?raw=true) 
+[RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnaireLHCS_CARI.docx?raw=true) 
 
 ### Version électronique du questionnaire
 
 Voici le module standardisé sous xlsform :
 
-[RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.xlsx?raw=true) 
+[RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnaireLHCS_CARI.xlsx?raw=true) 
 
 
 ## Calcul de indicateur LHCS
@@ -46,20 +46,20 @@ Voici le module standardisé sous xlsform :
 ### Example data set
 
 Voici l'exemple d'un ensemble de données brutes :  
-[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 
 
 ### SPSS Syntax
 
 Voici le fichier de syntaxe SPSS : 
 
-[RBDstandardized_SPSSsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_FR.sps) 
+[RBDstandardized_SPSSsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_FR.sps) 
 
 ### R Syntax
 
 Voici le fichier de syntaxe SPSS :  
 
-[RBDstandardized_RsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI_FR.R) 
+[RBDstandardized_RsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/RBDstandardized_RsyntaxLHCS_CARI_FR.R) 
 
 ## Module standardisé de stratégie d'adaptation aux moyens d'existence de l'ENA
 
@@ -67,13 +67,13 @@ Voici le fichier de syntaxe SPSS :
 
 Voici le module standardisé en format Word :
 
-[RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.docx?raw=true) 
+[RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnaireLHCS_ENA.docx?raw=true) 
 
 ### Version électronique du questionnaire
 
 Voici le module standardisé sous xlsform :
 
-[RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.xlsx?raw=true) 
+[RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnaireLHCS_ENA.xlsx?raw=true) 
 
 
 ### Exemple de données et de syntaxe

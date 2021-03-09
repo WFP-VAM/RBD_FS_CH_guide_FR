@@ -15,7 +15,7 @@ gecodes
 un-exemple-simple-du-problème
 où-trouver-les-codes-pcodes-et-plus-de-détails
 exemple-densemble-de-données-de-la-fiche-de-collecte-de-données-pour-le-nigeria
-caveats
+notes
 léchelle-de-la-faim-dans-les-ménages-hhs
 références-ressources
 questionnaire-standardisé

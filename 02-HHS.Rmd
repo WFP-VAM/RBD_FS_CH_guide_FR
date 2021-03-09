@@ -19,12 +19,12 @@ HHhSNotEat_FR | Combien de fois est-ce arrivé au cours des [4 dernières semain
 ### Version papier du questionnaire
 
 Voici le module standardisé en format Word :
-[RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireHHS.docx?raw=true) 
+[RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnaireHHS.docx?raw=true) 
 
 ### Version électronique du questionnaire
 
 Voici le module standardisé en format xlsform :
-[RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireHHS.xlsx?raw=true) 
+[RBDstandardized_questionnaireHHS](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/questionnaires/RBDstandardized_questionnaireHHS.xlsx?raw=true) 
 
 
 ## Calcul de l'indicateur HHS
@@ -32,14 +32,14 @@ Voici le module standardisé en format xlsform :
 ### Exemple d'ensemble de données
 
 Voici l'exemple d'un ensemble de données brutes :  
-[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true) 
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_raw.sav?raw=true) 
 
 ### SPSS Syntax
 
 Voici le fichier de syntaxe SPSS : 
-[RBDstandardized_SPSSsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_SPSSsyntaxHHS_FR.sps) 
+[RBDstandardized_SPSSsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/RBDstandardized_SPSSsyntaxHHS_FR.sps) 
 
 ### R Syntax
 
 Voici le fichier de syntaxe R :  
-[RBDstandardized_RsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxHHS_FR.R) 
+[RBDstandardized_RsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/RBDstandardized_RsyntaxHHS_FR.R) 

@@ -1,10 +1,10 @@
 # Gecodes
 
-Les noms des zones géographiques, bien qu'ils soient assez simples à mettre dans un outil de collecte de données, nécessitent souvent un certain travail de nettoyage dans le traitement des données pour que les résultats correspondent aux fichiers SIG.  Il est très fréquent qu'il y ait des problèmes et des confusions concernant l'orthographe, les translittérations, les noms alternatifs et les doublons des zones.
+Les noms des zones géographiques, bien qu'ils soient assez simples à mettre dans un outil de collecte de données, nécessitent souvent un certain travail de traitement pour que les résultats correspondent aux fichiers SIG.  Il est très fréquent qu'il y ait des problèmes et des confusions concernant l'orthographe, les translittérations, les noms alternatifs et les doublons des zones géographiques.
 
 L'utilisation de codes géographiques normalisés plutôt que de noms géographiques permet de surmonter certains de ces défis typiques du traitement de l'information géographique.  
 
-À cette fin, ce guide recommande d'utiliser les géocodes et les noms des ensembles de données opérationnelles communes (COD) de l'OCHA : 
+Ce guide recommande d'utiliser les géocodes et les noms des ensembles de Common Operational Datasets (COD) de l'OCHA : 
 
 https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels
 
@@ -30,7 +30,7 @@ Polygon |NG008004 | Bayo
 Polygon |NG008006 | Chibok
 Polygon |NG008015 | Kala/Balge
 
-Malheureusement, si nous essayions de fusionner l'ensemble de données et le fichier SIG par le nom de la zone (il semble que ce soit la variable à laquelle se joindre), nous devrions d'abord fixer la capitalisation et la ponctuation des noms.  Pour éviter tout travail inutile, nous recommandons de mettre le *Pcode* dans la colonne des noms du formulaire xls.  
+Malheureusement, si nous essayions de fusionner l'ensemble de données et le fichier SIG par le nom de la zone (il semble que ce soit la variable à laquelle se joindre), nous devrions d'abord fixer la capitalisation et la ponctuation des noms.  Pour éviter tout ce travail, nous recommandons de mettre le *Pcode* dans la colonne des noms du formulaire xls.  
 
 list_name | name | label
 ---- | --- |---- 
@@ -52,17 +52,17 @@ Grâce à une variable simple et commune permettant de fusionner les deux ensemb
 
 ## Où trouver les codes Pcodes et plus de détails
 
-Les données géographiques pour l'Afrique occidentale et centrale sont disponibles à l'adresse suivante  https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels ou les utilisateurs peuvent rechercher les informations appropriées sur le pays dans https://data.humdata.org/dashboards/cod
+Les données géographiques pour l'Afrique occidentale et centrale sont disponibles à l'adresse suivante  https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels ou les utilisateurs peuvent rechercher les informations sur le pays dans https://data.humdata.org/dashboards/cod
 
-Nous recommandons d'utiliser les codes des colonnes *admin1Pcode* et *admin2Pcode* dans la colonne *nom* du formulaire xls.  Il est également recommandé d'utiliser les codes des colonnes *admin1RefName* et *admin2RefName* dans la colonne *label* du formulaire xls.
+Nous recommandons d'utiliser les codes des colonnes *admin1Pcode* et *admin2Pcode* dans la colonne *nom* du formulaire xlsform.  Il est également recommandé d'utiliser les codes des colonnes *admin1RefName* et *admin2RefName* dans la colonne *label* du formulaire xlsform.
 
 ## Exemple d'ensemble de données de la fiche de collecte de données pour le Nigeria :
 
 Voici un exemple d'ensemble de données dont les noms et les étiquettes correspondent aux  Common Operation Datasets.
 
-[xlsformwithgeocodesexample](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true) 
+[xlsformwithgeocodesexample](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/main/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true) 
 
-## 2 caveats
+## 2 Notes
 
 1. Dans quelques pays, les limites des COD peuvent ne pas correspondre aux limites utilisées par le pays.  Dans ce cas, il faudra élaborer un fichier de limites et des codes SIG spécifiques.  
 
