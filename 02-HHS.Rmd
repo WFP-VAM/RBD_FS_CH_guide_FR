@@ -42,4 +42,4 @@ Voici le fichier de syntaxe SPSS :
 ### R Syntax
 
 Voici le fichier de syntaxe R :  
-[RBDstandardized_RsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxHHS_FR.R?raw=true) 
+[RBDstandardized_RsyntaxHHS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxHHS_FR.R) 
