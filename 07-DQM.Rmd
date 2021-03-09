@@ -18,7 +18,7 @@ et vérifier que le code (ci-dessous) fait référence au nom correct du fichier
 
 ```{r, eval = F}
 #set working directory 
-setwd("C:/exampledataquality")
+setwd("C:/exampledataquality_FR")
 
 #import dataset and call it "dataset"
 dataset <- read_sav("1_RawData/exampledataFrancais_raw.sav")

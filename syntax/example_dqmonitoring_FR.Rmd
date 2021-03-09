@@ -1,6 +1,6 @@
 ---
 title: "Exemple de rapport de contrôle de la qualité des données"
-author: "PAM et partenaires"
+author: "PAM et partenaires "
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
   html_document:
@@ -20,7 +20,7 @@ library(kableExtra)
 
 
 #set working directory 
-setwd("C:/exampledataquality")
+setwd("C:/exampledq_monitoring_FR")
 
 #import dataset and call it "dataset"
 dataset <- read_sav("1_RawData/exampledataFrancais_raw.sav")
@@ -188,10 +188,10 @@ dataset <- dataset %>% mutate(LhCSICat = case_when(
 var_label(dataset$LhCSICat) <- "Catégories de stratégies d'adaptation aux moyens d'existence - version léger  de CARI"
 
 #CH colors
-LHCS_colors = c("Pasdestrategies" = "#c6ffc7","StrategiesdeStress" = "#ffe718","StrategiesdeCrise" = "#e88400","StrategiesdUrgence" = "#e02d00")
+LHCS_colors = c("Pasdestrategies" = "#c6ffc7","StrategiesdeStress" = "#ffe718","StrategiesdeCrise" = "#e88400","StrategiesdeUrgence" = "#e02d00")
 #change ordering
 dataset <- dataset %>%
-  mutate(LhCSICat = fct_relevel(LhCSICat, c("Pasdestrategies", "StrategiesdeStress", "StrategiesdeCrise", "StrategiesdUrgence")))
+  mutate(LhCSICat = fct_relevel(LhCSICat, c("Pasdestrategies", "StrategiesdeStress", "StrategiesdeCrise", "StrategiesdeUrgence")))
 #LHCS by Adm2
 LHCSadm2table <- dataset %>% group_by(ADMIN1Name, ADMIN2Name) %>%  count(LhCSICat) %>% mutate(perc = 100 * n / sum(n)) %>% ungroup() %>% select(-n) %>% mutate_if(is.numeric, round, 1)
 LHCSadm2_barplot <- LHCSadm2table %>% ggplot(aes(x=ADMIN2Name, y = perc, fill = LhCSICat)) +geom_bar(position="fill", stat = "identity") +theme_minimal() +theme(axis.text.x = element_text(angle = 90)) +scale_fill_manual(values=LHCS_colors) + facet_wrap(. ~ ADMIN1Name, scales = "free_x") +labs(x = "", y = "") +scale_y_continuous(labels = scales::percent)
