@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 5 L’indice réduit des stratégies de survie (rCSI) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
-  <meta name="description" content="Chapter 5 L’indice réduit des stratégies de survie (rCSI) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <title>Chapter 10 Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
+  <meta name="description" content="Chapter 10 Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 5 L’indice réduit des stratégies de survie (rCSI) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta property="og:title" content="Chapter 10 Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 5 L’indice réduit des stratégies de survie (rCSI) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta name="twitter:title" content="Chapter 10 Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="léchelle-de-la-faim-dans-les-ménages-hhs.html"/>
-<link rel="next" href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"/>
+<link rel="prev" href="rapport-de-contrôle-de-la-qualité-des-données.html"/>
+<link rel="next" href="visualizing-ch-direct-food-security-indicators.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -270,78 +270,42 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="lindice-réduit-des-stratégies-de-survie-rcsi" class="section level1">
-<h1><span class="header-section-number">Chapter 5</span> L’indice réduit des stratégies de survie (rCSI)</h1>
-<div id="références-ressources-1" class="section level2">
-<h2><span class="header-section-number">5.1</span> Références / Ressources</h2>
-<p><a href="https://docs.wfp.org/api/documents/WFP-0000107746/download/" class="uri">https://docs.wfp.org/api/documents/WFP-0000107746/download/</a></p>
-<p><em>ci-dessus est l’ancienne version du manuel CARI mais la section rCSI est toujours valable</em></p>
+<div id="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire" class="section level1">
+<h1><span class="header-section-number">Chapter 10</span> Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire)</h1>
+<p>Après que les équipes d’enquête ont traité les données (nettoyage, calcul des indicateurs et ajout de poids d’enquête), la syntaxe R ci-dessous peut être utilisée pour générer un fichier .csv des preuves de Food Security Direct qui peut être collé dans la matrice intermediare</p>
+<div id="overview-video" class="section level2">
+<h2><span class="header-section-number">10.1</span> Overview video</h2>
+<iframe width="750" height="400" src="https://www.youtube.com/embed/MfELnjz2G8E" frameborder="0" allowfullscreen>
+</iframe>
+<p><em>cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu’elle illustre les informations essentielles</em></p>
 </div>
-<div id="questionnaire-standardisé-1" class="section level2">
-<h2><span class="header-section-number">5.2</span> Questionnaire standardisé</h2>
-<table>
-<colgroup>
-<col width="23%" />
-<col width="76%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nom de la variable</th>
-<th>Etiquette des questions</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>rCSILessQlty</td>
-<td>Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû <em>consommer des aliments moins préférés et moins chers</em> parce que vous n’aviez pas assez de nourriture ou de l’argent pour acheter de la nourriture ?</td>
-</tr>
-<tr class="even">
-<td>rCSIBorrow</td>
-<td>Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû <em>emprunter de la nourriture ou compter sur l’aide des parents/amis</em> parce que vous n’aviez pas assez de nourriture ou de l’argent pour acheter de la nourriture ?</td>
-</tr>
-<tr class="odd">
-<td>rCSIMealSize</td>
-<td>Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû <em>diminuer la quantité consommée pendant les repas</em> parce que vous n’aviez pas assez de nourriture ou de l’argent pour acheter de la nourriture ?</td>
-</tr>
-<tr class="even">
-<td>rCSIMealAdult</td>
-<td>Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû <em>restreindre la consommation des adultes pour nourrir les enfants</em> parce que vous n’aviez pas assez de nourriture ou de l’argent pour acheter de la nourriture ?</td>
-</tr>
-<tr class="odd">
-<td>rCSIMealNb</td>
-<td>Au cours des 7 derniers jours, combien de jours votre ménage a-t-il dû <em>diminuer le nombre de repas par jour</em> parce que vous n’aviez pas assez de nourriture ou de l’argent pour acheter de la nourriture ?</td>
-</tr>
-</tbody>
-</table>
-<div id="version-papier-du-questionnaire-1" class="section level3">
-<h3><span class="header-section-number">5.2.1</span> Version papier du questionnaire</h3>
-<p>Voici le module standardisé en format Word :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnairerCSI.docx?raw=true">RBDstandardized_questionnairerCSI</a></p>
+<div id="génération-dune-matrice-intermédiaire" class="section level2">
+<h2><span class="header-section-number">10.2</span> Génération d’une matrice intermédiaire</h2>
+<div id="exemple-densemble-de-données-traitées" class="section level3">
+<h3><span class="header-section-number">10.2.1</span> Exemple d’ensemble de données traitées</h3>
+<p>Voici un exemple d’ensemble de données traitées :
+<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true">exampledataFrancais_processed</a></p>
 </div>
-<div id="version-électronique-du-questionnaire-1" class="section level3">
-<h3><span class="header-section-number">5.2.2</span> Version électronique du questionnaire</h3>
-<p>Voici le module standardisé en format xlsform :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnairerCSI.xlsx?raw=true">RBDstandardized_questionnairerCSI</a></p>
+<div id="syntaxe" class="section level3">
+<h3><span class="header-section-number">10.2.2</span> Syntaxe</h3>
+<p>Voici la syntaxe pour générer la matrice intermediare à partir de l’ensemble des données traitées :
+<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/matricemaker_FR.R?raw=true">matricemaker_FR</a></p>
+</div>
+<div id="exemple-de-matrice-intermediare" class="section level3">
+<h3><span class="header-section-number">10.2.3</span> Exemple de matrice intermediare</h3>
+<p>Voici un fichier zippé de l’exemple de matrice intermediare (.csv) généré à partir des processus ci-dessus :
+<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/matrice_intermediaire_direct_FR.zip?raw=true">matrice_intermediaire_direct_FR</a></p>
 </div>
 </div>
-<div id="calcul-de-lindicateur-rcsi" class="section level2">
-<h2><span class="header-section-number">5.3</span> Calcul de l’indicateur rCSI</h2>
-<div id="exemple-densemble-de-données-1" class="section level3">
-<h3><span class="header-section-number">5.3.1</span> Exemple d’ensemble de données</h3>
-<p>Voici l’exemple d’un ensemble de données brutes :<br />
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true">exampledataFrancais_raw</a></p>
-</div>
-<div id="spss-syntax-1" class="section level3">
-<h3><span class="header-section-number">5.3.2</span> SPSS Syntax</h3>
-<p>Voici le fichier de syntaxe SPSS :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps">RBDstandardized_SPSSsyntaxrCSI_FR</a></p>
-</div>
-<div id="r-syntax-1" class="section level3">
-<h3><span class="header-section-number">5.3.3</span> R Syntax</h3>
-<p>Voici le fichier de syntaxe R :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxrCSI_FR.R">RBDstandardized_RsyntaxrCSI_FR</a></p>
+<div id="dépannage-et-problèmes-connus" class="section level2">
+<h2><span class="header-section-number">10.3</span> Dépannage et problèmes connus</h2>
+<ul>
+<li>Si le pays n’a pas collecté tous les 5 indicateurs de sécurité alimentaire (FCS, HDDS, rCSI, HHS, LhCS) - les modules non collectés doivent être supprimés du code</li>
+<li>Si le niveau d’analyse se situe au niveau de l’administration 1 uniquement - alors les variables ADMIN2Name et ADMIN2Code doivent être supprimées du code</li>
+<li>Si l’ADMIN1Name et l’ADMIN2Name n’ont pas été collectés avec des géocodes (voir chapitre 2), le code devra être modifié</li>
+<li>Si la variable de poids n’est pas utilisée, alors “wt = WeightHH” doit être supprimé du code</li>
+</ul>
 
-</div>
 </div>
 </div>
             </section>
@@ -349,8 +313,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="léchelle-de-la-faim-dans-les-ménages-hhs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="rapport-de-contrôle-de-la-qualité-des-données.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="visualizing-ch-direct-food-security-indicators.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -381,7 +345,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/03-rCSI.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/08-CHmatrice.Rmd",
 "text": "Edit"
 },
 "history": {

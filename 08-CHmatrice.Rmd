@@ -1,32 +1,34 @@
-# Calculating Matrice Intermediare (direct food security data)
+# Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire)
 
-After survey teams have processed the data (cleaned, calculated indicators and added survey weights), then the R syntax below can be used to generate a .csv file of the Food Security Direct evidence that can be pasted into the matrice intermediare
+Après que les équipes d'enquête ont traité les données (nettoyage, calcul des indicateurs et ajout de poids d'enquête), la syntaxe R ci-dessous peut être utilisée pour générer un fichier .csv des preuves de Food Security Direct qui peut être collé dans la matrice intermediare
 
 ## Overview video 
 
 <iframe width="750" height="400" src="https://www.youtube.com/embed/MfELnjz2G8E" frameborder="0" allowfullscreen></iframe>
 
+*cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu'elle illustre les informations essentielles*
 
-## Generating Matrice Intermediare
+## Génération d'une matrice intermédiaire
 
-### Example processed data set
+### Exemple d'ensemble de données traitées
 
-Here is the example processed data set:
-[exampledataEnglish_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_processed.sav?raw=true) 
+Voici un exemple d'ensemble de données traitées :
+[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true) 
 
-### Syntax
+### Syntaxe
 
-Here is the syntax to generate the matrice intermediare from processed dataset:
-[matricemaker_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/matricemaker_EN.R?raw=true) 
+Voici la syntaxe pour générer la matrice intermediare à partir de l'ensemble des données traitées :
+[matricemaker_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/matricemaker_FR.R?raw=true) 
 
 
-### Example of matrice intermediare 
+### Exemple de matrice intermediare 
 
-Here is a zipped file of the example matrice intermediare (.csv) generated from processes above:
-[matrice_intermediaire_direct_en](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/matrice_intermediaire_direct_en.zip?raw=true) 
+Voici un fichier zippé de l'exemple de matrice intermediare (.csv) généré à partir des processus ci-dessus :
+[matrice_intermediaire_direct_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/matrice_intermediaire_direct_FR.zip?raw=true) 
 
-## Troubleshooting & Known issues
+## Dépannage et problèmes connus
 
-- If the country did not collect all the 5 Food Security Indicators (FCS, HDDS, rCSI, HHS, LhCS) - the modules not collected should be removed from the code 
-- If the level of analysis is at the Admin 1 level only - then the variables ADMIN2Name and ADMIN2Code should be removed from the code
-- If the ADMIN1Name and ADMIN2Name were not collected with geocodes (see Chapter 2) then the code will have to be modified 
+- Si le pays n'a pas collecté tous les 5 indicateurs de sécurité alimentaire (FCS, HDDS, rCSI, HHS, LhCS) - les modules non collectés doivent être supprimés du code 
+- Si le niveau d'analyse se situe au niveau de l'administration 1 uniquement - alors les variables ADMIN2Name et ADMIN2Code doivent être supprimées du code
+- Si l'ADMIN1Name et l'ADMIN2Name n'ont pas été collectés avec des géocodes (voir chapitre 2), le code devra être modifié 
+- Si la variable de poids n'est pas utilisée, alors "wt = WeightHH" doit être supprimé du code

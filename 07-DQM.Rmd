@@ -45,7 +45,7 @@ title: "Exemple de rapport de contrôle de la qualité des données"
 author: "PAM et partenaires"
 ```
 
-Cliquez sur le bouton `Knit1` et le rapport devrait se générer (cela peut prendre quelques minutes). 
+Cliquez sur le bouton `Knit` et le rapport devrait se générer (cela peut prendre quelques minutes). 
 
 
 Un fichier .html est produit dans le dossier de l'enquête - vous pouvez passer le curseur sur les chiffres pour obtenir plus d'informations.

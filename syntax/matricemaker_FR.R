@@ -7,7 +7,7 @@ library(openxlsx)
 library(tidyverse)
 
 #1 - import data and if it is SPSS convert values to labels - need to check later about how to use geocodes
-dataset <- read_sav("example_datasets/exampledataEnglish_processed.sav")
+dataset <- read_sav("example_datasets/exampledataFrancais_processed.sav")
 
 #2 - convert all variables to the labelled version - figure out how to split
 dataset <- dataset %>% mutate(ADMIN1Code = as.character(ADMIN1Name))
@@ -82,13 +82,13 @@ CH_FCSCat_table_wide <- dataset %>%
               values_fill = list(perc = 0)) %>%
   replace(., is.na(.), 0)  %>% mutate_if(is.numeric, round, 1) %>%
 #Apply the Cadre Harmonise rules for phasing the Food Consumption Groups
-  mutate(PoorBorderline = Poor + Borderline, FCG_finalphase = case_when(
-  Poor < 5 ~ 1,  #if less than 5% are in the poor food group then phase 1
-  Poor >= 20 ~ 4, #if 20% or more are in the poor food group then phase 4
-  between(Poor,5,10) ~ 2, #if % of people are between 5 and 10%  then phase2
-  between(Poor,10,20) & PoorBorderline < 30 ~ 2, #if % of people in poor food group are between 20 and 20% and the % of people who are in poor and borderline is less than 30 % then phase2
-  between(Poor,10,20) & PoorBorderline >= 30 ~ 3)) %>% #if % of people in poor food group are between 20 and 20% and the % of people who are in poor and borderline is less than 30 % then phase2
-  select(ADMIN1Name, ADMIN1Code, ADMIN2Name, ADMIN2Code, FCG_Poor = Poor, FCG_Borderline = Borderline, FCG_Acceptable = Acceptable, FCG_finalphase) #select only relevant variables and order in proper sequence
+  mutate(PoorBorderline = Pauvre + Limite, FCG_finalphase = case_when(
+  Pauvre < 5 ~ 1,  #if less than 5% are in the poor food group then phase 1
+  Pauvre >= 20 ~ 4, #if 20% or more are in the poor food group then phase 4
+  between(Pauvre,5,10) ~ 2, #if % of people are between 5 and 10%  then phase2
+  between(Pauvre,10,20) & PoorBorderline < 30 ~ 2, #if % of people in poor food group are between 20 and 20% and the % of people who are in poor and borderline is less than 30 % then phase2
+  between(Pauvre,10,20) & PoorBorderline >= 30 ~ 3)) %>% #if % of people in poor food group are between 20 and 20% and the % of people who are in poor and borderline is less than 30 % then phase2
+  select(ADMIN1Name, ADMIN1Code, ADMIN2Name, ADMIN2Code, FCG_Poor = Pauvre, FCG_Borderline = Limite, FCG_Acceptable = Acceptable, FCG_finalphase) #select only relevant variables and order in proper sequence
 
 
 #Household Dietary Diversity Score
@@ -136,14 +136,14 @@ CH_LhCSICat_table_wide <- dataset %>%
               values_fill = list(perc = 0)) %>%
   mutate_if(is.numeric, round, 1) %>%
 #Apply the Cadre Harmonise rules for phasing the Livelihood Coping Strategies
- mutate(stresscrisisemergency = StressStrategies + CrisisStrategies + EmergencyStrategies,
-    crisisemergency = CrisisStrategies + EmergencyStrategies,
+ mutate(stresscrisisemergency = StrategiesdeStress + StrategiesdeCrise + StrategiesdUrgence,
+    crisisemergency = StrategiesdeCrise + StrategiesdUrgence,
     LhHCSCat_finalphase = case_when(
-    EmergencyStrategies >= 20 ~ 4,
-    crisisemergency >= 20 & EmergencyStrategies < 20 ~ 3,
-    NoStrategies < 80 & crisisemergency < 20 ~ 2,
-    NoStrategies >= 80 ~ 1)) %>%
-    select(ADMIN1Name, ADMIN1Code, ADMIN2Name, ADMIN2Code, LhHCSCat_NoStrategies = NoStrategies, LhHCSCat_StressStrategies = StressStrategies, LhHCSCat_CrisisStategies = CrisisStrategies, LhHCSCat_EmergencyStrategies = EmergencyStrategies, LhHCSCat_finalphase)
+    StrategiesdUrgence >= 20 ~ 4,
+    StrategiesdeCrise >= 20 & StrategiesdUrgence < 20 ~ 3,
+    Pasdestrategies < 80 & StrategiesdeCrise < 20 ~ 2,
+    Pasdestrategies >= 80 ~ 1)) %>%
+    select(ADMIN1Name, ADMIN1Code, ADMIN2Name, ADMIN2Code, LhHCSCat_NoStrategies = Pasdestrategies, LhHCSCat_StressStrategies = StrategiesdeStress, LhHCSCat_CrisisStategies = StrategiesdeCrise, LhHCSCat_EmergencyStrategies = StrategiesdUrgence, LhHCSCat_finalphase)
 
 
 
@@ -154,7 +154,7 @@ matrice_intermediaire_direct <- left_join(CH_FCSCat_table_wide, CH_HDDS_table_wi
   left_join(CH_rCSI_table_wide, by = c("ADMIN1Name", "ADMIN1Code", "ADMIN2Name", "ADMIN2Code"))
 
 #export as csv file which can then be pasted into the matrice intermediare
-matrice_intermediaire_direct %>% write.csv("example_datasets/matrice_intermediaire_direct_en.csv")
+matrice_intermediaire_direct %>% write.csv("example_datasets/matrice_intermediaire_direct_fr.csv")
 
 
 
