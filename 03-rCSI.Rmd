@@ -37,11 +37,11 @@ Voici l'exemple d'un ensemble de données brutes :
 ### SPSS Syntax
 
 Voici le fichier de syntaxe SPSS : 
-[RBDstandardized_SPSSsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps?raw=true) 
+[RBDstandardized_SPSSsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps) 
 
 
 ### R Syntax
 
 Voici le fichier de syntaxe R : 
-[RBDstandardized_RsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI_FR.R?raw=true) 
+[RBDstandardized_RsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI_FR.R) 
 

@@ -3,7 +3,7 @@ library(labelled)
 library(tidyverse)
 
 #import dataset
-dataset <- read_sav("example_datasets/exampledataEng.sav")
+dataset <- read_sav("example_datasets/exampledataFrancais_raw.sav")
 
 #Calculate HHS
 dataset <- to_factor(dataset)

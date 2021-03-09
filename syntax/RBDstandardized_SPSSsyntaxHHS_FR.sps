@@ -1,5 +1,5 @@
 
-GET  FILE='exampledataFrancais.sav'.
+GET  FILE='exampledataFrancais_raw.sav'.
 DATASET NAME DataSet1 WINDOW=FRONT.
 
 *** recoder les questions de frequence en scores

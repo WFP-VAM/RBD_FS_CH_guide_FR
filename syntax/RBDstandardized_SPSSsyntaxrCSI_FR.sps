@@ -1,4 +1,4 @@
-GET  FILE='exampledataFrancais.sav'.
+GET  FILE='exampledataFrancais_raw.sav'.
 DATASET NAME DataSet1 WINDOW=FRONT.
 
 *** Calculer rCSI
@@ -6,7 +6,7 @@ DATASET NAME DataSet1 WINDOW=FRONT.
 compute rCSI = sum(rCSILessQlty,rCSIBorrow*2,rCSIMealSize,rCSIMealAdult*3,rCSIMealNb).
 Variable labels rCSI "rCSI".
 
-*** chaque ménage devrait avoir un rCSI entre 0 et 56
+*** chaque menage devrait avoir un rCSI entre 0 et 56
 
 FREQUENCIES VARIABLES =  rCSI
 /STATISTICS=MEAN MEDIAN MINIMUM MAXIMUM
