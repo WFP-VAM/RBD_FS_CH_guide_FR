@@ -25,12 +25,11 @@ setwd("C:/exampledq_monitoring_FR")
 #import dataset and call it "dataset"
 dataset <- read_sav("1_RawData/exampledataFrancais_raw.sav")
 
-#convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator
-dataset$EnumName <- to_character(dataset$EnumName)
-
 #convert into labels for all variables
 dataset <- to_factor(dataset)
 
+#change back to value to prevent showing operators name
+dataset$EnumName <- to_labelled(dataset$EnumName )
 
 #Survey Progress
 countsadm1table <- dataset %>% group_by(ADMIN1Name) %>%  count()

@@ -31,13 +31,6 @@ En outre, si le nom de la variable des enquêteurs n'est pas "EnumName", insére
 dataset <- dataset %>% rename(EnumName = OLDNAMEOFENUMERATORVARIABLE) 
 ```
 
-avant ce code :
-
-```{r, eval = F}
-#convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator
-dataset$EnumName <- to_character(dataset$EnumName)
-```
-
 Modifiez le `title` and `author` 
 
 ```{r, eval = F}
