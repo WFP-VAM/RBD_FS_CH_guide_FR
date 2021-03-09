@@ -14,7 +14,7 @@ dataset <- dataset %>% mutate(stress_coping = case_when(
   LhCSIStress3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
   LhCSIStress4 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
   TRUE ~ "Non"))
-var_label(dataset$stress_coping) <- "e ménage s'est-il engagé dans des stratégies  du stress ?"
+var_label(dataset$stress_coping) <- "le ménage s'est-il engagé dans des stratégies  du stress ?"
 
 #Crisis
 dataset <- dataset %>% mutate(crisis_coping = case_when(
