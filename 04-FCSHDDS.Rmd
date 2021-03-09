@@ -17,26 +17,26 @@ Le module ci-dessous vous permet de collecter et de calculer les indicateurs FCS
 ### Version papier du questionnaire
 
 Voici le module standardisé en format Word :
-[RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.docx?raw=true) 
+[RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.docx?raw=true) 
 
 ### Version électronique du questionnaire
 
 Voici le module standardisé sous xlsform :
-[RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.xlsx?raw=true)
+[RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.xlsx?raw=true)
 
 ## Calcul des indicateurs FCS et HDDS  
 
 ### Exemple d'ensemble de données
 
 Voici l'exemple d'un ensemble de données brutes :  
-[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 
 ### SPSS Syntax
 
 Voici le fichier de syntaxe SPSS : 
-[RBDStandardized_SPSSsyntaxFCSHDDS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_FR.sps) 
+[RBDStandardized_SPSSsyntaxFCSHDDS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_FR.sps) 
 
 ### R Syntax
 
 Voici le fichier de syntaxe R : 
-[RBDstandardized_RsyntaxFCSHDDS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS_FR.R) 
+[RBDstandardized_RsyntaxFCSHDDS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS_FR.R) 
