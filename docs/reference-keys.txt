@@ -43,7 +43,7 @@ calcul-des-indicateurs-fcs-et-hdds
 exemple-densemble-de-données-2
 spss-syntax-2
 r-syntax-2
-stratégie-dapaption-aux-moyens-dexistence-lhcs
+stratégie-dadaption-aux-moyens-dexistence-lhcs
 références-ressources-3
 module-cari-léger-standardisé
 version-papier-du-questionnaire-3

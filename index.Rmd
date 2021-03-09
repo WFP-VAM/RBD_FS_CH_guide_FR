@@ -1,5 +1,5 @@
 --- 
-title: "Guide pour la collecte, le traitement et la visualisation normalisés des indicateurs de sécurité alimentaire du Cadre harmonisé"
+title: "Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé"
 author:
   - Research, Assesment and Monitoring (RAM) Unit
   - Bureau régional pour l'Afrique de l'Ouest et du Centre, Programme Alimentaire Mondial

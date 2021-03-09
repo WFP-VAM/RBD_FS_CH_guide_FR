@@ -1,4 +1,4 @@
-# Stratégie d’apaption aux moyens d’existence  (LHCS)
+# Stratégie d’adaption aux moyens d’existence  (LHCS)
 
 Les ressources suivantes illustrent comment collecter et calculer la version légère CARI du module Stratégie d'adaptation aux moyens d'existence.
 
