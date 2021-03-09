@@ -53,13 +53,13 @@ Voici l'exemple d'un ensemble de données brutes :
 
 Voici le fichier de syntaxe SPSS : 
 
-[RBDstandardized_SPSSsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_FR.sps?raw=true) 
+[RBDstandardized_SPSSsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_FR.sps) 
 
 ### R Syntax
 
 Voici le fichier de syntaxe SPSS :  
 
-[RBDstandardized_RsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI_FR.R?raw=true) 
+[RBDstandardized_RsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI_FR.R) 
 
 ## Module standardisé de stratégie d'adaptation aux moyens d'existence de l'ENA
 
