@@ -3,9 +3,9 @@ library(labelled)
 library(tidyverse)
 
 #import dataset
-dataset <- read_sav("example_datasets/exampledataEnglish_raw.sav")
+dataset <- read_sav("example_datasets/exampledataFrancais_raw.sav")
 
-#2 - convert all variables to the labelled version - but first create ADMINCodes
+#2 - convertir toutes les variables à la version étiquetée - mais créer d'abord des ADMINCodes
 dataset <- dataset %>% mutate(ADMIN1Code = as.character(ADMIN1Name))
 dataset <- dataset %>% mutate(ADMIN2Code = as.character(ADMIN2Name))
 dataset <- to_factor(dataset)

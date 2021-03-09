@@ -86,3 +86,7 @@ overview-video-2
 example-processed-data-set-1
 example-shapefiles-1
 syntax-2
+questionnaire-combiné-syntaxes-pour-les-5-indicateurs
+version-papier-du-questionnaire-5
+version-électronique-du-questionnaire-5
+example-data-set-2

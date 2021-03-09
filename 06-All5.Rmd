@@ -1,38 +1,40 @@
-# Combined Questionnaire & Syntaxes for all 5 indicators
+# Questionnaire combiné & Syntaxes pour les 5 indicateurs
 
-Chapters 4 through 7, presented the questionnaires and syntax by indicator.  The resources below contain qeustions and syntax for all 5 food security direct evidence indicators as well as standardized geographic questions.
+Les chapitres 4 à 7 présentent les questionnaires et la syntaxe par indicateur.  Les ressources ci-dessous contiennent les questions et la syntaxe pour les 5 indicateurs de preuve directe de la sécurité alimentaire ainsi que des questions géographiques standardisées.
 
-### Paper Version of Questionnaire
+### Version papier du questionnaire
 
-Here are the standardized modules in word format:
+Voici le module standardisé en format Word :
 
-[RBDstandardized_questionnairecombined_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairecombined_EN.docx?raw=true?raw=true) 
+[RBDstandardized_questionnairecombined_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnairecombined_FR.docx?raw=true?raw=true) 
 
-### Electronic Version of Questionnaire
+### Version électronique du questionnaire
 
-Here are standardized modules in xlsform:
+Voici le module standardisé sous xlsform :
 
-[RBDstandardized_questionnairecombined_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnairecombined_EN.xlsx?raw=true) 
+[RBDstandardized_questionnairecombined_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnairecombined_FR.xlsx?raw=true) 
 
 ### Example data set
 
-Here is the example raw data set:
+### Example data set
 
-[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
+Voici l'exemple d'un ensemble de données brutes :  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
+
 
 ### SPSS Syntax
 
-Here is the combined SPSS syntax file for calculating the 5 indicators: 
+Voici le fichier syntaxique SPSS combiné pour le calcul des 5 indicateurs : 
 
-[RBDstandardized_Rsyntaxcombined_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_Rsyntaxcombined_EN.sps?raw=true) 
+[RBDstandardized_Rsyntaxcombined_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_Rsyntaxcombined_FR.sps) 
 
 *Note - still looking for a way to create  ADMIN1Code & ADMIN2Code variables from the variables ADMIN1Name & ADMIN2Name in SPSS*
 
 
 ### R Syntax
 
-Here is the combined R syntax file for calculating the 5 indicators: 
+Voici le fichier syntaxique R combiné pour le calcul des 5 indicateurs : 
 
-[RBDstandardized_Rsyntaxcombined_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_Rsyntaxcombined_EN.R?raw=true) 
+[RBDstandardized_Rsyntaxcombined_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_Rsyntaxcombined_FR.R) 
 
-*Note - R code above creates the variables ADMIN1Code & ADMIN2Code from the variables ADMIN1Name & ADMIN2Name*
+*Note - Le code R ci-dessus crée les variables ADMIN1Code & ADMIN2Code à partir des variables ADMIN1Name & ADMIN2Name*
