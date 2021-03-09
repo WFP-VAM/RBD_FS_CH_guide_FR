@@ -1,75 +1,81 @@
-# Livelihood Coping Strategies
+# Stratégie d’apaption aux moyens d’existence  (LHCS)
 
-The following resources illustrate how to collect and calculate the CARI light version of the Livelihood Coping Strategy Module.
+Les ressources suivantes illustrent comment collecter et calculer la version légère CARI du module Stratégie d'adaptation aux moyens d'existence.
 
-Users can substitute the stress, crisis and emergency coping strategy strategies according to their context , preferably from the standard list of strategies on page 47 of the CARI Manual (below). 
+Les utilisateurs peuvent substituer les stratégies d'adaptation au stress, aux crises et aux situations d'urgence en fonction de leur contexte, de préférence à partir de la liste standard de stratégies de la page 47 du manuel CARI (ci-dessous). 
 
-## References / Resources
+## Références / Ressources
 
 1.  CARI Manual - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
 
-2.  ENA Guidelines - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
+2.  ENA Guidelines - https://docs.wfp.org/api/documents/WFP-0000074197/download/
 
-## Standardized Light CARI Module 
+*Les versions actualisées des références ne sont pas encore disponibles en français*
 
-Variable Name | Question Label | Answer Choices
+
+## Module CARI léger standardisé 
+
+Nom de la variable | Etiquette des questions | Choix des réponses
 ---- | ------------- |------- 
-LhCSIStress1 | During the past 30 days, did anyone in your household have to: *Sell household assets/goods  radio, furniture, refrigerator, television, jewelry etc..)* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSIStress2 | During the past 30 days, did anyone in your household have to: *sell more animals (non-productive) than usual* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSIStress3 | During the past 30 days, did anyone in your household have to: *spend savings* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSIStress4 | During the past 30 days, did anyone in your household have to: *Borrow money / food  from a formal lender / bank* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSICrisis1 | During the past 30 days, did anyone in your household have to: *Reduce non-food expenses on health (including drugs) and education * due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSICrisis2 | During the past 30 days, did anyone in your household have to: *sell productive assets or means of transport (sewing machine, wheelbarrow, bicycle, car, etc..)* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSICrisis3 | During the past 30 days, did anyone in your household have to: *withdraw children from school* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSIEmergency1 | During the past 30 days, did anyone in your household have to: *sell house or land* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSIEmergency2 | During the past 30 days, did anyone in your household have to: *sell last female animals* due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
-LhCSIEmergency3 | During the past 30 days, did anyone in your household have to: *beg * due to a lack of food or a lack of money to buy food? | 1) No, because I did not face a shortage of food 2) No; because I already sold those assets or did this activity in the last 12 months and cannot continue to do it 3) Yes 4) Not applicable
+LhCSIStress1 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *vendre des actifs/biens non productifs du ménage (radio, meuble, réfrigérateur, télévision, bijoux etc.)* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSIStress2 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Vendre plus d’animaux (non-productifs) que d’habitude* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ?  | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSIStress3 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Dépenser l’épargne* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSIStress4 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Emprunter de l’argent / nourriture auprès d’un prêteur formel /banque* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSICrisis1 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Réduire les dépenses non alimentaires essentielles telles que l’éducation, la santé (dont de médicaments)* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSICrisis2 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Vendre des biens productifs ou des moyens de transport (machine à coudre, brouette, vélo, car, etc.)* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSICrisis3 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Retirer les enfants de l’école* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSIEmergency1 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Vendre la maison ou du terrain* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSIEmergency2 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Mendier* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
+LhCSIEmergency3 | Au cours des 30 derniers jours, est ce qu’ un membre de votre ménage a du *Vendre les derniers animaux femelles* en raison d'un manque de nourriture ou d'argent pour acheter de la nourriture ? | 1) Non, je n'ai pas été confronté à une insuffisance de nourriture 2) Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire 3)  Oui 4) Non applicable
 
-### Paper Version of Questionnaire
+### Version papier du questionnaire
 
-Here is the standardized module in word format:
+Voici le module standardisé en format Word :
 
 [RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.docx?raw=true) 
 
-### Electronic Version of Questionnaire
+### Version électronique du questionnaire
 
-Here is the standardized module in xlsform:
+Voici le module standardisé sous xlsform :
 
 [RBDstandardized_questionnaireLHCS_CARI](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_CARI.xlsx?raw=true) 
 
+
+## Calcul de indicateur LHCS
+
 ### Example data set
 
-Here is the example data set:
+Voici l'exemple d'un ensemble de données brutes :  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 
-[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
 
 ### SPSS Syntax
 
-Here is the SPSS syntax file:
+Voici le fichier de syntaxe SPSS : 
 
-[RBDstandardized_SPSSsyntaxLHCS_CARI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_EN.sps?raw=true) 
+[RBDstandardized_SPSSsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxLHCS_CARI_FR.sps?raw=true) 
 
 ### R Syntax
 
-Here is the R syntax file: 
+Voici le fichier de syntaxe SPSS :  
 
-[RBDstandardized_RsyntaxLHCS_CARI_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI_EN.R?raw=true) 
+[RBDstandardized_RsyntaxLHCS_CARI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxLHCS_CARI_FR.R?raw=true) 
 
-## Standardized ENA Livehihood Coping Strategy Module
+## Module standardisé de stratégie d'adaptation aux moyens d'existence de l'ENA
 
-### Paper Version of Questionnaire
+### Version papier du questionnaire
 
-Here is the standardized module in word format:
+Voici le module standardisé en format Word :
 
 [RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.docx?raw=true) 
 
-### Electronic Version of Questionnaire
+### Version électronique du questionnaire
 
-Here is the standardized module in xlsform:
+Voici le module standardisé sous xlsform :
 
 [RBDstandardized_questionnaireLHCS_ENA](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireLHCS_ENA.xlsx?raw=true) 
 
 
-### Example Data & Syntax
+### Exemple de données et de syntaxe
 
-Example data and syntax for ENA version of the livelihood coping strategies is forthcoming.
+Des exemples de données et de syntaxe pour la version ENA des stratégies d'adaptation des moyens de subsistance sont à venir.

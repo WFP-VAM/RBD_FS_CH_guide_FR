@@ -4,6 +4,8 @@
 
 https://docs.wfp.org/api/documents/WFP-0000107746/download/
 
+*ci-dessus est l'ancienne version du manuel CARI mais la section rCSI est toujours valable*
+
 ## Questionnaire standardisé
 
 Nom de la variable  | Etiquette des questions
@@ -34,12 +36,12 @@ Voici l'exemple d'un ensemble de données brutes :
 
 ### SPSS Syntax
 
-Here is the SPSS syntax file: 
+Voici le fichier de syntaxe SPSS : 
 [RBDstandardized_SPSSsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_SPSSsyntaxrCSI_FR.sps?raw=true) 
 
 
 ### R Syntax
 
-Here is the R syntax file: 
+Voici le fichier de syntaxe R : 
 [RBDstandardized_RsyntaxrCSI_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxrCSI_FR.R?raw=true) 
 

@@ -1,41 +1,42 @@
-# Food Consumption Score & Household Dietary Diversity
+# Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG & HDDS)
 
-The module below allows you to collect and calculate FCS, FCS-N and HDDS indicators.
+Le module ci-dessous vous permet de collecter et de calculer les indicateurs FCS/FCG, FCS-N et HDDS.
 
-## References / Resources
+## Références / Ressources
 
 1.  FCS - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf
 
 2.  FCS_N - https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp277333.pdf
 
-3.  HDDS - http://www.fao.org/fileadmin/user_upload/wa_workshop/docs/FAO-guidelines-dietary-diversity2011.pdf
+3.  HDDS - http://www.fao.org/3/i1983f/i1983f.pdf
 
-## Standardized Questionnaire
+*Les versions actualisées des références FCS/FCG et FCS-N ne sont pas encore disponibles en français*
 
-### Paper Version of Questionnaire
+## Questionnaire standardisé
 
-Here is the standardized module in word format:
+### Version papier du questionnaire
+
+Voici le module standardisé en format Word :
 [RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.docx?raw=true) 
 
-### Electronic Version of Questionnaire
+### Version électronique du questionnaire
 
-Here is the standardized module in xlsform:
+Voici le module standardisé sous xlsform :
 [RBDstandardized_questionnaireFCSHDDS](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.xlsx?raw=true)
 
-## Calculation of FCS & HDDS Indicators  
+## Calcul des indicateurs FCS et HDDS  
 
-### Example data set
+### Exemple d'ensemble de données
 
-Here is the example data set:
-[exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav?raw=true) 
-
+Voici l'exemple d'un ensemble de données brutes :  
+[exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 
 ### SPSS Syntax
 
-Here is the SPSS syntax file: 
-[RBDStandardized_SPSSsyntaxFCSHDDS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_EN.sps?raw=true) 
+Voici le fichier de syntaxe SPSS : 
+[RBDStandardized_SPSSsyntaxFCSHDDS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_FR.sps?raw=true) 
 
 ### R Syntax
 
-Here is the R syntax file: 
-[RBDstandardized_RsyntaxFCSHDDS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS_EN.R?raw=true) 
+Voici le fichier de syntaxe R : 
+[RBDstandardized_RsyntaxFCSHDDS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS_FR.R?raw=true) 
