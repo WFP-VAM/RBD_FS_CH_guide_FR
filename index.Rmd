@@ -20,27 +20,27 @@ Ce guide présente des outils standardisés pour la collecte, le traitement, l'a
 
 ### Un bref aperçu des chapitres de ce guide :
 
-[Chapter 2 Setting up R & Rstudio](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/setting-up-r-rstudio.html) comment installer le logiciel R & Rstudio, comment ajouter les packages nécessaires et un aperçu sur Rmarkdown (utilisé pour générer des rapports).
+[Chapter 2 Mise en place de la R & Rstudio](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/mise-en-place-de-la-r-rstudio.html) comment installer le logiciel R & Rstudio, comment ajouter les packages nécessaires et un aperçu sur Rmarkdown (utilisé pour générer des rapports).
 
 [Chapter 3 Gecodes](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/gecodes.html) explique comment/pourquoi utiliser les géocodes dans la collecte de données (xlsforms) pour accélérer la cartographie et le traitement des données.
 
-[Chapter 4 Household Hunger Scale](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/household-hunger-scale.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul de l'indicateur de l'échelle de la faim dans les ménages.
+[Chapter 4 L’échelle de la faim dans les ménages (HHS)](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/l%C3%A9chelle-de-la-faim-dans-les-m%C3%A9nages-hhs.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul de l'indicateur de l'échelle de la faim dans les ménages.
 
-[Chapter 5 reduced Coping Strategy Index](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/reduced-coping-strategy-index.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul de l'indicateur réduit de l'indice de stratégie d'adaptation.
+[Chapter 5 L’indice réduit des stratégies de survie (rCSI)](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/lindice-r%C3%A9duit-des-strat%C3%A9gies-de-survie-rcsi.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul de l'indicateur réduit de l'indice de stratégie d'adaptation.
 
-[Chapter 6 Food Consumption Score & Household Dietary Diversity](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/food-consumption-score-household-dietary-diversity.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul des indicateurs Score/Groupes de consommation alimentaire et Score de diversité alimentaire des ménages.
+[Chapter 6 Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG & HDDS)](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/scoregroupes-de-consommation-alimentaire-et-score-de-diversit%C3%A9-alimentaire-des-m%C3%A9nages-fcsfcg-hdds.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul des indicateurs Score/Groupes de consommation alimentaire et Score de diversité alimentaire des ménages.
 
-[Chapter 7 Livelihood Coping Strategies](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/livelihood-coping-strategies.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul de la stratégie d'adaptation maximale utilisée pour la version légère CARI et la version ENA du module "Livelihood Coping Strategies".
+[Chapter 7 Stratégie d’adaption aux moyens d’existence (LHCS)](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/strat%C3%A9gie-dadaption-aux-moyens-dexistence-lhcs.html) versions papier et électronique du questionnaire standardisé et de la syntaxe SPSS/R pour le calcul de la stratégie d'adaptation maximale utilisée pour la version légère CARI et la version ENA du module "Livelihood Coping Strategies".
 
-[Chapter 8 Combined Questionnaire & Syntaxes for all 5 indicators](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/combined-questionnaire-syntaxes-for-all-5-indicators.html) combine les questionnaires et les syntaxes des chapitres 4 à 7.
+[Chapter 8 Questionnaire combiné & Syntaxes pour les 5 indicateurs](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/questionnaire-combin%C3%A9-syntaxes-pour-les-5-indicateurs.html) combine les questionnaires et les syntaxes des chapitres 4 à 7.
 
-[Chapter 9 Data Quality Monitoring Report](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/data-quality-monitoring-report.html) fournit des instructions et la syntaxe R pour un rapport de contrôle de la qualité des données, en utilisant des données d'enquête brutes.
+[Chapter 9 Rapport de contrôle de la qualité des données](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/rapport-de-contr%C3%B4le-de-la-qualit%C3%A9-des-donn%C3%A9es.html) fournit des instructions et la syntaxe R pour un rapport de contrôle de la qualité des données, en utilisant des données d'enquête brutes.
 
-[Chapter 10 Calculating Matrice Intermediare](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/calculating-matrice-intermediare-direct-food-security-data.html) fournit des instructions et une syntaxe R pour produire, à partir d'un fichier spss traité, les indicateurs directs de sécurité alimentaire et les géocodes qui peuvent être copiés dans la matrice intermediare.
+[Chapter 10 Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire)](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/calcul-de-la-matrice-interm%C3%A9diaire-preuve-donn%C3%A9es-directes-sur-la-s%C3%A9curit%C3%A9-alimentaire.html) fournit des instructions et une syntaxe R pour produire, à partir d'un fichier spss traité, les indicateurs directs de sécurité alimentaire et les géocodes qui peuvent être copiés dans la matrice intermediare.
 fournit des instructions et la syntaxe R pour un rapport de contrôle de la qualité des données, en utilisant des données d'enquête brutes.
 
 
-[Chapter 11 Visualizing CH Direct Food security Indicators](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/visualizing-ch-direct-food-security-indicators.html) fournit des instructions et une syntaxe R pour visualiser les cartes et les tableaux de la mise en phase des indicateurs de preuve directe de la CH à partir de la matrice intermediare ou d'un ensemble de données traitées. 
+[Chapter 11 Visualisation des indicateurs directs de la sécurité alimentaire de CH Indicators](https://wfp-vam.github.io/RBD_FS_CH_guide_FR/visualisation-des-indicateurs-directs-de-la-s%C3%A9curit%C3%A9-alimentaire-de-ch.html) fournit des instructions et une syntaxe R pour visualiser les cartes et les tableaux de la mise en phase des indicateurs de preuve directe de la CH à partir de la matrice intermediare ou d'un ensemble de données traitées. 
 
 ### À propos des logiciels
 
@@ -54,7 +54,7 @@ Pour ce guide, deux ensembles de données "semi-fictives" ont été créés en s
 
 [exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true) - est ce à quoi devrait ressembler un ensemble de données "brutes" lorsqu'elles sont collectées avec des modules standardisés et téléchargées à partir d'un serveur ODK au format spss.
 
-[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true) - est ce à quoi devrait ressembler une "donnée traitée" lorsqu'on applique une syntaxe normalisée pour calculer des indicateurs et ajouter des poids d'enquête. 
+[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true) - est ce à quoi devrait ressembler une "donnée traitée" lorsqu'on applique une syntaxe normalisée pour calculer des indicateurs et ajouter des ponderation. 
 
 ### À propos des questionnaires et des noms de variables
 
