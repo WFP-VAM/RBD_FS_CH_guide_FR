@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 2 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
-  <meta name="description" content="Chapter 2 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <title>Chapter 3 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
+  <meta name="description" content="Chapter 3 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 2 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta property="og:title" content="Chapter 3 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 2 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta name="twitter:title" content="Chapter 3 Gecodes | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   
   
   
@@ -33,7 +33,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="index.html"/>
+<link rel="prev" href="mise-en-place-de-la-r-rstudio.html"/>
 <link rel="next" href="léchelle-de-la-faim-dans-les-ménages-hhs.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -55,6 +55,70 @@
 <script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
 
 
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
@@ -79,109 +143,111 @@
 <li class="chapter" data-level="1.0.4" data-path="index.html"><a href="index.html#à-propos-des-questionnaires-et-des-noms-de-variables"><i class="fa fa-check"></i><b>1.0.4</b> À propos des questionnaires et des noms de variables</a></li>
 <li class="chapter" data-level="1.0.5" data-path="index.html"><a href="index.html#à-propos-du-style-de-programmation"><i class="fa fa-check"></i><b>1.0.5</b> À propos du style de programmation</a></li>
 <li class="chapter" data-level="1.0.6" data-path="index.html"><a href="index.html#un-dernier-mot-sur---proposer-des-solutions-et-des-suggestions"><i class="fa fa-check"></i><b>1.0.6</b> Un dernier mot sur - Proposer des solutions et des suggestions</a></li>
-<li class="chapter" data-level="1.1" data-path="index.html"><a href="index.html#installation-de-r-rstudio"><i class="fa fa-check"></i><b>1.1</b> Installation de R &amp; Rstudio</a><ul>
-<li class="chapter" data-level="1.1.1" data-path="index.html"><a href="index.html#r"><i class="fa fa-check"></i><b>1.1.1</b> R</a></li>
-<li class="chapter" data-level="1.1.2" data-path="index.html"><a href="index.html#rstudio"><i class="fa fa-check"></i><b>1.1.2</b> RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="1.2" data-path="index.html"><a href="index.html#installation-des-packages"><i class="fa fa-check"></i><b>1.2</b> Installation des packages</a></li>
-<li class="chapter" data-level="1.3" data-path="index.html"><a href="index.html#utilisation-de-rmarkdown"><i class="fa fa-check"></i><b>1.3</b> Utilisation de Rmarkdown</a></li>
+<li class="chapter" data-level="2" data-path="mise-en-place-de-la-r-rstudio.html"><a href="mise-en-place-de-la-r-rstudio.html"><i class="fa fa-check"></i><b>2</b> Mise en place de la R &amp; Rstudio</a><ul>
+<li class="chapter" data-level="2.1" data-path="mise-en-place-de-la-r-rstudio.html"><a href="mise-en-place-de-la-r-rstudio.html#installation-de-r-rstudio"><i class="fa fa-check"></i><b>2.1</b> Installation de R &amp; Rstudio</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="mise-en-place-de-la-r-rstudio.html"><a href="mise-en-place-de-la-r-rstudio.html#r"><i class="fa fa-check"></i><b>2.1.1</b> R</a></li>
+<li class="chapter" data-level="2.1.2" data-path="mise-en-place-de-la-r-rstudio.html"><a href="mise-en-place-de-la-r-rstudio.html#rstudio"><i class="fa fa-check"></i><b>2.1.2</b> RStudio</a></li>
 </ul></li>
-<li class="chapter" data-level="2" data-path="gecodes.html"><a href="gecodes.html"><i class="fa fa-check"></i><b>2</b> Gecodes</a><ul>
-<li class="chapter" data-level="2.1" data-path="gecodes.html"><a href="gecodes.html#un-exemple-simple-du-problème"><i class="fa fa-check"></i><b>2.1</b> Un exemple simple du problème :</a></li>
-<li class="chapter" data-level="2.2" data-path="gecodes.html"><a href="gecodes.html#où-trouver-les-codes-pcodes-et-plus-de-détails"><i class="fa fa-check"></i><b>2.2</b> Où trouver les codes Pcodes et plus de détails</a></li>
-<li class="chapter" data-level="2.3" data-path="gecodes.html"><a href="gecodes.html#exemple-densemble-de-données-de-la-fiche-de-collecte-de-données-pour-le-nigeria"><i class="fa fa-check"></i><b>2.3</b> Exemple d’ensemble de données de la fiche de collecte de données pour le Nigeria :</a></li>
-<li class="chapter" data-level="2.4" data-path="gecodes.html"><a href="gecodes.html#caveats"><i class="fa fa-check"></i><b>2.4</b> 2 caveats</a></li>
+<li class="chapter" data-level="2.2" data-path="mise-en-place-de-la-r-rstudio.html"><a href="mise-en-place-de-la-r-rstudio.html#installation-des-packages"><i class="fa fa-check"></i><b>2.2</b> Installation des packages</a></li>
+<li class="chapter" data-level="2.3" data-path="mise-en-place-de-la-r-rstudio.html"><a href="mise-en-place-de-la-r-rstudio.html#utilisation-de-rmarkdown"><i class="fa fa-check"></i><b>2.3</b> Utilisation de Rmarkdown</a></li>
 </ul></li>
-<li class="chapter" data-level="3" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html"><i class="fa fa-check"></i><b>3</b> L’échelle de la faim dans les ménages (HHS)</a><ul>
-<li class="chapter" data-level="3.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#références-ressources"><i class="fa fa-check"></i><b>3.1</b> Références / Ressources</a></li>
-<li class="chapter" data-level="3.2" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#questionnaire-standardisé"><i class="fa fa-check"></i><b>3.2</b> Questionnaire standardisé</a><ul>
-<li class="chapter" data-level="3.2.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#version-papier-du-questionnaire"><i class="fa fa-check"></i><b>3.2.1</b> Version papier du questionnaire</a></li>
-<li class="chapter" data-level="3.2.2" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#version-électronique-du-questionnaire"><i class="fa fa-check"></i><b>3.2.2</b> Version électronique du questionnaire</a></li>
+<li class="chapter" data-level="3" data-path="gecodes.html"><a href="gecodes.html"><i class="fa fa-check"></i><b>3</b> Gecodes</a><ul>
+<li class="chapter" data-level="3.1" data-path="gecodes.html"><a href="gecodes.html#un-exemple-simple-du-problème"><i class="fa fa-check"></i><b>3.1</b> Un exemple simple du problème :</a></li>
+<li class="chapter" data-level="3.2" data-path="gecodes.html"><a href="gecodes.html#où-trouver-les-codes-pcodes-et-plus-de-détails"><i class="fa fa-check"></i><b>3.2</b> Où trouver les codes Pcodes et plus de détails</a></li>
+<li class="chapter" data-level="3.3" data-path="gecodes.html"><a href="gecodes.html#exemple-densemble-de-données-de-la-fiche-de-collecte-de-données-pour-le-nigeria"><i class="fa fa-check"></i><b>3.3</b> Exemple d’ensemble de données de la fiche de collecte de données pour le Nigeria :</a></li>
+<li class="chapter" data-level="3.4" data-path="gecodes.html"><a href="gecodes.html#caveats"><i class="fa fa-check"></i><b>3.4</b> 2 caveats</a></li>
 </ul></li>
-<li class="chapter" data-level="3.3" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#calcul-de-lindicateur-hhs"><i class="fa fa-check"></i><b>3.3</b> Calcul de l’indicateur HHS</a><ul>
-<li class="chapter" data-level="3.3.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#exemple-densemble-de-données"><i class="fa fa-check"></i><b>3.3.1</b> Exemple d’ensemble de données</a></li>
-<li class="chapter" data-level="3.3.2" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#spss-syntax"><i class="fa fa-check"></i><b>3.3.2</b> SPSS Syntax</a></li>
-<li class="chapter" data-level="3.3.3" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#r-syntax"><i class="fa fa-check"></i><b>3.3.3</b> R Syntax</a></li>
+<li class="chapter" data-level="4" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html"><i class="fa fa-check"></i><b>4</b> L’échelle de la faim dans les ménages (HHS)</a><ul>
+<li class="chapter" data-level="4.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#références-ressources"><i class="fa fa-check"></i><b>4.1</b> Références / Ressources</a></li>
+<li class="chapter" data-level="4.2" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#questionnaire-standardisé"><i class="fa fa-check"></i><b>4.2</b> Questionnaire standardisé</a><ul>
+<li class="chapter" data-level="4.2.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#version-papier-du-questionnaire"><i class="fa fa-check"></i><b>4.2.1</b> Version papier du questionnaire</a></li>
+<li class="chapter" data-level="4.2.2" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#version-électronique-du-questionnaire"><i class="fa fa-check"></i><b>4.2.2</b> Version électronique du questionnaire</a></li>
 </ul></li>
-</ul></li>
-<li class="chapter" data-level="4" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html"><i class="fa fa-check"></i><b>4</b> L’indice réduit des stratégies de survie (rCSI)</a><ul>
-<li class="chapter" data-level="4.1" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#références-ressources-1"><i class="fa fa-check"></i><b>4.1</b> Références / Ressources</a></li>
-<li class="chapter" data-level="4.2" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#questionnaire-standardisé-1"><i class="fa fa-check"></i><b>4.2</b> Questionnaire standardisé</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#version-papier-du-questionnaire-1"><i class="fa fa-check"></i><b>4.2.1</b> Version papier du questionnaire</a></li>
-<li class="chapter" data-level="4.2.2" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#version-électronique-du-questionnaire-1"><i class="fa fa-check"></i><b>4.2.2</b> Version électronique du questionnaire</a></li>
-</ul></li>
-<li class="chapter" data-level="4.3" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#calcul-de-lindicateur-rcsi"><i class="fa fa-check"></i><b>4.3</b> Calcul de l’indicateur rCSI</a><ul>
-<li class="chapter" data-level="4.3.1" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#exemple-densemble-de-données-1"><i class="fa fa-check"></i><b>4.3.1</b> Exemple d’ensemble de données</a></li>
-<li class="chapter" data-level="4.3.2" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#spss-syntax-1"><i class="fa fa-check"></i><b>4.3.2</b> SPSS Syntax</a></li>
-<li class="chapter" data-level="4.3.3" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#r-syntax-1"><i class="fa fa-check"></i><b>4.3.3</b> R Syntax</a></li>
+<li class="chapter" data-level="4.3" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#calcul-de-lindicateur-hhs"><i class="fa fa-check"></i><b>4.3</b> Calcul de l’indicateur HHS</a><ul>
+<li class="chapter" data-level="4.3.1" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#exemple-densemble-de-données"><i class="fa fa-check"></i><b>4.3.1</b> Exemple d’ensemble de données</a></li>
+<li class="chapter" data-level="4.3.2" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#spss-syntax"><i class="fa fa-check"></i><b>4.3.2</b> SPSS Syntax</a></li>
+<li class="chapter" data-level="4.3.3" data-path="léchelle-de-la-faim-dans-les-ménages-hhs.html"><a href="léchelle-de-la-faim-dans-les-ménages-hhs.html#r-syntax"><i class="fa fa-check"></i><b>4.3.3</b> R Syntax</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><i class="fa fa-check"></i><b>5</b> Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS)</a><ul>
-<li class="chapter" data-level="5.1" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#références-ressources-2"><i class="fa fa-check"></i><b>5.1</b> Références / Ressources</a></li>
-<li class="chapter" data-level="5.2" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#questionnaire-standardisé-2"><i class="fa fa-check"></i><b>5.2</b> Questionnaire standardisé</a><ul>
-<li class="chapter" data-level="5.2.1" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#version-papier-du-questionnaire-2"><i class="fa fa-check"></i><b>5.2.1</b> Version papier du questionnaire</a></li>
-<li class="chapter" data-level="5.2.2" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#version-électronique-du-questionnaire-2"><i class="fa fa-check"></i><b>5.2.2</b> Version électronique du questionnaire</a></li>
+<li class="chapter" data-level="5" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html"><i class="fa fa-check"></i><b>5</b> L’indice réduit des stratégies de survie (rCSI)</a><ul>
+<li class="chapter" data-level="5.1" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#références-ressources-1"><i class="fa fa-check"></i><b>5.1</b> Références / Ressources</a></li>
+<li class="chapter" data-level="5.2" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#questionnaire-standardisé-1"><i class="fa fa-check"></i><b>5.2</b> Questionnaire standardisé</a><ul>
+<li class="chapter" data-level="5.2.1" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#version-papier-du-questionnaire-1"><i class="fa fa-check"></i><b>5.2.1</b> Version papier du questionnaire</a></li>
+<li class="chapter" data-level="5.2.2" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#version-électronique-du-questionnaire-1"><i class="fa fa-check"></i><b>5.2.2</b> Version électronique du questionnaire</a></li>
 </ul></li>
-<li class="chapter" data-level="5.3" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#calcul-des-indicateurs-fcs-et-hdds"><i class="fa fa-check"></i><b>5.3</b> Calcul des indicateurs FCS et HDDS</a><ul>
-<li class="chapter" data-level="5.3.1" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#exemple-densemble-de-données-2"><i class="fa fa-check"></i><b>5.3.1</b> Exemple d’ensemble de données</a></li>
-<li class="chapter" data-level="5.3.2" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#spss-syntax-2"><i class="fa fa-check"></i><b>5.3.2</b> SPSS Syntax</a></li>
-<li class="chapter" data-level="5.3.3" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#r-syntax-2"><i class="fa fa-check"></i><b>5.3.3</b> R Syntax</a></li>
-</ul></li>
-</ul></li>
-<li class="chapter" data-level="6" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><i class="fa fa-check"></i><b>6</b> Stratégie d’adaption aux moyens d’existence (LHCS)</a><ul>
-<li class="chapter" data-level="6.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#références-ressources-3"><i class="fa fa-check"></i><b>6.1</b> Références / Ressources</a></li>
-<li class="chapter" data-level="6.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#module-cari-léger-standardisé"><i class="fa fa-check"></i><b>6.2</b> Module CARI léger standardisé</a><ul>
-<li class="chapter" data-level="6.2.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-papier-du-questionnaire-3"><i class="fa fa-check"></i><b>6.2.1</b> Version papier du questionnaire</a></li>
-<li class="chapter" data-level="6.2.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-électronique-du-questionnaire-3"><i class="fa fa-check"></i><b>6.2.2</b> Version électronique du questionnaire</a></li>
-</ul></li>
-<li class="chapter" data-level="6.3" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#calcul-de-indicateur-lhcs"><i class="fa fa-check"></i><b>6.3</b> Calcul de indicateur LHCS</a><ul>
-<li class="chapter" data-level="6.3.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#example-data-set"><i class="fa fa-check"></i><b>6.3.1</b> Example data set</a></li>
-<li class="chapter" data-level="6.3.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#spss-syntax-3"><i class="fa fa-check"></i><b>6.3.2</b> SPSS Syntax</a></li>
-<li class="chapter" data-level="6.3.3" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#r-syntax-3"><i class="fa fa-check"></i><b>6.3.3</b> R Syntax</a></li>
-</ul></li>
-<li class="chapter" data-level="6.4" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#module-standardisé-de-stratégie-dadaptation-aux-moyens-dexistence-de-lena"><i class="fa fa-check"></i><b>6.4</b> Module standardisé de stratégie d’adaptation aux moyens d’existence de l’ENA</a><ul>
-<li class="chapter" data-level="6.4.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-papier-du-questionnaire-4"><i class="fa fa-check"></i><b>6.4.1</b> Version papier du questionnaire</a></li>
-<li class="chapter" data-level="6.4.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-électronique-du-questionnaire-4"><i class="fa fa-check"></i><b>6.4.2</b> Version électronique du questionnaire</a></li>
-<li class="chapter" data-level="6.4.3" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#exemple-de-données-et-de-syntaxe"><i class="fa fa-check"></i><b>6.4.3</b> Exemple de données et de syntaxe</a></li>
+<li class="chapter" data-level="5.3" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#calcul-de-lindicateur-rcsi"><i class="fa fa-check"></i><b>5.3</b> Calcul de l’indicateur rCSI</a><ul>
+<li class="chapter" data-level="5.3.1" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#exemple-densemble-de-données-1"><i class="fa fa-check"></i><b>5.3.1</b> Exemple d’ensemble de données</a></li>
+<li class="chapter" data-level="5.3.2" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#spss-syntax-1"><i class="fa fa-check"></i><b>5.3.2</b> SPSS Syntax</a></li>
+<li class="chapter" data-level="5.3.3" data-path="lindice-réduit-des-stratégies-de-survie-rcsi.html"><a href="lindice-réduit-des-stratégies-de-survie-rcsi.html#r-syntax-1"><i class="fa fa-check"></i><b>5.3.3</b> R Syntax</a></li>
 </ul></li>
 </ul></li>
-<li class="chapter" data-level="7" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><i class="fa fa-check"></i><b>7</b> Questionnaire combiné &amp; Syntaxes pour les 5 indicateurs</a><ul>
-<li class="chapter" data-level="7.0.1" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#version-papier-du-questionnaire-5"><i class="fa fa-check"></i><b>7.0.1</b> Version papier du questionnaire</a></li>
-<li class="chapter" data-level="7.0.2" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#version-électronique-du-questionnaire-5"><i class="fa fa-check"></i><b>7.0.2</b> Version électronique du questionnaire</a></li>
-<li class="chapter" data-level="7.0.3" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#example-data-set-1"><i class="fa fa-check"></i><b>7.0.3</b> Example data set</a></li>
-<li class="chapter" data-level="7.0.4" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#spss-syntax-4"><i class="fa fa-check"></i><b>7.0.4</b> SPSS Syntax</a></li>
-<li class="chapter" data-level="7.0.5" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#r-syntax-4"><i class="fa fa-check"></i><b>7.0.5</b> R Syntax</a></li>
+<li class="chapter" data-level="6" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><i class="fa fa-check"></i><b>6</b> Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS)</a><ul>
+<li class="chapter" data-level="6.1" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#références-ressources-2"><i class="fa fa-check"></i><b>6.1</b> Références / Ressources</a></li>
+<li class="chapter" data-level="6.2" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#questionnaire-standardisé-2"><i class="fa fa-check"></i><b>6.2</b> Questionnaire standardisé</a><ul>
+<li class="chapter" data-level="6.2.1" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#version-papier-du-questionnaire-2"><i class="fa fa-check"></i><b>6.2.1</b> Version papier du questionnaire</a></li>
+<li class="chapter" data-level="6.2.2" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#version-électronique-du-questionnaire-2"><i class="fa fa-check"></i><b>6.2.2</b> Version électronique du questionnaire</a></li>
 </ul></li>
-<li class="chapter" data-level="8" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html"><i class="fa fa-check"></i><b>8</b> Rapport de contrôle de la qualité des données</a><ul>
-<li class="chapter" data-level="8.1" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#aperçu-des-étapes"><i class="fa fa-check"></i><b>8.1</b> Aperçu des étapes</a><ul>
-<li class="chapter" data-level="8.1.1" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#exemple-de-vidéo"><i class="fa fa-check"></i><b>8.1.1</b> Exemple de vidéo</a></li>
+<li class="chapter" data-level="6.3" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#calcul-des-indicateurs-fcs-et-hdds"><i class="fa fa-check"></i><b>6.3</b> Calcul des indicateurs FCS et HDDS</a><ul>
+<li class="chapter" data-level="6.3.1" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#exemple-densemble-de-données-2"><i class="fa fa-check"></i><b>6.3.1</b> Exemple d’ensemble de données</a></li>
+<li class="chapter" data-level="6.3.2" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#spss-syntax-2"><i class="fa fa-check"></i><b>6.3.2</b> SPSS Syntax</a></li>
+<li class="chapter" data-level="6.3.3" data-path="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html"><a href="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds.html#r-syntax-2"><i class="fa fa-check"></i><b>6.3.3</b> R Syntax</a></li>
 </ul></li>
-<li class="chapter" data-level="8.2" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#outils-de-contrôle-de-la-qualité-des-données"><i class="fa fa-check"></i><b>8.2</b> Outils de contrôle de la qualité des données</a><ul>
-<li class="chapter" data-level="8.2.1" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#exemple-densemble-de-données-et-syntaxe"><i class="fa fa-check"></i><b>8.2.1</b> Exemple d’ensemble de données et syntaxe</a></li>
 </ul></li>
-<li class="chapter" data-level="8.3" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#dépannage-et-aller-plus-loin"><i class="fa fa-check"></i><b>8.3</b> Dépannage et aller plus loin</a></li>
+<li class="chapter" data-level="7" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><i class="fa fa-check"></i><b>7</b> Stratégie d’adaption aux moyens d’existence (LHCS)</a><ul>
+<li class="chapter" data-level="7.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#références-ressources-3"><i class="fa fa-check"></i><b>7.1</b> Références / Ressources</a></li>
+<li class="chapter" data-level="7.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#module-cari-léger-standardisé"><i class="fa fa-check"></i><b>7.2</b> Module CARI léger standardisé</a><ul>
+<li class="chapter" data-level="7.2.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-papier-du-questionnaire-3"><i class="fa fa-check"></i><b>7.2.1</b> Version papier du questionnaire</a></li>
+<li class="chapter" data-level="7.2.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-électronique-du-questionnaire-3"><i class="fa fa-check"></i><b>7.2.2</b> Version électronique du questionnaire</a></li>
 </ul></li>
-<li class="chapter" data-level="9" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><i class="fa fa-check"></i><b>9</b> Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire)</a><ul>
-<li class="chapter" data-level="9.1" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#exemple-de-vidéo-1"><i class="fa fa-check"></i><b>9.1</b> Exemple de vidéo</a></li>
-<li class="chapter" data-level="9.2" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#génération-dune-matrice-intermédiaire"><i class="fa fa-check"></i><b>9.2</b> Génération d’une matrice intermédiaire</a><ul>
-<li class="chapter" data-level="9.2.1" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#exemple-densemble-de-données-traitées"><i class="fa fa-check"></i><b>9.2.1</b> Exemple d’ensemble de données traitées</a></li>
-<li class="chapter" data-level="9.2.2" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#syntaxe"><i class="fa fa-check"></i><b>9.2.2</b> Syntaxe</a></li>
-<li class="chapter" data-level="9.2.3" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#exemple-de-matrice-intermediare"><i class="fa fa-check"></i><b>9.2.3</b> Exemple de matrice intermediare</a></li>
+<li class="chapter" data-level="7.3" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#calcul-de-indicateur-lhcs"><i class="fa fa-check"></i><b>7.3</b> Calcul de indicateur LHCS</a><ul>
+<li class="chapter" data-level="7.3.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#example-data-set"><i class="fa fa-check"></i><b>7.3.1</b> Example data set</a></li>
+<li class="chapter" data-level="7.3.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#spss-syntax-3"><i class="fa fa-check"></i><b>7.3.2</b> SPSS Syntax</a></li>
+<li class="chapter" data-level="7.3.3" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#r-syntax-3"><i class="fa fa-check"></i><b>7.3.3</b> R Syntax</a></li>
 </ul></li>
-<li class="chapter" data-level="9.3" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#dépannage-et-problèmes-connus"><i class="fa fa-check"></i><b>9.3</b> Dépannage et problèmes connus</a></li>
+<li class="chapter" data-level="7.4" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#module-standardisé-de-stratégie-dadaptation-aux-moyens-dexistence-de-lena"><i class="fa fa-check"></i><b>7.4</b> Module standardisé de stratégie d’adaptation aux moyens d’existence de l’ENA</a><ul>
+<li class="chapter" data-level="7.4.1" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-papier-du-questionnaire-4"><i class="fa fa-check"></i><b>7.4.1</b> Version papier du questionnaire</a></li>
+<li class="chapter" data-level="7.4.2" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#version-électronique-du-questionnaire-4"><i class="fa fa-check"></i><b>7.4.2</b> Version électronique du questionnaire</a></li>
+<li class="chapter" data-level="7.4.3" data-path="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"><a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html#exemple-de-données-et-de-syntaxe"><i class="fa fa-check"></i><b>7.4.3</b> Exemple de données et de syntaxe</a></li>
 </ul></li>
-<li class="chapter" data-level="10" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><i class="fa fa-check"></i><b>10</b> Visualisation des indicateurs directs de la sécurité alimentaire de CH</a><ul>
-<li class="chapter" data-level="10.1" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#visualisation-des-indicateurs-directs-de-sécurité-alimentaire-de-ch-à-partir-de-matrice-intermediare-fichier-.csv"><i class="fa fa-check"></i><b>10.1</b> Visualisation des indicateurs directs de sécurité alimentaire de CH à partir de Matrice Intermediare (fichier .csv)</a><ul>
-<li class="chapter" data-level="10.1.1" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-vidéo-2"><i class="fa fa-check"></i><b>10.1.1</b> Exemple de vidéo</a></li>
-<li class="chapter" data-level="10.1.2" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-matrice-intermediare-fichier-.csv"><i class="fa fa-check"></i><b>10.1.2</b> Exemple de matrice intermediare (fichier .csv)</a></li>
-<li class="chapter" data-level="10.1.3" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-shapefiles"><i class="fa fa-check"></i><b>10.1.3</b> Exemple de shapefiles</a></li>
-<li class="chapter" data-level="10.1.4" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#syntaxe-1"><i class="fa fa-check"></i><b>10.1.4</b> Syntaxe</a></li>
 </ul></li>
-<li class="chapter" data-level="10.2" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#visualisation-des-indicateurs-directs-de-sécurité-alimentaire-de-ch-directement-à-partir-de-lensemble-des-données-traitées"><i class="fa fa-check"></i><b>10.2</b> Visualisation des indicateurs directs de sécurité alimentaire de CH directement à partir de l’ensemble des données traitées</a><ul>
-<li class="chapter" data-level="10.2.1" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#vidéo-de-présentation"><i class="fa fa-check"></i><b>10.2.1</b> Vidéo de présentation</a></li>
-<li class="chapter" data-level="10.2.2" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-densemble-de-données-traitées-1"><i class="fa fa-check"></i><b>10.2.2</b> Exemple d’ensemble de données traitées</a></li>
-<li class="chapter" data-level="10.2.3" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-shapefiles-1"><i class="fa fa-check"></i><b>10.2.3</b> Exemple de shapefiles</a></li>
-<li class="chapter" data-level="10.2.4" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#syntaxe-2"><i class="fa fa-check"></i><b>10.2.4</b> Syntaxe</a></li>
+<li class="chapter" data-level="8" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><i class="fa fa-check"></i><b>8</b> Questionnaire combiné &amp; Syntaxes pour les 5 indicateurs</a><ul>
+<li class="chapter" data-level="8.0.1" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#version-papier-du-questionnaire-5"><i class="fa fa-check"></i><b>8.0.1</b> Version papier du questionnaire</a></li>
+<li class="chapter" data-level="8.0.2" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#version-électronique-du-questionnaire-5"><i class="fa fa-check"></i><b>8.0.2</b> Version électronique du questionnaire</a></li>
+<li class="chapter" data-level="8.0.3" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#example-data-set-1"><i class="fa fa-check"></i><b>8.0.3</b> Example data set</a></li>
+<li class="chapter" data-level="8.0.4" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#spss-syntax-4"><i class="fa fa-check"></i><b>8.0.4</b> SPSS Syntax</a></li>
+<li class="chapter" data-level="8.0.5" data-path="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"><a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html#r-syntax-4"><i class="fa fa-check"></i><b>8.0.5</b> R Syntax</a></li>
+</ul></li>
+<li class="chapter" data-level="9" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html"><i class="fa fa-check"></i><b>9</b> Rapport de contrôle de la qualité des données</a><ul>
+<li class="chapter" data-level="9.1" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#aperçu-des-étapes"><i class="fa fa-check"></i><b>9.1</b> Aperçu des étapes</a><ul>
+<li class="chapter" data-level="9.1.1" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#exemple-de-vidéo"><i class="fa fa-check"></i><b>9.1.1</b> Exemple de vidéo</a></li>
+</ul></li>
+<li class="chapter" data-level="9.2" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#outils-de-contrôle-de-la-qualité-des-données"><i class="fa fa-check"></i><b>9.2</b> Outils de contrôle de la qualité des données</a><ul>
+<li class="chapter" data-level="9.2.1" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#exemple-densemble-de-données-et-syntaxe"><i class="fa fa-check"></i><b>9.2.1</b> Exemple d’ensemble de données et syntaxe</a></li>
+</ul></li>
+<li class="chapter" data-level="9.3" data-path="rapport-de-contrôle-de-la-qualité-des-données.html"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#dépannage-et-aller-plus-loin"><i class="fa fa-check"></i><b>9.3</b> Dépannage et aller plus loin</a></li>
+</ul></li>
+<li class="chapter" data-level="10" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><i class="fa fa-check"></i><b>10</b> Calcul de la matrice intermédiaire (preuve données directes sur la sécurité alimentaire)</a><ul>
+<li class="chapter" data-level="10.1" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#exemple-de-vidéo-1"><i class="fa fa-check"></i><b>10.1</b> Exemple de vidéo</a></li>
+<li class="chapter" data-level="10.2" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#génération-dune-matrice-intermédiaire"><i class="fa fa-check"></i><b>10.2</b> Génération d’une matrice intermédiaire</a><ul>
+<li class="chapter" data-level="10.2.1" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#exemple-densemble-de-données-traitées"><i class="fa fa-check"></i><b>10.2.1</b> Exemple d’ensemble de données traitées</a></li>
+<li class="chapter" data-level="10.2.2" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#syntaxe"><i class="fa fa-check"></i><b>10.2.2</b> Syntaxe</a></li>
+<li class="chapter" data-level="10.2.3" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#exemple-de-matrice-intermediare"><i class="fa fa-check"></i><b>10.2.3</b> Exemple de matrice intermediare</a></li>
+</ul></li>
+<li class="chapter" data-level="10.3" data-path="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"><a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html#dépannage-et-problèmes-connus"><i class="fa fa-check"></i><b>10.3</b> Dépannage et problèmes connus</a></li>
+</ul></li>
+<li class="chapter" data-level="11" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><i class="fa fa-check"></i><b>11</b> Visualisation des indicateurs directs de la sécurité alimentaire de CH</a><ul>
+<li class="chapter" data-level="11.1" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#visualisation-des-indicateurs-directs-de-sécurité-alimentaire-de-ch-à-partir-de-matrice-intermediare-fichier-.csv"><i class="fa fa-check"></i><b>11.1</b> Visualisation des indicateurs directs de sécurité alimentaire de CH à partir de Matrice Intermediare (fichier .csv)</a><ul>
+<li class="chapter" data-level="11.1.1" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-vidéo-2"><i class="fa fa-check"></i><b>11.1.1</b> Exemple de vidéo</a></li>
+<li class="chapter" data-level="11.1.2" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-matrice-intermediare-fichier-.csv"><i class="fa fa-check"></i><b>11.1.2</b> Exemple de matrice intermediare (fichier .csv)</a></li>
+<li class="chapter" data-level="11.1.3" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-shapefiles"><i class="fa fa-check"></i><b>11.1.3</b> Exemple de shapefiles</a></li>
+<li class="chapter" data-level="11.1.4" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#syntaxe-1"><i class="fa fa-check"></i><b>11.1.4</b> Syntaxe</a></li>
+</ul></li>
+<li class="chapter" data-level="11.2" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#visualisation-des-indicateurs-directs-de-sécurité-alimentaire-de-ch-directement-à-partir-de-lensemble-des-données-traitées"><i class="fa fa-check"></i><b>11.2</b> Visualisation des indicateurs directs de sécurité alimentaire de CH directement à partir de l’ensemble des données traitées</a><ul>
+<li class="chapter" data-level="11.2.1" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#vidéo-de-présentation"><i class="fa fa-check"></i><b>11.2.1</b> Vidéo de présentation</a></li>
+<li class="chapter" data-level="11.2.2" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-densemble-de-données-traitées-1"><i class="fa fa-check"></i><b>11.2.2</b> Exemple d’ensemble de données traitées</a></li>
+<li class="chapter" data-level="11.2.3" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-shapefiles-1"><i class="fa fa-check"></i><b>11.2.3</b> Exemple de shapefiles</a></li>
+<li class="chapter" data-level="11.2.4" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#syntaxe-2"><i class="fa fa-check"></i><b>11.2.4</b> Syntaxe</a></li>
 </ul></li>
 </ul></li>
 <li class="divider"></li>
@@ -205,13 +271,13 @@
 
             <section class="normal" id="section-">
 <div id="gecodes" class="section level1">
-<h1><span class="header-section-number">Chapter 2</span> Gecodes</h1>
+<h1><span class="header-section-number">Chapter 3</span> Gecodes</h1>
 <p>Les noms des zones géographiques, bien qu’ils soient assez simples à mettre dans un outil de collecte de données, nécessitent souvent un certain travail de nettoyage dans le traitement des données pour que les résultats correspondent aux fichiers SIG. Il est très fréquent qu’il y ait des problèmes et des confusions concernant l’orthographe, les translittérations, les noms alternatifs et les doublons des zones.</p>
 <p>L’utilisation de codes géographiques normalisés plutôt que de noms géographiques permet de surmonter certains de ces défis typiques du traitement de l’information géographique.</p>
 <p>À cette fin, ce guide recommande d’utiliser les géocodes et les noms des ensembles de données opérationnelles communes (COD) de l’OCHA :</p>
 <p><a href="https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels" class="uri">https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels</a></p>
 <div id="un-exemple-simple-du-problème" class="section level2">
-<h2><span class="header-section-number">2.1</span> Un exemple simple du problème :</h2>
+<h2><span class="header-section-number">3.1</span> Un exemple simple du problème :</h2>
 <p>Les variables géographiques de la section <em>choices</em> d’un xlsform ressemblent généralement à ceci. Les valeurs de <em>name</em> sont généralement attribuées de manière séquentielle.</p>
 <table>
 <thead>
@@ -343,17 +409,17 @@
 <p>Grâce à une variable simple et commune permettant de fusionner les deux ensembles de données, la cartographie et le traitement des données peuvent devenir plus rapides et plus faciles.</p>
 </div>
 <div id="où-trouver-les-codes-pcodes-et-plus-de-détails" class="section level2">
-<h2><span class="header-section-number">2.2</span> Où trouver les codes Pcodes et plus de détails</h2>
+<h2><span class="header-section-number">3.2</span> Où trouver les codes Pcodes et plus de détails</h2>
 <p>Les données géographiques pour l’Afrique occidentale et centrale sont disponibles à l’adresse suivante <a href="https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels" class="uri">https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels</a> ou les utilisateurs peuvent rechercher les informations appropriées sur le pays dans <a href="https://data.humdata.org/dashboards/cod" class="uri">https://data.humdata.org/dashboards/cod</a></p>
 <p>Nous recommandons d’utiliser les codes des colonnes <em>admin1Pcode</em> et <em>admin2Pcode</em> dans la colonne <em>nom</em> du formulaire xls. Il est également recommandé d’utiliser les codes des colonnes <em>admin1RefName</em> et <em>admin2RefName</em> dans la colonne <em>label</em> du formulaire xls.</p>
 </div>
 <div id="exemple-densemble-de-données-de-la-fiche-de-collecte-de-données-pour-le-nigeria" class="section level2">
-<h2><span class="header-section-number">2.3</span> Exemple d’ensemble de données de la fiche de collecte de données pour le Nigeria :</h2>
+<h2><span class="header-section-number">3.3</span> Exemple d’ensemble de données de la fiche de collecte de données pour le Nigeria :</h2>
 <p>Voici un exemple d’ensemble de données dont les noms et les étiquettes correspondent aux Common Operation Datasets.</p>
 <p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true">xlsformwithgeocodesexample</a></p>
 </div>
 <div id="caveats" class="section level2">
-<h2><span class="header-section-number">2.4</span> 2 caveats</h2>
+<h2><span class="header-section-number">3.4</span> 2 caveats</h2>
 <ol style="list-style-type: decimal">
 <li><p>Dans quelques pays, les limites des COD peuvent ne pas correspondre aux limites utilisées par le pays. Dans ce cas, il faudra élaborer un fichier de limites et des codes SIG spécifiques.</p></li>
 <li><p>L’insertion des pcodes pertinents dans la colonne <em>nom</em> d’un formulaire xls existant nécessitera probablement un travail de recherche sur excel <em>vlookup</em>. Cela peut être relativement simple si l’on ne remplace les codes qu’au niveau admin1 et admin2, mais les choses peuvent se compliquer si l’on utilise des colonnes en cascade et l’option <em>choice_filter</em> au niveau adm3, adm4.</p></li>
@@ -366,7 +432,7 @@
           </div>
         </div>
       </div>
-<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="mise-en-place-de-la-r-rstudio.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
 <a href="léchelle-de-la-faim-dans-les-ménages-hhs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
