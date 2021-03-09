@@ -34,7 +34,7 @@ Voici l'exemple d'un ensemble de données brutes :
 ### SPSS Syntax
 
 Voici le fichier de syntaxe SPSS : 
-[RBDStandardized_SPSSsyntaxFCSHDDS_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_FR.sps) 
+[RBDStandardized_SPSSsyntaxFCSHDDS_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_FR.sps) 
 
 ### R Syntax
 
