@@ -1,17 +1,18 @@
 # Gecodes
 
-Names of geographic areas, while simple enough to put in a data collection tool, often require some clean up work in data processing for the results to match GIS files.  It's very common for there to be issues and confusion over spelling, transliterations,alternative and duplicate names of areas.
+Les noms des zones géographiques, bien qu'ils soient assez simples à mettre dans un outil de collecte de données, nécessitent souvent un certain travail de nettoyage dans le traitement des données pour que les résultats correspondent aux fichiers SIG.  Il est très fréquent qu'il y ait des problèmes et des confusions concernant l'orthographe, les translittérations, les noms alternatifs et les doublons des zones.
 
-Using standardized geographic codes rather than geographic names helps bound over some of  these typical challenges of processing geographic information.  
+L'utilisation de codes géographiques normalisés plutôt que de noms géographiques permet de surmonter certains de ces défis typiques du traitement de l'information géographique.  
 
-To this end, this guide recommends using Geocodes and Names from OCHA's Common Operational Data sets (CODs): 
+À cette fin, ce guide recommande d'utiliser les géocodes et les noms des ensembles de données opérationnelles communes (COD) de l'OCHA : 
 
 https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels
 
 
-## A simple example of the problem:
+## Un exemple simple du problème :
 
-The geographic variables of the *choices* section of a xlsform typically look like this.  The *name* values are usually sequentially assigned.  
+Les variables géographiques de la section *choices* d'un xlsform ressemblent généralement à ceci.  Les valeurs de *name* sont généralement attribuées de manière séquentielle. 
+
 
 list_name | name | label
 ---- | --- |---- 
@@ -20,7 +21,7 @@ cod_lga | 2 | BAYO
 cod_lga | 3 | CHIBOK
 cod_lga | 4 | KALABAGE
 
-The geographic variables in a corresponding GIS data set look like this:
+Les variables géographiques dans un ensemble de données SIG correspondant ressemblent à ceci :
 
 Shape | admin2Pcode | admin2RefName
 ---- | --- |---- 
@@ -29,7 +30,7 @@ Polygon |NG008004 | Bayo
 Polygon |NG008006 | Chibok
 Polygon |NG008015 | Kala/Balge
 
-Unfortunately, if we tried to merge the data set and the GIS file by the name of the area (this seems to be the variable to join on), we would first have to fix the capitalization and punctuation of the names.  To avoid unnecessary work, we recommend putting in the *Pcode* in the name column of the xlsform.  
+Malheureusement, si nous essayions de fusionner l'ensemble de données et le fichier SIG par le nom de la zone (il semble que ce soit la variable à laquelle se joindre), nous devrions d'abord fixer la capitalisation et la ponctuation des noms.  Pour éviter tout travail inutile, nous recommandons de mettre le *Pcode* dans la colonne des noms du formulaire xls.  
 
 list_name | name | label
 ---- | --- |---- 
@@ -38,7 +39,7 @@ cod_lga | NG008004 | BAYO
 cod_lga | NG008006 | CHIBOK
 cod_lga | NG008015 | KALABAGE
 
-Even better, also use standardized names and labels.  
+Mieux encore, utilisez également des noms et des labels standardisés.  
 
 list_name | name | label
 ---- | --- |---- 
@@ -47,25 +48,25 @@ cod_lga | NG008004 | Bayo
 cod_lga | NG008006 | Chibok
 cod_lga | NG008015 | Kala/Balge
 
-With a common, simple variable to merge both data sets, mapping and data processing can become faster and easier.
+Grâce à une variable simple et commune permettant de fusionner les deux ensembles de données, la cartographie et le traitement des données peuvent devenir plus rapides et plus faciles.
 
-## Where to find Pcodes and more details
+## Où trouver les codes Pcodes et plus de détails
 
-Geographic data for West and Central Africa can be found at  https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels or users can search for the appropriate country information in https://data.humdata.org/dashboards/cod
+Les données géographiques pour l'Afrique occidentale et centrale sont disponibles à l'adresse suivante  https://data.humdata.org/dataset/west-and-central-africa-administrative-boundaries-levels ou les utilisateurs peuvent rechercher les informations appropriées sur le pays dans https://data.humdata.org/dashboards/cod
 
-We recommend using the codes from the *admin1Pcode* and *admin2Pcode* columns in the *name* column of the xlsform.  Using the *admin1RefName* and *admin2RefName* is also recommended in the *label* column of the xlsform.
+Nous recommandons d'utiliser les codes des colonnes *admin1Pcode* et *admin2Pcode* dans la colonne *nom* du formulaire xls.  Il est également recommandé d'utiliser les codes des colonnes *admin1RefName* et *admin2RefName* dans la colonne *label* du formulaire xls.
 
-## Example data set of the data collection sheet for Nigeria:
+## Exemple d'ensemble de données de la fiche de collecte de données pour le Nigeria :
 
-Here is an example data set with names and labels matching the Common Operation Datasets.
+Voici un exemple d'ensemble de données dont les noms et les étiquettes correspondent aux  Common Operation Datasets.
 
 [xlsformwithgeocodesexample](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/questionnaires/xlsformwithgeocodesexample.xlsx?raw=true) 
 
 ## 2 caveats
 
-1. In a few countries, the boundaries in the CODs might not correspond with the boundaries used by the country.  In this case, special development of a GIS boundary file and codes will need to be developed.  
+1. Dans quelques pays, les limites des COD peuvent ne pas correspondre aux limites utilisées par le pays.  Dans ce cas, il faudra élaborer un fichier de limites et des codes SIG spécifiques.  
 
-2. Inserting the relevant pcodes in the *name* column to an existing xlsform will probably require some excel *vlookup* work.  This might be relatively straightforward when only replacing codes at the admin1 and admin2 level, however things might get more complicated if cascading columns and the *choice_filter* option is used at the adm3, adm4 level. 
+2. L'insertion des pcodes pertinents dans la colonne *nom* d'un formulaire xls existant nécessitera probablement un travail de recherche sur excel *vlookup*.  Cela peut être relativement simple si l'on ne remplace les codes qu'au niveau admin1 et admin2, mais les choses peuvent se compliquer si l'on utilise des colonnes en cascade et l'option *choice_filter* au niveau adm3, adm4. 
 
 
 

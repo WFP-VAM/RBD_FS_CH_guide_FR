@@ -1,62 +1,68 @@
-# Visualizing CH Direct Food security Indicators
+# Visualisation des indicateurs directs de la sécurité alimentaire de CH
 
-Visualizing the phasing of areas in maps and tables  according to the different food security indicators can give users a chance to better contemplate/synthesize results during the analysis process.  The resources below, offer two methods for visualizing the results: via the Matrice Intermediare (.csv file) or via the processed survey (.sav) file .
+La visualisation de l'échelonnement des zones dans les cartes et les tableaux en fonction des différents indicateurs de sécurité alimentaire peut donner aux utilisateurs une chance de mieux contempler/synthétiser les résultats au cours du processus d'analyse.  Les ressources ci-dessous proposent deux méthodes de visualisation des résultats : via le Matrice Intermediare (fichier .csv) ou via le fichier d'enquête traité (.sav) .
 
-## Visualizing CH Direct Food security Indicators from Matrice Intermediare (.csv file)
+## Visualisation des indicateurs directs de sécurité alimentaire de CH à partir de Matrice Intermediare (fichier .csv)
 
-After survey teams have generated the .csv for thematrice intermediare, the R script below can be used for creating maps and tables of the Food Security Direct Evidence.
+Après que les équipes d'enquête ont généré le .csv pour la matrice intermediare, le script R ci-dessous peut être utilisé pour créer des cartes et des tableaux des preuves directes de la sécurité alimentaire.
 
-### Overview video 
+### Exemple de vidéo
 
 <iframe width="750" height="400" src="https://www.youtube.com/embed/BdORJYlOEQU" frameborder="0" allowfullscreen></iframe>
 
-
-### Example matrice intermediare (.csv file)
-
-Here is the zipped example matrice intermediare (.csv) generated from processes in the last chapter:
-
-[matrice_intermediaire_direct_en](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/matrice_intermediaire_direct_en.zip?raw=true) 
-
-### Example shapefiles 
-
-Here are shape files for Nigeria which will be used to make maps in our example:
-
-[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+*cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu'elle illustre les informations essentielles*
 
 
-### Syntax
+### Exemple de matrice intermediare (fichier .csv)
 
-Here is the syntax to visualize the CH Direct Food security Indicators
-[example_CH_preliminaryFSresults_fromcsv](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/example_CH_preliminaryFSresults_fromcsv.zip?raw=true) 
+Voici l'exemple zippé de matrice intermediare (.csv) généré à partir des processus du dernier chapitre :
+
+[matrice_intermediaire_direct_fr](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/matrice_intermediaire_direct_fr.zip?raw=true) 
+
+### Exemple de shapefiles 
+
+Voici des shapefiles pour le Nigéria qui seront utilisés pour réaliser les cartes de notre exemple :
+
+[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
 
 
-## Visualizing CH Direct Food security Indicators directly from processed data set 
+### Syntaxe
 
-Alternatively, teams can use the R script below to create maps and tables of the Food Security Direct Evidence directly from the processed dataset.  
+Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH
+[example_CH_preliminaryFSresults_fromcsv_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_CH_preliminaryFSresults_fromcsv_FR.zip?raw=true) 
 
 
-### Overview video 
+## Visualisation des indicateurs directs de sécurité alimentaire de CH directement à partir de l'ensemble des données traitées 
+
+Alternativement, les équipes peuvent utiliser le script R ci-dessous pour créer des cartes et des tableaux des preuves directes de la sécurité alimentaire directement à partir de l'ensemble des données traitées.  
+
+
+### Vidéo de présentation  
 
 <iframe width="750" height="400" src="https://www.youtube.com/embed/SStPXUETQxY" frameborder="0" allowfullscreen></iframe>
 
-### Example processed data set
-
-Here is the example processed data set:
-
-[exampledataEnglish_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_processed.sav?raw=true) 
+*cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu'elle illustre les informations essentielles*
 
 
-### Example shapefiles 
+### Exemple d'ensemble de données traitées
 
-Here are shape files for Nigeria which will be used to make maps in our example:
 
-[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+Voici un exemple d'ensemble de données traitées :
+[exampledataFrancais_processed](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true) 
 
-### Syntax
 
-Here is the syntax to visualize the CH Direct Food security Indicators from the processed dataset:
+### Exemple de shapefiles 
 
-[example_CH_preliminaryFSresults_fromspss](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/example_CH_preliminaryFSresults_fromspss.zip?raw=true) 
+Voici des shapefiles pour le Nigéria qui seront utilisés pour réaliser les cartes de notre exemple :
+
+[NGA_shpfile](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/NGA_shpfile.zip?raw=true) 
+
+
+### Syntaxe
+
+Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH à partir de l'ensemble des données traitées :
+
+[example_CH_preliminaryFSresults_fromspss_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_CH_preliminaryFSresults_fromspss_FR.zip?raw=true) 
 
 
 

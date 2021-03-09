@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 4 L’échelle de la faim dans les ménages (HHS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
-  <meta name="description" content="Chapter 4 L’échelle de la faim dans les ménages (HHS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <title>Chapter 11 Visualisation des indicateurs directs de la sécurité alimentaire de CH | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
+  <meta name="description" content="Chapter 11 Visualisation des indicateurs directs de la sécurité alimentaire de CH | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 4 L’échelle de la faim dans les ménages (HHS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta property="og:title" content="Chapter 11 Visualisation des indicateurs directs de la sécurité alimentaire de CH | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 L’échelle de la faim dans les ménages (HHS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta name="twitter:title" content="Chapter 11 Visualisation des indicateurs directs de la sécurité alimentaire de CH | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="gecodes.html"/>
-<link rel="next" href="lindice-réduit-des-stratégies-de-survie-rcsi.html"/>
+<link rel="prev" href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html"/>
+
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -270,87 +270,57 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="léchelle-de-la-faim-dans-les-ménages-hhs" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> L’échelle de la faim dans les ménages (HHS)</h1>
-<div id="références-ressources" class="section level2">
-<h2><span class="header-section-number">4.1</span> Références / Ressources</h2>
-<p><a href="https://www.fantaproject.org/sites/default/files/resources/HHS-Indicator-Guide-Aug2011-FRANCAIS.pdf" class="uri">https://www.fantaproject.org/sites/default/files/resources/HHS-Indicator-Guide-Aug2011-FRANCAIS.pdf</a></p>
+<div id="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch" class="section level1">
+<h1><span class="header-section-number">Chapter 11</span> Visualisation des indicateurs directs de la sécurité alimentaire de CH</h1>
+<p>La visualisation de l’échelonnement des zones dans les cartes et les tableaux en fonction des différents indicateurs de sécurité alimentaire peut donner aux utilisateurs une chance de mieux contempler/synthétiser les résultats au cours du processus d’analyse. Les ressources ci-dessous proposent deux méthodes de visualisation des résultats : via le Matrice Intermediare (fichier .csv) ou via le fichier d’enquête traité (.sav) .</p>
+<div id="visualisation-des-indicateurs-directs-de-sécurité-alimentaire-de-ch-à-partir-de-matrice-intermediare-fichier-.csv" class="section level2">
+<h2><span class="header-section-number">11.1</span> Visualisation des indicateurs directs de sécurité alimentaire de CH à partir de Matrice Intermediare (fichier .csv)</h2>
+<p>Après que les équipes d’enquête ont généré le .csv pour la matrice intermediare, le script R ci-dessous peut être utilisé pour créer des cartes et des tableaux des preuves directes de la sécurité alimentaire.</p>
+<div id="exemple-de-vidéo-2" class="section level3">
+<h3><span class="header-section-number">11.1.1</span> Exemple de vidéo</h3>
+<iframe width="750" height="400" src="https://www.youtube.com/embed/BdORJYlOEQU" frameborder="0" allowfullscreen>
+</iframe>
+<p><em>cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu’elle illustre les informations essentielles</em></p>
 </div>
-<div id="questionnaire-standardisé" class="section level2">
-<h2><span class="header-section-number">4.2</span> Questionnaire standardisé</h2>
-<table>
-<colgroup>
-<col width="17%" />
-<col width="56%" />
-<col width="26%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Nom de la variable</th>
-<th>Etiquette des questions</th>
-<th>Choix des réponses</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>HHhSNoFood_YN</td>
-<td>Au cours des [4 dernières semaines/30 jours], n’y avait-il aucun aliment à manger à la maison, de quelque nature que ce soit à cause du manque de ressources ?</td>
-<td>1) Oui 0) Non</td>
-</tr>
-<tr class="even">
-<td>HHhSNoFood_FR</td>
-<td>Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ?</td>
-<td>1) Rarely (1–2 times) 2) Parfois (3 à 10 fois) 3) Souvent (plus que 10 fois)</td>
-</tr>
-<tr class="odd">
-<td>HHhSBedHung_YN</td>
-<td>Au cours des [4 dernières semaines/30 jours], étiez-vous ou tout membre de votre ménage obligé de dormir affamé le soir parce qu’il n’y avait pas assez de nourriture ?</td>
-<td>1) Oui 0) Non</td>
-</tr>
-<tr class="even">
-<td>HHhSBedHung_FR</td>
-<td>Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ?</td>
-<td>1) Rarely (1–2 times) 2) Parfois (3 à 10 fois) 3) Souvent (plus que 10 fois)</td>
-</tr>
-<tr class="odd">
-<td>HHhSNotEat_YN</td>
-<td>Au cours des [4 dernières semaines/30 jours], avez-vous ou tout membre de votre ménage passé un jour et une nuit entière sans rien manger parce qu’il n’y avait pas assez de nourriture ?</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>HHhSNotEat_FR</td>
-<td>Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ?</td>
-<td>1) Rarely (1–2 times) 2) Parfois (3 à 10 fois) 3) Souvent (plus que 10 fois)</td>
-</tr>
-</tbody>
-</table>
-<div id="version-papier-du-questionnaire" class="section level3">
-<h3><span class="header-section-number">4.2.1</span> Version papier du questionnaire</h3>
-<p>Voici le module standardisé en format Word :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireHHS.docx?raw=true">RBDstandardized_questionnaireHHS</a></p>
+<div id="exemple-de-matrice-intermediare-fichier-.csv" class="section level3">
+<h3><span class="header-section-number">11.1.2</span> Exemple de matrice intermediare (fichier .csv)</h3>
+<p>Voici l’exemple zippé de matrice intermediare (.csv) généré à partir des processus du dernier chapitre :</p>
+<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/matrice_intermediaire_direct_fr.zip?raw=true">matrice_intermediaire_direct_fr</a></p>
 </div>
-<div id="version-électronique-du-questionnaire" class="section level3">
-<h3><span class="header-section-number">4.2.2</span> Version électronique du questionnaire</h3>
-<p>Voici le module standardisé en format xlsform :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireHHS.xlsx?raw=true">RBDstandardized_questionnaireHHS</a></p>
+<div id="exemple-de-shapefiles" class="section level3">
+<h3><span class="header-section-number">11.1.3</span> Exemple de shapefiles</h3>
+<p>Voici des shapefiles pour le Nigéria qui seront utilisés pour réaliser les cartes de notre exemple :</p>
+<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/NGA_shpfile.zip?raw=true">NGA_shpfile</a></p>
+</div>
+<div id="syntaxe-1" class="section level3">
+<h3><span class="header-section-number">11.1.4</span> Syntaxe</h3>
+<p>Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH
+<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_CH_preliminaryFSresults_fromcsv_FR.zip?raw=true">example_CH_preliminaryFSresults_fromcsv_FR</a></p>
 </div>
 </div>
-<div id="calcul-de-lindicateur-hhs" class="section level2">
-<h2><span class="header-section-number">4.3</span> Calcul de l’indicateur HHS</h2>
-<div id="exemple-densemble-de-données" class="section level3">
-<h3><span class="header-section-number">4.3.1</span> Exemple d’ensemble de données</h3>
-<p>Voici l’exemple d’un ensemble de données brutes :<br />
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true">exampledataFrancais_raw</a></p>
+<div id="visualisation-des-indicateurs-directs-de-sécurité-alimentaire-de-ch-directement-à-partir-de-lensemble-des-données-traitées" class="section level2">
+<h2><span class="header-section-number">11.2</span> Visualisation des indicateurs directs de sécurité alimentaire de CH directement à partir de l’ensemble des données traitées</h2>
+<p>Alternativement, les équipes peuvent utiliser le script R ci-dessous pour créer des cartes et des tableaux des preuves directes de la sécurité alimentaire directement à partir de l’ensemble des données traitées.</p>
+<div id="vidéo-de-présentation" class="section level3">
+<h3><span class="header-section-number">11.2.1</span> Vidéo de présentation</h3>
+<iframe width="750" height="400" src="https://www.youtube.com/embed/SStPXUETQxY" frameborder="0" allowfullscreen>
+</iframe>
+<p><em>cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu’elle illustre les informations essentielles</em></p>
 </div>
-<div id="spss-syntax" class="section level3">
-<h3><span class="header-section-number">4.3.2</span> SPSS Syntax</h3>
-<p>Voici le fichier de syntaxe SPSS :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_SPSSsyntaxHHS_FR.sps">RBDstandardized_SPSSsyntaxHHS_FR</a></p>
+<div id="exemple-densemble-de-données-traitées-1" class="section level3">
+<h3><span class="header-section-number">11.2.2</span> Exemple d’ensemble de données traitées</h3>
+<p>Voici un exemple d’ensemble de données traitées :
+<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_processed.sav?raw=true">exampledataFrancais_processed</a></p>
 </div>
-<div id="r-syntax" class="section level3">
-<h3><span class="header-section-number">4.3.3</span> R Syntax</h3>
-<p>Voici le fichier de syntaxe R :<br />
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxHHS_FR.R">RBDstandardized_RsyntaxHHS_FR</a></p>
+<div id="exemple-de-shapefiles-1" class="section level3">
+<h3><span class="header-section-number">11.2.3</span> Exemple de shapefiles</h3>
+<p>Voici des shapefiles pour le Nigéria qui seront utilisés pour réaliser les cartes de notre exemple :</p>
+<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/NGA_shpfile.zip?raw=true">NGA_shpfile</a></p>
+</div>
+<div id="syntaxe-2" class="section level3">
+<h3><span class="header-section-number">11.2.4</span> Syntaxe</h3>
+<p>Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH à partir de l’ensemble des données traitées :</p>
+<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_CH_preliminaryFSresults_fromspss_FR.zip?raw=true">example_CH_preliminaryFSresults_fromspss_FR</a></p>
 
 </div>
 </div>
@@ -360,8 +330,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="gecodes.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="lindice-réduit-des-stratégies-de-survie-rcsi.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="calcul-de-la-matrice-intermédiaire-preuve-données-directes-sur-la-sécurité-alimentaire.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -392,7 +362,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-HHS.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/09-CHvizzes.Rmd",
 "text": "Edit"
 },
 "history": {

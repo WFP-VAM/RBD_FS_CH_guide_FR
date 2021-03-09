@@ -1,5 +1,5 @@
 ---
-title: "CH march 2021 - Example of preliminary results of Food Security direct evidence"
+title: "CH mars 2021 - Exemple de résultats préliminaires des preuves directes de la sécurité alimentaire"
 author: "WFP and partners"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: html_document
@@ -13,11 +13,11 @@ library(kableExtra)
 library(ggiraph)
 
 #import matrice intermediare direct
-matrice_intermediaire <- read_csv("C:\\RBD_FS_CH_guide_EN\\example_datasets\\matrice_intermediaire_direct_en.csv")
+matrice_intermediaire <- read_csv("C:\\RBD_FS_CH_guide_FR\\example_datasets\\matrice_intermediaire_direct_fr.csv")
 
 #Import GIS files for country - and select only relevant areas
-NGA_shp2 <- read_sf("C:\\RBD_FS_CH_guide_EN\\example_datasets\\NGA_shpfile\\nga_admbnda_adm2_osgof_20190417.shp") %>% filter(ADM1_EN %in% c("Borno","Adamawa","Yobe"))
-NGA_shp1 <- read_sf("C:\\RBD_FS_CH_guide_EN\\example_datasets\\NGA_shpfile\\nga_admbnda_adm1_osgof_20190417.shp") %>% filter(ADM1_EN %in% c("Borno","Adamawa","Yobe"))
+NGA_shp2 <- read_sf("C:\\RBD_FS_CH_guide_FR\\example_datasets\\NGA_shpfile\\nga_admbnda_adm2_osgof_20190417.shp") %>% filter(ADM1_EN %in% c("Borno","Adamawa","Yobe"))
+NGA_shp1 <- read_sf("C:\\RBD_FS_CH_guide_FR\\example_datasets\\NGA_shpfile\\nga_admbnda_adm1_osgof_20190417.shp") %>% filter(ADM1_EN %in% c("Borno","Adamawa","Yobe"))
 #Rename the adm1 & adm2codes in the GIS file
 NGA_shp2 <- NGA_shp2 %>% rename(ADMIN2Code = ADM2_PCODE, ADMIN1Code = ADM1_PCODE)
 
@@ -32,11 +32,11 @@ CH_colors = c("1" = "#c6ffc7", "2" = "#ffe718", "3" = "#e88400", "4" = "#e02d00"
 
 
 #maps by indicator
-mapHDDS <- Matrice_intermediaire_shp %>% ggplot() +geom_sf_interactive(aes(fill = as.factor(HDDS_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="HDDS phasing")  +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasing of HDDS") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
-mapHHS <- Matrice_intermediaire_shp %>% ggplot()  +geom_sf_interactive(aes(fill = as.factor(HHS_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="HHS phasing") +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasing of HHS") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA) 
-mapFCG <- Matrice_intermediaire_shp %>% ggplot()+geom_sf_interactive(aes(fill = as.factor(FCG_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="FCG phasing") +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasing of food consumption score groups") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
-maprCSI <- Matrice_intermediaire_shp  %>%ggplot() +geom_sf_interactive(aes(fill = as.factor(rCSI_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="rCSI phasing") +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasing of rCSI") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
-mapLCS <- Matrice_intermediaire_shp  %>% ggplot() +geom_sf_interactive(aes(fill = as.factor(LhHCSCat_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="LCS phasing") +scale_fill_manual(values = CH_colors)  +ggtitle(label= "phasing of livelihood coping strategies") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
+mapHDDS <- Matrice_intermediaire_shp %>% ggplot() +geom_sf_interactive(aes(fill = as.factor(HDDS_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="phasage du HDDS")  +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasage du HDDS") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
+mapHHS <- Matrice_intermediaire_shp %>% ggplot()  +geom_sf_interactive(aes(fill = as.factor(HHS_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="phasage du HHS") +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasage du HHS") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA) 
+mapFCG <- Matrice_intermediaire_shp %>% ggplot()+geom_sf_interactive(aes(fill = as.factor(FCG_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="phasage du FCG") +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasage du FCG") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
+maprCSI <- Matrice_intermediaire_shp  %>%ggplot() +geom_sf_interactive(aes(fill = as.factor(rCSI_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="phasage du rCSI") +scale_fill_manual(values = CH_colors) +ggtitle(label= "phasage du rCSI") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
+mapLCS <- Matrice_intermediaire_shp  %>% ggplot() +geom_sf_interactive(aes(fill = as.factor(LhHCSCat_finalphase), tooltip = ADMIN2Name)) +theme_void() +coord_sf(datum=NA) +labs(fill="phasage du LhCS") +scale_fill_manual(values = CH_colors)  +ggtitle(label= "phasage du LhCS") +geom_sf(data=NGA_shp1,  lwd=1.5, fill=NA)
 
 table <- matrice_intermediaire%>% select(ADMIN1Name, ADMIN2Name, FCG_finalphase, HDDS_finalphase, rCSI_finalphase, HHS_finalphase, LhHCSCat_finalphase)
 
