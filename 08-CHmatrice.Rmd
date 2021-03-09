@@ -18,7 +18,7 @@ Voici un exemple d'ensemble de données traitées :
 ### Syntaxe
 
 Voici la syntaxe pour générer la matrice intermediare à partir de l'ensemble des données traitées :
-[matricemaker_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/matricemaker_FR.R?raw=true) 
+[matricemaker_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/matricemaker_FR.R) 
 
 
 ### Exemple de matrice intermediare 
