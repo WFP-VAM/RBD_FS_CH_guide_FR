@@ -28,7 +28,7 @@ Voici le fichier syntaxique SPSS combiné pour le calcul des 5 indicateurs :
 
 [RBDstandardized_Rsyntaxcombined_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_Rsyntaxcombined_FR.sps) 
 
-*Note - still looking for a way to create  ADMIN1Code & ADMIN2Code variables from the variables ADMIN1Name & ADMIN2Name in SPSS*
+*Note - on cherche toujours un moyen de créer des variables ADMIN1Code & ADMIN2Code à partir des variables ADMIN1Name & ADMIN2Name dans SPSS*
 
 
 ### R Syntax
