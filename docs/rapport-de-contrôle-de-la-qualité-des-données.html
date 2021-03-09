@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Chapter 6 Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
-  <meta name="description" content="Chapter 6 Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <title>Chapter 9 Rapport de contrôle de la qualité des données | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé</title>
+  <meta name="description" content="Chapter 9 Rapport de contrôle de la qualité des données | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="Chapter 6 Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta property="og:title" content="Chapter 9 Rapport de contrôle de la qualité des données | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 6 Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS) | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
+  <meta name="twitter:title" content="Chapter 9 Rapport de contrôle de la qualité des données | Guide pour la collecte, le traitement et la visualisation standardisé des indicateurs de sécurité alimentaire du Cadre harmonisé" />
   
   
   
@@ -33,8 +33,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-<link rel="prev" href="lindice-réduit-des-stratégies-de-survie-rcsi.html"/>
-<link rel="next" href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html"/>
+<link rel="prev" href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html"/>
+<link rel="next" href="calculating-matrice-intermediare-direct-food-security-data.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -270,49 +270,53 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="scoregroupes-de-consommation-alimentaire-et-score-de-diversité-alimentaire-des-ménages-fcsfcg-hdds" class="section level1">
-<h1><span class="header-section-number">Chapter 6</span> Score/Groupes de consommation alimentaire et score de diversité alimentaire des ménages (FCS/FCG &amp; HDDS)</h1>
-<p>Le module ci-dessous vous permet de collecter et de calculer les indicateurs FCS/FCG, FCS-N et HDDS.</p>
-<div id="références-ressources-2" class="section level2">
-<h2><span class="header-section-number">6.1</span> Références / Ressources</h2>
-<ol style="list-style-type: decimal">
-<li><p>FCS - <a href="https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf" class="uri">https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp271449.pdf</a></p></li>
-<li><p>FCS_N - <a href="https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp277333.pdf" class="uri">https://documents.wfp.org/stellent/groups/public/documents/manual_guide_proced/wfp277333.pdf</a></p></li>
-<li><p>HDDS - <a href="http://www.fao.org/3/i1983f/i1983f.pdf" class="uri">http://www.fao.org/3/i1983f/i1983f.pdf</a></p></li>
-</ol>
-<p><em>Les versions actualisées des références FCS/FCG et FCS-N ne sont pas encore disponibles en français</em></p>
+<div id="rapport-de-contrôle-de-la-qualité-des-données" class="section level1">
+<h1><span class="header-section-number">Chapter 9</span> Rapport de contrôle de la qualité des données</h1>
+<p>Si les équipes d’enquête collectent des données avec Kobo/Ona/MoDa/ODK et envoient régulièrement des soumissions à un serveur, alors les analystes peuvent rapidement générer un rapport sur la qualité des données avec Rmarkdown pour suivre régulièrement les résultats des enquêtes et détecter les problèmes qui peuvent survenir sur le terrain lors de la collecte des données.</p>
+<p>L’exemple de rapport ci-dessous a été généralisé pour visualiser la progression des enquêtes par zones géographiques et les résultats calculés des indicateurs clés de la CH par zones géographiques et par les recenseurs en utilisant l’ensemble de données brutes téléchargées du serveur Kobo/Ona/MoDa/ODK.</p>
+<p>Pour des raisons de confidentialité et de sécurité des données, le code du recenseur doit être utilisé plutôt que le nom du recenseur. Si un opérateur particulier doit être identifié ou contacté - vous pouvez vous référer au formulaire de collecte des données pour faire correspondre le code de l’énumérateur avec le nom de l’énumérateur.</p>
+<div id="aperçu-des-étapes" class="section level2">
+<h2><span class="header-section-number">9.1</span> Aperçu des étapes</h2>
+<p>Télécharger une version .sav (spss) de l’ensemble de données à partir de Kobo/Ona/MoDa/ODK - utiliser <a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav">exampledataFrancais_raw</a> as an example.</p>
+<p>Créez un dossier sur votre machine (“C :” est recommandé mais pas obligatoire) avec le nom de l’enquête (par exemple NGA_022021_EFSA) et créez un sous-dossier “1_RawData” et enregistrez votre ensemble de données SPSS dans le dossier “1_RawData”.</p>
+<p>Ouvrez <a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_dqmonitoring_FR.Rmd">example_dqmonitoring_FR</a>
+et vérifier que le code (ci-dessous) fait référence au nom correct du fichier et à l’emplacement du dossier.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb3-1"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb3-1"></a><span class="co">#set working directory </span></span>
+<span id="cb3-2"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb3-2"></a><span class="kw">setwd</span>(<span class="st">&quot;C:/exampledataquality&quot;</span>)</span>
+<span id="cb3-3"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb3-3"></a></span>
+<span id="cb3-4"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb3-4"></a><span class="co">#import dataset and call it &quot;dataset&quot;</span></span>
+<span id="cb3-5"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb3-5"></a>dataset &lt;-<span class="st"> </span><span class="kw">read_sav</span>(<span class="st">&quot;1_RawData/exampledataFrancais_raw.sav&quot;</span>)</span></code></pre></div>
+<p>En outre, si le nom de la variable des enquêteurs n’est pas “EnumName”, insérez le code suivant pour renommer la variable</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb4-1"></a><span class="co">#standardized enumerator name variable</span></span>
+<span id="cb4-2"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb4-2"></a>dataset &lt;-<span class="st"> </span>dataset <span class="op">%&gt;%</span><span class="st"> </span><span class="kw">rename</span>(<span class="dt">EnumName =</span> OLDNAMEOFENUMERATORVARIABLE) </span></code></pre></div>
+<p>avant ce code :</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb5-1"></a><span class="co">#convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator</span></span>
+<span id="cb5-2"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb5-2"></a>dataset<span class="op">$</span>EnumName &lt;-<span class="st"> </span><span class="kw">to_character</span>(dataset<span class="op">$</span>EnumName)</span></code></pre></div>
+<p>Modifiez le <code>title</code> and <code>author</code></p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb6-1"></a>title<span class="op">:</span><span class="st"> &quot;Exemple de rapport de contrôle de la qualité des données&quot;</span></span>
+<span id="cb6-2"><a href="rapport-de-contrôle-de-la-qualité-des-données.html#cb6-2"></a>author<span class="op">:</span><span class="st"> &quot;PAM et partenaires&quot;</span></span></code></pre></div>
+<p>Cliquez sur le bouton <code>Knit1</code> et le rapport devrait se générer (cela peut prendre quelques minutes).</p>
+<p>Un fichier .html est produit dans le dossier de l’enquête - vous pouvez passer le curseur sur les chiffres pour obtenir plus d’informations.</p>
+<div id="exemple-de-vidéo" class="section level3">
+<h3><span class="header-section-number">9.1.1</span> Exemple de vidéo</h3>
+<iframe width="750" height="400" src="https://www.youtube.com/embed/-hvUzqojk9c" frameborder="0" allowfullscreen>
+</iframe>
+<p><em>cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu’elle illustre les informations essentielles</em></p>
 </div>
-<div id="questionnaire-standardisé-2" class="section level2">
-<h2><span class="header-section-number">6.2</span> Questionnaire standardisé</h2>
-<div id="version-papier-du-questionnaire-2" class="section level3">
-<h3><span class="header-section-number">6.2.1</span> Version papier du questionnaire</h3>
-<p>Voici le module standardisé en format Word :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.docx?raw=true">RBDstandardized_questionnaireFCSHDDS</a></p>
 </div>
-<div id="version-électronique-du-questionnaire-2" class="section level3">
-<h3><span class="header-section-number">6.2.2</span> Version électronique du questionnaire</h3>
-<p>Voici le module standardisé sous xlsform :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/questionnaires/RBDstandardized_questionnaireFCSHDDS.xlsx?raw=true">RBDstandardized_questionnaireFCSHDDS</a></p>
+<div id="outils-de-contrôle-de-la-qualité-des-données" class="section level2">
+<h2><span class="header-section-number">9.2</span> Outils de contrôle de la qualité des données</h2>
+<div id="exemple-densemble-de-données-et-syntaxe" class="section level3">
+<h3><span class="header-section-number">9.2.1</span> Exemple d’ensemble de données et syntaxe</h3>
+<p>Voici le fichier zippé avec l’exemple de données brutes et la syntaxe :</p>
+<p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/exampledq_monitoring_FR.zip?raw=true">exampledq_monitoring_FR</a></p>
 </div>
 </div>
-<div id="calcul-des-indicateurs-fcs-et-hdds" class="section level2">
-<h2><span class="header-section-number">6.3</span> Calcul des indicateurs FCS et HDDS</h2>
-<div id="exemple-densemble-de-données-2" class="section level3">
-<h3><span class="header-section-number">6.3.1</span> Exemple d’ensemble de données</h3>
-<p>Voici l’exemple d’un ensemble de données brutes :<br />
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true">exampledataFrancais_raw</a></p>
-</div>
-<div id="spss-syntax-2" class="section level3">
-<h3><span class="header-section-number">6.3.2</span> SPSS Syntax</h3>
-<p>Voici le fichier de syntaxe SPSS :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDStandardized_SPSSsyntaxFCSHDDS_FR.sps">RBDStandardized_SPSSsyntaxFCSHDDS_FR</a></p>
-</div>
-<div id="r-syntax-2" class="section level3">
-<h3><span class="header-section-number">6.3.3</span> R Syntax</h3>
-<p>Voici le fichier de syntaxe R :
-<a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/RBDstandardized_RsyntaxFCSHDDS_FR.R">RBDstandardized_RsyntaxFCSHDDS_FR</a></p>
+<div id="dépannage-et-aller-plus-loin" class="section level2">
+<h2><span class="header-section-number">9.3</span> Dépannage et aller plus loin</h2>
+<p>Ce rapport a été conçu pour fonctionner avec des noms de variables et des indicateurs normalisés illustrés plus haut dans ce guide. Si les noms des variables dans l’ensemble de données brutes ne correspondent pas au code, il faudra procéder à un ajustement.</p>
+<p>Les utilisateurs R expérimentés sont libres de modifier le rapport pour répondre à leurs besoins spécifiques. Partagez ce que vous créez !</p>
 
-</div>
 </div>
 </div>
             </section>
@@ -320,8 +324,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           </div>
         </div>
       </div>
-<a href="lindice-réduit-des-stratégies-de-survie-rcsi.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="stratégie-dadaption-aux-moyens-dexistence-lhcs.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="questionnaire-combiné-syntaxes-pour-les-5-indicateurs.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="calculating-matrice-intermediare-direct-food-security-data.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
@@ -352,7 +356,7 @@ gitbook.start({
 "size": 2
 },
 "edit": {
-"link": "https://github.com/rstudio/bookdown-demo/edit/master/04-FCSHDDS.Rmd",
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/07-DQM.Rmd",
 "text": "Edit"
 },
 "history": {

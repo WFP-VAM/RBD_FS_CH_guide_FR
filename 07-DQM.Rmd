@@ -1,71 +1,76 @@
-# Data Quality Monitoring Report
+# Rapport de contrôle de la qualité des données
 
-If survey teams collect data with Kobo/Ona/MoDa/ODK and regularly send submissions to a server, then analysts can quickly generate a data quality report with Rmarkdown to regularly track survey results and detect problems that may arise in the field with data collection.
+Si les équipes d'enquête collectent des données avec Kobo/Ona/MoDa/ODK et envoient régulièrement des soumissions à un serveur, alors les analystes peuvent rapidement générer un rapport sur la qualité des données avec Rmarkdown pour suivre régulièrement les résultats des enquêtes et détecter les problèmes qui peuvent survenir sur le terrain lors de la collecte des données.
 
-The example report below has been generalized to visualize survey progress by geographic areas and calculated results of key CH indicators by geographic areas and by enumerators using the raw data set downloaded from the  Kobo/Ona/MoDa/ODK server.
+L'exemple de rapport ci-dessous a été généralisé pour visualiser la progression des enquêtes par zones géographiques et les résultats calculés des indicateurs clés de la CH par zones géographiques et par les recenseurs en utilisant l'ensemble de données brutes téléchargées du serveur Kobo/Ona/MoDa/ODK.
 
-For privacy/data security, the code of the enumerator should be used rather thanreporting the enumerators name.  If a particular operator needs to be identified or contacted - you can refer to the data collection form to match the enumerator code with the enumerator name. 
-
-## Overview of the steps
-
-Download a .sav (spss) version of the dataset from Kobo/Ona/MoDa/ODK - use [exampledataEnglish_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/example_datasets/exampledataEnglish_raw.sav) as an example.
-
-Create a folder on your machine ("C:" is recommended but not required) with the name of the survey (i.e. NGA_022021_EFSA) and create a sub-folder "1_RawData" and save your SPSS dataset in the "1_RawData" folder.
+Pour des raisons de confidentialité et de sécurité des données, le code du recenseur doit être utilisé plutôt que le nom du recenseur.  Si un opérateur particulier doit être identifié ou contacté - vous pouvez vous référer au formulaire de collecte des données pour faire correspondre le code de l'énumérateur avec le nom de l'énumérateur. 
 
 
-Open up [example_dqmonitoring_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/example_dqmonitoring_EN.Rmd) 
- and verify the code (below) refers to the correct name of file and folder location.
+## Aperçu des étapes
+
+Télécharger une version .sav (spss) de l'ensemble de données à partir de Kobo/Ona/MoDa/ODK - utiliser [exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav) as an example.
+
+Créez un dossier sur votre machine ("C :" est recommandé mais pas obligatoire) avec le nom de l'enquête (par exemple NGA_022021_EFSA) et créez un sous-dossier "1_RawData" et enregistrez votre ensemble de données SPSS dans le dossier "1_RawData".
+
+Ouvrez  [example_dqmonitoring_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/example_dqmonitoring_FR.Rmd) 
+et vérifier que le code (ci-dessous) fait référence au nom correct du fichier et à l'emplacement du dossier.
 
 ```{r, eval = F}
 #set working directory 
 setwd("C:/exampledataquality")
 
 #import dataset and call it "dataset"
-dataset <- read_sav("1_RawData/exampledataEnglish_raw.sav")
+dataset <- read_sav("1_RawData/exampledataFrancais_raw.sav")
 ```
 
-Also, if the variable name of the Enumerators is not `EnumName`, insert the following code to rename the variable
+En outre, si le nom de la variable des enquêteurs n'est pas "EnumName", insérez le code suivant pour renommer la variable
 
 ```{r, eval = F}
 #standardized enumerator name variable
 dataset <- dataset %>% rename(EnumName = OLDNAMEOFENUMERATORVARIABLE) 
 ```
 
-before this code:
+avant ce code :
 
 ```{r, eval = F}
 #convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator
 dataset$EnumName <- to_character(dataset$EnumName)
 ```
 
-Modify the `title` and author `fields` to your survey. 
+Modifiez le `title` and `author` 
 
 ```{r, eval = F}
-title: "Example Data Quality Monitoring Report"
-author: "WFP "
+title: "Exemple de rapport de contrôle de la qualité des données"
+author: "PAM et partenaires"
 ```
 
-Click the Knit button and the report should generate (it might take a few minutes). 
+Cliquez sur le bouton `Knit1` et le rapport devrait se générer (cela peut prendre quelques minutes). 
 
-An .html file is produced in the survey folder - you can hover the cursor over the figures for more information.
 
-### Video Example 
+Un fichier .html est produit dans le dossier de l'enquête - vous pouvez passer le curseur sur les chiffres pour obtenir plus d'informations.
+
+### Exemple de vidéo  
 
 <iframe width="750" height="400" src="https://www.youtube.com/embed/-hvUzqojk9c" frameborder="0" allowfullscreen></iframe>
 
-## Data Quality Monitoring Tools
+*cette vidéo concerne la version anglaise, une version française sera créée mais nous espérons qu'elle illustre les informations essentielles*
 
-### Example data set & Syntax
+## Outils de contrôle de la qualité des données
 
-Here is the zipped file with the raw example data set and syntax:
+### Exemple d'ensemble de données et syntaxe
 
-[exampledq_monitoring_EN](https://github.com/WFP-VAM/RBD_FS_CH_guide_EN/blob/master/syntax/exampledq_monitoring_EN.zip?raw=true) 
+Voici le fichier zippé avec l'exemple de données brutes et la syntaxe :
+
+[exampledq_monitoring_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/syntax/exampledq_monitoring_FR.zip?raw=true) 
 
 
-## Troubleshooting & Going Further
+## Dépannage et aller plus loin
 
-This report has been designed to work with standardized variable names and indicators illustrated earlier in this guide. If the variable names in the raw data set do not match the code - their will be some adjustment needed.
+Ce rapport a été conçu pour fonctionner avec des noms de variables et des indicateurs normalisés illustrés plus haut dans ce guide. Si les noms des variables dans l'ensemble de données brutes ne correspondent pas au code, il faudra procéder à un ajustement.
 
-Experienced R users are free to modify the report to meet their specific needs.  Share what you create!  
+Les utilisateurs R expérimentés sont libres de modifier le rapport pour répondre à leurs besoins spécifiques.  Partagez ce que vous créez !  
+
+
 
 

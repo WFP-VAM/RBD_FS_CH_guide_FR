@@ -16,8 +16,6 @@ Voici le module standardisé sous xlsform :
 
 ### Example data set
 
-### Example data set
-
 Voici l'exemple d'un ensemble de données brutes :  
 [exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/master/example_datasets/exampledataFrancais_raw.sav?raw=true)  
 

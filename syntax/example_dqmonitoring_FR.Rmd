@@ -1,6 +1,6 @@
 ---
 title: "Exemple de rapport de contrôle de la qualité des données"
-author: "PAM et partenaires "
+author: "PAM et partenaires"
 date: "`r format(Sys.time(), '%d %B, %Y')`"
 output: 
   html_document:
@@ -25,11 +25,11 @@ setwd("C:/exampledataquality")
 #import dataset and call it "dataset"
 dataset <- read_sav("1_RawData/exampledataFrancais_raw.sav")
 
+#convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator
+dataset$EnumName <- to_character(dataset$EnumName)
+
 #convert into labels for all variables
 dataset <- to_factor(dataset)
-
-#convert enumerator name back to code - because for data security reasons you dont want to publish the name of the operator
-dataset$EnumName <- to_labelled(dataset$EnumName)
 
 
 #Survey Progress
@@ -150,31 +150,43 @@ HHSadm2EnumName_barplot <- HHSadm2EnumNametable %>% ggplot(aes(x=as.factor(EnumN
 
 #Livelihood Coping Strategies (CARI)
 #create a variable to specify if the household used any of the strategies by severity
-#stress
+#parce que le texte est très long dans les questions - voir si la réponse a été tronquée
+levels(dataset$LhCSIStress1)
+
 dataset <- dataset %>% mutate(stress_coping = case_when(
-  LhCSIStress1 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSIStress2 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSIStress3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSIStress4 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  TRUE ~ "No"))
+  LhCSIStress1 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSIStress2 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSIStress3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSIStress4 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  TRUE ~ "Non"))
+var_label(dataset$stress_coping) <- "le ménage s'est-il engagé dans des stratégies  du stress ?"
+
 #Crisis
 dataset <- dataset %>% mutate(crisis_coping = case_when(
-  LhCSICrisis1 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSICrisis2 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSICrisis3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  TRUE ~ "No"))
+  LhCSICrisis1 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSICrisis2 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSICrisis3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  TRUE ~ "Non"))
+var_label(dataset$crisis_coping) <- "le ménage s'est-il engagé dans des stratégies d'adaptation aux crises ?"
+
 #Emergency
 dataset <- dataset %>% mutate(emergency_coping = case_when(
-  LhCSIEmergency1 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSIEmergency2 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  LhCSIEmergency3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas continuer à le faire") ~ "Oui",
-  TRUE ~ "Oui"))
+  LhCSIEmergency1 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSIEmergency2 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  LhCSIEmergency3 %in% c("Oui","Non, parce que j’ai déjà vendu ces actifs ou mené cette activité au cours des 12 derniers mois et je ne peux pas c") ~ "Oui",
+  TRUE ~ "Non"))
+var_label(dataset$emergency_coping) <- "le ménage s'est-il engagé dans des stratégies d'adaptation d'urgence ?"
+
+
 #calculate Max_coping_behaviour
 dataset <- dataset %>% mutate(LhCSICat = case_when(
-  stress_coping == "Oui" ~ "StrategiesdeStress",
+  emergency_coping == "Oui" ~ "StrategiesdeUrgence",
   crisis_coping == "Oui" ~ "StrategiesdeCrise",
-  emergency_coping == "Oui" ~ "StrategiesdUrgence",
+  stress_coping == "Oui" ~ "StrategiesdeStress",
   TRUE ~ "Pasdestrategies"))
+
+var_label(dataset$LhCSICat) <- "Catégories de stratégies d'adaptation aux moyens d'existence - version léger  de CARI"
+
 #CH colors
 LHCS_colors = c("Pasdestrategies" = "#c6ffc7","StrategiesdeStress" = "#ffe718","StrategiesdeCrise" = "#e88400","StrategiesdUrgence" = "#e02d00")
 #change ordering
