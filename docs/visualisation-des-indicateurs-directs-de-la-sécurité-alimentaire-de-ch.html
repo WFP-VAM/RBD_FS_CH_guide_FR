@@ -26,7 +26,7 @@
 <meta name="author" content="rbd.ram@wfp.org" />
 
 
-<meta name="date" content="2021-03-09" />
+<meta name="date" content="2021-03-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -249,6 +249,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="11.2.3" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#exemple-de-shapefiles-1"><i class="fa fa-check"></i><b>11.2.3</b> Exemple de shapefiles</a></li>
 <li class="chapter" data-level="11.2.4" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#syntaxe-2"><i class="fa fa-check"></i><b>11.2.4</b> Syntaxe</a></li>
 </ul></li>
+<li class="chapter" data-level="11.3" data-path="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html"><a href="visualisation-des-indicateurs-directs-de-la-sécurité-alimentaire-de-ch.html#dépannage-et-problèmes-connus-1"><i class="fa fa-check"></i><b>11.3</b> Dépannage et problèmes connus</a></li>
 </ul></li>
 <li class="divider"></li>
 <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
@@ -321,8 +322,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h3><span class="header-section-number">11.2.4</span> Syntaxe</h3>
 <p>Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentaire de CH à partir de l’ensemble des données traitées :</p>
 <p><a href="https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/example_CH_preliminaryFSresults_fromspss_FR.zip?raw=true">example_CH_preliminaryFSresults_fromspss_FR</a></p>
-
 </div>
+</div>
+<div id="dépannage-et-problèmes-connus-1" class="section level2">
+<h2><span class="header-section-number">11.3</span> Dépannage et problèmes connus</h2>
+<ul>
+<li>Si le pays n’a pas collecté tous les 5 indicateurs de sécurité alimentaire (FCS, HDDS, rCSI, HHS, LhCS) - les modules non collectés doivent être supprimés du code</li>
+<li>Si le niveau d’analyse se situe au niveau de l’administration 1 uniquement - alors les variables ADMIN2Name et ADMIN2Code doivent être supprimées du code</li>
+<li>Si l’ADMIN1Name et l’ADMIN2Name n’ont pas été collectés avec des géocodes (voir chapitre 2), le code devra être modifié</li>
+<li><ul>
+<li>Si une variable de ponderation est utilisée, cette variable doit être renommée en <code>Weight_HH</code>, si les ponderation ne sont pas utilisés, le code <code>wt = WeightHH</code> doit être supprimé de la syntaxe.</li>
+</ul></li>
+<li>Pour les calculs des groupes de consommation alimentaire - modifier le code pour utiliser “FCSCat21” pour les seuils 21/35 ou “FCSCat28” pour les seuils 28/42, selon le cas.</li>
+</ul>
+
 </div>
 </div>
             </section>

@@ -86,3 +86,4 @@ vidéo-de-présentation
 exemple-densemble-de-données-traitées-1
 exemple-de-shapefiles-1
 syntaxe-2
+dépannage-et-problèmes-connus-1

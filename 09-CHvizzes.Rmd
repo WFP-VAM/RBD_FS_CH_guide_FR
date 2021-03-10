@@ -64,7 +64,13 @@ Voici la syntaxe pour visualiser les indicateurs directs de sécurité alimentai
 
 [example_CH_preliminaryFSresults_fromspss_FR](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/syntax/example_CH_preliminaryFSresults_fromspss_FR.zip?raw=true) 
 
+## Dépannage et problèmes connus
 
+- Si le pays n'a pas collecté tous les 5 indicateurs de sécurité alimentaire (FCS, HDDS, rCSI, HHS, LhCS) - les modules non collectés doivent être supprimés du code 
+- Si le niveau d'analyse se situe au niveau de l'administration 1 uniquement - alors les variables ADMIN2Name et ADMIN2Code doivent être supprimées du code
+- Si l'ADMIN1Name et l'ADMIN2Name n'ont pas été collectés avec des géocodes (voir chapitre 2), le code devra être modifié 
+- - Si une variable de ponderation est utilisée, cette variable doit être renommée en `Weight_HH`, si les ponderation ne sont pas utilisés, le code `wt = WeightHH` doit être supprimé de la syntaxe.
+- Pour les calculs des groupes de consommation alimentaire - modifier le code pour utiliser "FCSCat21" pour les seuils 21/35 ou "FCSCat28" pour les seuils 28/42, selon le cas.
 
 
 
