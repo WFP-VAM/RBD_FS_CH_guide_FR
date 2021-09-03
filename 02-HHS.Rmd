@@ -10,11 +10,11 @@ https://www.fantaproject.org/sites/default/files/resources/HHS-Indicator-Guide-A
 Nom de la variable | Etiquette des questions | Choix des réponses
 ---- | ------------- |------
 HHhSNoFood_YN | Au cours des [4 dernières semaines/30 jours], n'y avait-il aucun aliment à manger à la maison, de quelque nature que ce soit à cause du manque de ressources ? | 1) Oui 0) Non
-HHhSNoFood_FR | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarely (1–2 times) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
+HHhSNoFood_FR | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarement (1 à 2 fois) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
 HHhSBedHung_YN | Au cours des [4 dernières semaines/30 jours], étiez-vous ou tout membre de votre ménage obligé de dormir affamé le soir parce qu’il n’y avait pas assez de nourriture ?  | 1) Oui 0) Non
-HHhSBedHung_FR  | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarely (1–2 times) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
+HHhSBedHung_FR  | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarement (1 à 2 fois) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
 HHhSNotEat_YN | Au cours des [4 dernières semaines/30 jours], avez-vous ou tout membre de votre ménage passé un jour et une nuit entière sans rien manger parce qu’il n’y avait pas assez de nourriture ?
-HHhSNotEat_FR | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarely (1–2 times) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
+HHhSNotEat_FR | Combien de fois est-ce arrivé au cours des [4 dernières semaines/30 jours] ? | 1) Rarement (1 à 2 fois) 2) Parfois (3 à 10 fois)  3) Souvent (plus que 10 fois)
 
 ### Version papier du questionnaire
 
