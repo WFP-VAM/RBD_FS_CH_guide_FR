@@ -49,11 +49,11 @@ dataset <- dataset %>% mutate(FCS = (2 * FCSStap) + (3 * FCSPulse)+ (4*FCSPr) +F
 #create FCG groups based on 21/25 or 28/42 thresholds
 dataset <- dataset %>% mutate(
   FCSCat21 = case_when(
-    FCS <= 21 ~ "Poor", between(FCS, 21.5, 35) ~ "Borderline", FCS > 35 ~ "Acceptable"),
+    FCS <= 21 ~ "Pauvre", between(FCS, 21.5, 35) ~ "Limite", FCS > 35 ~ "Acceptable"),
   FCSCat28 = case_when(
-    FCS <= 28 ~ "Poor", between(FCS, 28, 42) ~ "Borderline", FCS > 42 ~ "Acceptable"))
+    FCS <= 28 ~ "Pauvre", between(FCS, 28, 42) ~ "Limite", FCS > 42 ~ "Acceptable"))
 #fcg colors
-fcg_colors = c("Acceptable" = "#27AE60","Borderline" = "#F1C40F","Poor" = "#C0392B")
+fcg_colors = c("Acceptable" = "#27AE60","Limite" = "#F1C40F","Pauvre" = "#C0392B")
 #FCG by Adm1
 FCGadm1table <- dataset %>% group_by(ADMIN1Name) %>%  count(FCSCat28) %>% mutate(perc = 100 * n / sum(n)) %>% ungroup() %>% select(-n) %>% mutate_if(is.numeric, round, 1)
 FCGadm1_barplot <- FCGadm1table %>% ggplot(aes(x=ADMIN1Name, y = perc, fill = FCSCat28)) +geom_bar(position="fill", stat = "identity") +theme_minimal() +theme(axis.text.x = element_text(angle = 90)) +scale_fill_manual(values=fcg_colors) + facet_grid(. ~ ADMIN1Name, scales = "free_x")  +labs(x = "", y = "") +scale_y_continuous(labels = scales::percent)
