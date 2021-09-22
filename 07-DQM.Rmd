@@ -9,7 +9,7 @@ Pour des raisons de confidentialité et de sécurité des données, le code du r
 
 ## Aperçu des étapes
 
-Télécharger une version .sav (spss) de l'ensemble de données à partir de Kobo/Ona/MoDa/ODK - utiliser [exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_raw.sav) as an example.
+Télécharger une version .sav (spss) de l'ensemble de données à partir de Kobo/Ona/MoDa/ODK - utiliser [exampledataFrancais_raw](https://github.com/WFP-VAM/RBD_FS_CH_guide_FR/blob/main/example_datasets/exampledataFrancais_raw.sav) comme example.
 
 Créez un dossier sur votre machine ("C :" est recommandé mais pas obligatoire) avec le nom de l'enquête (par exemple NGA_022021_EFSA) et créez un sous-dossier "1_RawData" et enregistrez votre ensemble de données SPSS dans le dossier "1_RawData".
 
